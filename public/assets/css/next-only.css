@@ -1,0 +1,39 @@
+/* ============================================================
+   Next.js build ONLY stylesheet (not part of the original HTML
+   template's shared main.css). It restores template behaviors that
+   are lost purely because the page markup inside a Next.js app is
+   nested in <div id="site-root"> instead of being direct <body>
+   children like in index.html.
+   ============================================================ */
+
+/* --- 1) Sticky header -----------------------------------------
+   In index.html, <header> is a direct child of <body>. ScrollSmoother
+   pins #smooth-wrapper to the viewport (position: fixed) and gives
+   <body> an explicit height equal to the whole page, so the sticky
+   header (.header.fixed-header in main.css) can travel the full
+   document. Inside the Next.js app the same markup lives in
+   #site-root, whose height collapses to zero as soon as ScrollSmoother
+   fixes the wrapper — a zero-height parent is why the sticky header
+   never stuck. Giving #site-root the document height (kept in sync by
+   LegacyScripts.js) lets the template's original sticky CSS work
+   unchanged, with the header staying in the normal flow. */
+#site-root {
+  height: 100%;
+}
+
+/* --- 2) Work section zigzag (576px - 991px) --------------------
+   In the template the portfolio cards (".portfolio-three-item")
+   alternate left / right / left / right whenever the viewport is wide
+   enough for two cards per row (>= 992px). Below that the template's
+   own CSS sets max-width:100% and they stack on the left. This
+   override keeps the alternating look on tablets too, matching the
+   desktop appearance of the template. */
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  #site-root .portfolio-three-item {
+    max-width: 47%;
+  }
+  #site-root .portfolio-three-item:nth-child(even) {
+    margin-top: 200px;
+    margin-bottom: 0;
+  }
+}
