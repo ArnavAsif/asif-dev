@@ -372,8 +372,14 @@ const RippleDistortion = ({
       wave.opacity = 1;
     };
 
-    const localPoint = (clientX, clientY) => {
-      const rect = mount.getBoundingClientRect();
+    // Coordinates are stored client-side by the passive listeners below
+    // (no DOM reads, no allocations per event). The render loop starts
+    // on demand ("wake") and parks itself once every wave has faded, so
+    // the GPU is untouched while the cursor is idle or outside the hero.
+    // A parked canvas holds its last frame, which by then is fully
+    // transparent — visually identical to the empty frames that were
+    // previously rendered every single frame.
+    const toLocal = (clientX, clientY, rect) => {
       if (rect.width === 0 || rect.height === 0) return null;
       if (clientX < rect.left || clientX > rect.right || clientY < rect.top || clientY > rect.bottom) {
         return null;
@@ -381,51 +387,90 @@ const RippleDistortion = ({
       return [clientX - rect.left, rect.height - (clientY - rect.top)];
     };
 
-    let previousX = 0;
-    let previousY = 0;
+    let raf = 0;
+    let running = false;
+    let previousTime = 0;
+    let lastSpawnX = null;
+    let lastSpawnY = null;
+    let pendingMoveX = 0;
+    let pendingMoveY = 0;
+    let hasPendingMove = false;
+    let pendingDownX = 0;
+    let pendingDownY = 0;
+    let hasPendingDown = false;
+
+    const wake = () => {
+      if (running || disposed) return;
+      running = true;
+      previousTime = 0;
+      raf = requestAnimationFrame(loop);
+    };
 
     const onMove = event => {
       const cfg = configRef.current;
       if (!cfg.enabled || reduceMotion || cfg.trigger === 'click') return;
-      const point = localPoint(event.clientX, event.clientY);
-      if (!point) return;
       const step = Math.max(1, cfg.spacing);
-      if (Math.abs(point[0] - previousX) > step || Math.abs(point[1] - previousY) > step) {
-        setNewWave(point[0], point[1], 1);
-        previousX = point[0];
-        previousY = point[1];
+      if (
+        lastSpawnX === null ||
+        Math.abs(event.clientX - lastSpawnX) > step ||
+        Math.abs(event.clientY - lastSpawnY) > step
+      ) {
+        pendingMoveX = event.clientX;
+        pendingMoveY = event.clientY;
+        hasPendingMove = true;
+        lastSpawnX = event.clientX;
+        lastSpawnY = event.clientY;
+        wake();
       }
     };
 
     const onDown = event => {
       const cfg = configRef.current;
       if (!cfg.enabled || reduceMotion || cfg.trigger === 'hover') return;
-      const point = localPoint(event.clientX, event.clientY);
-      if (!point) return;
-      setNewWave(point[0], point[1], Math.max(1, cfg.clickStrength));
+      pendingDownX = event.clientX;
+      pendingDownY = event.clientY;
+      hasPendingDown = true;
+      wake();
     };
 
     window.addEventListener('pointermove', onMove, { passive: true });
     window.addEventListener('pointerdown', onDown, { passive: true });
 
-    let raf = 0;
-    let previousTime = 0;
-
     const loop = now => {
-      raf = requestAnimationFrame(loop);
       const delta = previousTime ? Math.min(0.05, (now - previousTime) / 1000) : 0;
       previousTime = now;
       const cfg = configRef.current;
 
+      // Consume pending pointer input with a single rect read per frame
+      // (instead of one getBoundingClientRect per pointermove event).
+      if (hasPendingMove || hasPendingDown) {
+        const rect = mount.getBoundingClientRect();
+        if (hasPendingDown) {
+          hasPendingDown = false;
+          const point = toLocal(pendingDownX, pendingDownY, rect);
+          if (point) {
+            setNewWave(point[0], point[1], Math.max(1, cfg.clickStrength));
+          }
+        }
+        if (hasPendingMove) {
+          hasPendingMove = false;
+          const point = toLocal(pendingMoveX, pendingMoveY, rect);
+          if (point) {
+            setNewWave(point[0], point[1], 1);
+          }
+        }
+      }
+
       const growth = reduceMotion ? 0 : 1 - Math.exp(-delta * 1.09);
       const decay = reduceMotion ? 1 : Math.exp((-delta * LIFE_CONSTANT) / Math.max(0.15, cfg.fade));
 
+      let active = false;
       for (let i = 0; i < MAX_WAVES; i += 1) {
         const wave = waves[i];
         if (wave.opacity <= 0) {
-          opacities[i] = 0;
           continue;
         }
+        active = true;
 
         wave.opacity *= decay;
         wave.scale += (wave.target - wave.scale) * growth;
@@ -444,14 +489,36 @@ const RippleDistortion = ({
         opacities[i] = wave.opacity;
       }
 
-      geometry.attributes.iOffset.needsUpdate = true;
-      geometry.attributes.iScale.needsUpdate = true;
-      geometry.attributes.iOpacity.needsUpdate = true;
+      if (active) {
+        geometry.attributes.iOffset.needsUpdate = true;
+        geometry.attributes.iScale.needsUpdate = true;
+        geometry.attributes.iOpacity.needsUpdate = true;
 
-      renderer.render({ scene: waveMesh, target: displacementTarget, clear: true });
-      renderer.render({ scene: compositeMesh });
+        renderer.render({ scene: waveMesh, target: displacementTarget, clear: true });
+        renderer.render({ scene: compositeMesh });
+      }
+
+      // Park the loop when there is nothing left to draw or animate.
+      // With prefers-reduced-motion waves never fade, so the loop parks
+      // right after rendering each new input — the original kept
+      // re-drawing that identical static frame every millisecond.
+      const settled = reduceMotion || !active;
+      if (settled && !hasPendingMove && !hasPendingDown) {
+        if (!reduceMotion && !active) {
+          // One final pass with cleared waves so the parked canvas is
+          // exactly the fully transparent steady state.
+          geometry.attributes.iOffset.needsUpdate = true;
+          geometry.attributes.iScale.needsUpdate = true;
+          geometry.attributes.iOpacity.needsUpdate = true;
+          renderer.render({ scene: waveMesh, target: displacementTarget, clear: true });
+          renderer.render({ scene: compositeMesh });
+        }
+        running = false;
+        previousTime = 0;
+        return;
+      }
+      raf = requestAnimationFrame(loop);
     };
-    raf = requestAnimationFrame(loop);
 
     return () => {
       disposed = true;

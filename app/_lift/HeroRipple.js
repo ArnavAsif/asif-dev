@@ -2,7 +2,14 @@
 
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import RippleDistortion from "./RippleDistortion";
+import dynamic from "next/dynamic";
+
+// ogl/WebGL stays out of the initial JS bundle: the ripple component is
+// browser-only and loads right after hydration, long before the user can
+// move a cursor over the hero. Visual behavior is unchanged.
+const RippleDistortion = dynamic(() => import("./RippleDistortion"), {
+  ssr: false,
+});
 
 // The page body is injected as raw HTML (bodyContent.js), so the hero
 // mount point (#hero-ripple-mount inside .banner-three-area) can't hold

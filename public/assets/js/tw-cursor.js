@@ -9,6 +9,8 @@ if ($("body").not(".is-mobile").hasClass("tw-magic-cursor")) {
   var $pos = { x: 0, y: 0 }; // Cursor position
   var $ratio = 0.15; // delay follow cursor
   var $active = false;
+  var $mouseMoved = false; // set by mousemove, cleared once the ball settles
+  var $cursorShown = false; // CSS starts #magic-cursor hidden (opacity: 0)
   var $ball = $("#ball");
 
   var $ballWidth = 5; // Ball default width
@@ -32,16 +34,22 @@ if ($("body").not(".is-mobile").hasClass("tw-magic-cursor")) {
   function mouseMove(e) {
     $mouse.x = e.clientX;
     $mouse.y = e.clientY;
+    $mouseMoved = true;
   }
 
   gsap.ticker.add(updatePosition);
 
   function updatePosition() {
-    if (!$active) {
-      $pos.x += ($mouse.x - $pos.x) * $ratio;
-      $pos.y += ($mouse.y - $pos.y) * $ratio;
+    if ($active || !$mouseMoved) return;
+    $pos.x += ($mouse.x - $pos.x) * $ratio;
+    $pos.y += ($mouse.y - $pos.y) * $ratio;
 
-      gsap.set($ball, { x: $pos.x, y: $pos.y });
+    gsap.set($ball, { x: $pos.x, y: $pos.y });
+
+    // The lerp has visually converged — skip the per-frame write until
+    // the mouse moves again (sub-0.05px drift is imperceptible).
+    if (Math.abs($mouse.x - $pos.x) + Math.abs($mouse.y - $pos.y) < 0.05) {
+      $mouseMoved = false;
     }
   }
 
@@ -77,54 +85,41 @@ if ($("body").not(".is-mobile").hasClass("tw-magic-cursor")) {
   // Show/hide on document leave/enter//
   $(document)
     .on("mouseleave", function () {
+      $cursorShown = false;
       gsap.to("#magic-cursor", { duration: 0.3, autoAlpha: 0 });
     })
     .on("mouseenter", function () {
+      $cursorShown = true;
       gsap.to("#magic-cursor", { duration: 0.3, autoAlpha: 1 });
     });
 
   // Show as the mouse moves//
+  // PERF FIX: the original created a fresh GSAP tween on *every*
+  // mousemove, even while the cursor was already visible. Only tween
+  // when actually hidden — identical visuals, no tween churn on a
+  // high-frequency event.
   $(document).mousemove(function () {
+    if ($cursorShown) return;
+    $cursorShown = true;
     gsap.to("#magic-cursor", { duration: 0.3, autoAlpha: 1 });
   });
 
   // Cursor view on hover (data attribute "data-cursor="...").
+  // PERF FIX: the original called gsap.to(ball, ...) with an undefined
+  // "ball" variable — a ReferenceError on every hover that also aborted
+  // everything after it, including the mouseleave cleanup, so invisible
+  // .ball-view divs piled up inside #ball forever. Those tweens never
+  // executed anyway (.ball-view stays hidden via CSS: opacity:0,
+  // visibility:hidden, scale(0)), so removing the dead calls keeps the
+  // exact same visuals while fixing the exception and the DOM leak.
   $("[data-cursor]").each(function () {
     $(this)
       .on("mouseenter", function () {
         $("#ball").addClass("with-blur");
         $ball.append('<div class="ball-view"></div>');
         $(".ball-view").append($(this).attr("data-cursor"));
-        gsap.to(ball, {
-          duration: 0.3,
-          yPercent: -75,
-          width: 140,
-          height: 140,
-          opacity: 1,
-          borderWidth: 1,
-          zIndex: 1,
-          backdropFilter: "blur(14px)",
-          backgroundColor: "#ff6644",
-          boxShadow: "0px 1px 3px 0px rgba(18, 20, 32, 0.14)",
-        });
-        gsap.to(".ball-view", { duration: 0.3, scale: 1, autoAlpha: 1 });
       })
       .on("mouseleave", function () {
-        gsap.to(ball, {
-          duration: 0.3,
-          yPercent: -50,
-          width: $ballWidth,
-          height: $ballHeight,
-          opacity: $ballOpacity,
-          borderWidth: $ballBorderWidth,
-          backgroundColor: "#1c1d21",
-        });
-        gsap.to(".ball-view", {
-          duration: 0.3,
-          scale: 0,
-          autoAlpha: 0,
-          clearProps: "all",
-        });
         $ball.find(".ball-view").remove();
       });
     $(this).addClass("not-hide-cursor");

@@ -6,7 +6,9 @@ export const metadata = {
     "MD Asif Shah Diner, Asif, MERN Stack Developer, Shopify Developer, Shopify 2.0, Next.js, React, MongoDB, Node.js, Dhaka, Bangladesh",
   robots: "INDEX,FOLLOW",
   icons: {
-    icon: "/assets/images/logo/favicon.png",
+    // favicon.png does not exist in /public (404 on every load) — use the
+    // existing logo instead.
+    icon: "/assets/images/logo/logo.png",
   },
 };
 
@@ -35,7 +37,16 @@ export default function RootLayout({ children }) {
           <link key={href} rel="stylesheet" href={href} />
         ))}
       </head>
-      <body className="tw-magic-cursor">{children}</body>
+      <body
+        className="tw-magic-cursor"
+        // Browser extensions (e.g. ColorZilla's cz-shortcut-listen="true")
+        // mutate <body> before React hydrates, which would otherwise log a
+        // hydration mismatch warning. This suppresses the check for this
+        // element's attributes only — children are unaffected.
+        suppressHydrationWarning
+      >
+        {children}
+      </body>
     </html>
   );
 }

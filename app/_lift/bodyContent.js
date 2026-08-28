@@ -74,7 +74,7 @@ export const bodyHtml = `
           >
             <div class="twoffcanvas__logo">
               <a class="logo-1" href="index.html"
-                ><img src="/assets/images/logo/logo.png" alt="Asif Logo"
+                ><img decoding="async" src="/assets/images/logo/logo.png" alt="Asif Logo"
               /></a>
             </div>
             <div class="tw-offcanvas-2-close d-md-none text-end">
@@ -248,7 +248,7 @@ export const bodyHtml = `
           <!-- Logo Start -->
           <div class="header-three-logo tw-rounded-md">
             <a href="index.html" class="link">
-              <img
+              <img loading="lazy" decoding="async"
                 src="/assets/images/logo/logo-secendary.png"
                 alt="Asif Logo"
                 class="max-w-200-px"
@@ -309,7 +309,7 @@ export const bodyHtml = `
                       >
                         <div class="col homemenu">
                           <div class="homemenu-thumb tw-mb-4">
-                            <img
+                            <img loading="lazy" decoding="async"
                               src="/assets/images/thumbs/home1.jpg"
                               alt="home-one"
                             />
@@ -332,7 +332,7 @@ export const bodyHtml = `
                         </div>
                         <div class="col homemenu">
                           <div class="homemenu-thumb tw-mb-4">
-                            <img
+                            <img loading="lazy" decoding="async"
                               src="/assets/images/thumbs/home2.jpg"
                               alt="home-two"
                             />
@@ -355,7 +355,7 @@ export const bodyHtml = `
                         </div>
                         <div class="col homemenu">
                           <div class="homemenu-thumb tw-mb-4">
-                            <img
+                            <img loading="lazy" decoding="async"
                               src="/assets/images/thumbs/home3.jpg"
                               alt="home-three"
                             />
@@ -378,7 +378,7 @@ export const bodyHtml = `
                         </div>
                         <div class="col homemenu">
                           <div class="homemenu-thumb tw-mb-4">
-                            <img
+                            <img loading="lazy" decoding="async"
                               src="/assets/images/thumbs/coming-soon-img.png"
                               alt="coming-soon"
                             />
@@ -447,7 +447,7 @@ export const bodyHtml = `
                 class="tw-offcanvas-open-btn tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center tw-transition-3 tw-rounded-md"
               >
                 <span
-                  ><img
+                  ><img decoding="async"
                     class="tw-transition-3"
                     src="/assets/images/icons/header-three-toggle.svg"
                     alt="toggle"
@@ -485,7 +485,7 @@ export const bodyHtml = `
                   <div
                     class="banner-three-man position-absolute start-50 translate-middle-x"
                   >
-                    <img
+                    <img decoding="async"
                       src="/assets/images/shapes/banner-three-man.png"
                       alt="man"
                     />
@@ -512,7 +512,7 @@ export const bodyHtml = `
                             class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
                           >
                             <span
-                              ><img
+                              ><img decoding="async"
                                 src="/assets/images/icons/banner-three-pluse.svg"
                                 alt="pluse"
                             /></span>
@@ -522,7 +522,7 @@ export const bodyHtml = `
                             class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
                           >
                             <span
-                              ><img
+                              ><img decoding="async"
                                 src="/assets/images/icons/banner-three-pluse.svg"
                                 alt="pluse"
                             /></span>
@@ -532,7 +532,7 @@ export const bodyHtml = `
                             class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
                           >
                             <span
-                              ><img
+                              ><img decoding="async"
                                 src="/assets/images/icons/banner-three-pluse.svg"
                                 alt="pluse"
                             /></span>
@@ -542,7 +542,7 @@ export const bodyHtml = `
                             class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
                           >
                             <span
-                              ><img
+                              ><img decoding="async"
                                 src="/assets/images/icons/banner-three-pluse.svg"
                                 alt="pluse"
                             /></span>
@@ -552,7 +552,7 @@ export const bodyHtml = `
                             class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
                           >
                             <span
-                              ><img
+                              ><img decoding="async"
                                 src="/assets/images/icons/banner-three-pluse.svg"
                                 alt="pluse"
                             /></span>
@@ -562,7 +562,7 @@ export const bodyHtml = `
                             class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
                           >
                             <span
-                              ><img
+                              ><img decoding="async"
                                 src="/assets/images/icons/banner-three-pluse.svg"
                                 alt="pluse"
                             /></span>
@@ -643,7 +643,7 @@ export const bodyHtml = `
                           <div
                             class="tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-1 border border-2 border-white"
                           >
-                            <img
+                            <img decoding="async"
                               src="/assets/images/thumbs/team-img1.png"
                               alt="Client Image"
                               class="w-100 h-100 object-fit-cover"
@@ -652,7 +652,7 @@ export const bodyHtml = `
                           <div
                             class="tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-2 tw--ms-16-px z-1 border border-2 border-white"
                           >
-                            <img
+                            <img decoding="async"
                               src="/assets/images/thumbs/team-img2.png"
                               alt="Client Image"
                               class="w-100 h-100 object-fit-cover"
@@ -661,7 +661,7 @@ export const bodyHtml = `
                           <div
                             class="tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-3 tw--ms-16-px z-1 border border-2 border-white"
                           >
-                            <img
+                            <img decoding="async"
                               src="/assets/images/thumbs/team-img3.png"
                               alt="Client Image"
                               class="w-100 h-100 object-fit-cover"
@@ -670,7 +670,7 @@ export const bodyHtml = `
                           <div
                             class="tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-3 tw--ms-16-px z-1 border border-2 border-white"
                           >
-                            <img
+                            <img decoding="async"
                               src="/assets/images/thumbs/team-img4.png"
                               alt="Client Image"
                               class="w-100 h-100 object-fit-cover"
@@ -697,7 +697,7 @@ export const bodyHtml = `
                     <div
                       class="banner-three-line-shape position-absolute start-50 translate-middle-x z-n1"
                     >
-                      <img
+                      <img decoding="async"
                         src="/assets/images/shapes/banner-three-shape.png"
                         alt="shape"
                       />
@@ -736,7 +736,7 @@ export const bodyHtml = `
                     data-aos-duration="1000"
                     data-aos-delay="200"
                   >
-                    <img
+                    <img loading="lazy" decoding="async"
                       class="tw-anim-img w-100 tw-rounded-lg"
                       data-animate="true"
                       src="/assets/images/thumbs/about-three-thumb.webp"
@@ -851,7 +851,7 @@ export const bodyHtml = `
             </div>
           </div>
           <div>
-            <img
+            <img loading="lazy" decoding="async"
               class="about-three-shape position-absolute start-0 w-100"
               src="/assets/images/shapes/about-three-shape.png"
               alt="shape"
@@ -920,7 +920,7 @@ export const bodyHtml = `
                           <span
                             class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
                             >01
-                            <img
+                            <img loading="lazy" decoding="async"
                               class="tw-transition-3"
                               src="/assets/images/icons/service-three-arrow.svg"
                               alt="arrow"
@@ -965,7 +965,7 @@ export const bodyHtml = `
                       </div>
                       <div class="service-three-thumb">
                         <a href="service-details.html"
-                          ><img
+                          ><img loading="lazy" decoding="async"
                             src="/assets/images/thumbs/service-three-thumb1.png"
                             alt="thumb1"
                         /></a>
@@ -986,7 +986,7 @@ export const bodyHtml = `
                           <span
                             class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
                             >02
-                            <img
+                            <img loading="lazy" decoding="async"
                               class="tw-transition-3"
                               src="/assets/images/icons/service-three-arrow.svg"
                               alt="arrow"
@@ -1031,7 +1031,7 @@ export const bodyHtml = `
                       </div>
                       <div class="service-three-thumb">
                         <a href="service-details.html"
-                          ><img
+                          ><img loading="lazy" decoding="async"
                             src="/assets/images/thumbs/service-three-thumb2.png"
                             alt="thumb1"
                         /></a>
@@ -1052,7 +1052,7 @@ export const bodyHtml = `
                           <span
                             class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
                             >03
-                            <img
+                            <img loading="lazy" decoding="async"
                               class="tw-transition-3"
                               src="/assets/images/icons/service-three-arrow.svg"
                               alt="arrow"
@@ -1095,7 +1095,7 @@ export const bodyHtml = `
                       </div>
                       <div class="service-three-thumb">
                         <a href="service-details.html"
-                          ><img
+                          ><img loading="lazy" decoding="async"
                             src="/assets/images/thumbs/service-three-thumb3.png"
                             alt="thumb1"
                         /></a>
@@ -1116,7 +1116,7 @@ export const bodyHtml = `
                           <span
                             class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
                             >04
-                            <img
+                            <img loading="lazy" decoding="async"
                               class="tw-transition-3"
                               src="/assets/images/icons/service-three-arrow.svg"
                               alt="arrow"
@@ -1161,7 +1161,7 @@ export const bodyHtml = `
                       </div>
                       <div class="service-three-thumb">
                         <a href="service-details.html"
-                          ><img
+                          ><img loading="lazy" decoding="async"
                             src="/assets/images/thumbs/service-three-thumb4.png"
                             alt="thumb1"
                         /></a>
@@ -1235,7 +1235,7 @@ export const bodyHtml = `
                       <a
                         class="d-block cursor-hide tw-rounded-lg"
                         href="portfolio-details.html"
-                        ><img
+                        ><img loading="lazy" decoding="async"
                           class="w-100 tw-rounded-lg"
                           src="/assets/images/thumbs/portfolio-three-thumb1.jpg"
                           alt="thumb"
@@ -1292,7 +1292,7 @@ export const bodyHtml = `
                       <a
                         class="d-block cursor-hide tw-rounded-lg"
                         href="portfolio-details.html"
-                        ><img
+                        ><img loading="lazy" decoding="async"
                           class="w-100 tw-rounded-lg"
                           src="/assets/images/thumbs/portfolio-three-thumb2.jpg"
                           alt="thumb"
@@ -1349,7 +1349,7 @@ export const bodyHtml = `
                       <a
                         class="d-block cursor-hide tw-rounded-lg"
                         href="portfolio-details.html"
-                        ><img
+                        ><img loading="lazy" decoding="async"
                           class="w-100 tw-rounded-lg"
                           src="/assets/images/thumbs/portfolio-three-thumb3.jpg"
                           alt="thumb"
@@ -1406,7 +1406,7 @@ export const bodyHtml = `
                       <a
                         class="d-block cursor-hide tw-rounded-lg"
                         href="portfolio-details.html"
-                        ><img
+                        ><img loading="lazy" decoding="async"
                           class="w-100 tw-rounded-lg"
                           src="/assets/images/thumbs/portfolio-three-thumb4.jpg"
                           alt="thumb"
@@ -1465,7 +1465,7 @@ export const bodyHtml = `
                       <a
                         class="d-block cursor-hide tw-rounded-lg"
                         href="portfolio-details.html"
-                        ><img
+                        ><img loading="lazy" decoding="async"
                           class="w-100 tw-rounded-lg"
                           src="/assets/images/thumbs/portfolio-three-thumb2.jpg"
                           alt="thumb"
@@ -1524,7 +1524,7 @@ export const bodyHtml = `
                       <a
                         class="d-block cursor-hide tw-rounded-lg"
                         href="portfolio-details.html"
-                        ><img
+                        ><img loading="lazy" decoding="async"
                           class="w-100 tw-rounded-lg"
                           src="/assets/images/thumbs/portfolio-three-thumb3.jpg"
                           alt="thumb"
@@ -1583,7 +1583,7 @@ export const bodyHtml = `
                       <a
                         class="d-block cursor-hide tw-rounded-lg"
                         href="portfolio-details.html"
-                        ><img
+                        ><img loading="lazy" decoding="async"
                           class="w-100 tw-rounded-lg"
                           src="/assets/images/thumbs/portfolio-three-thumb4.jpg"
                           alt="thumb"
@@ -1642,7 +1642,7 @@ export const bodyHtml = `
                       <a
                         class="d-block cursor-hide tw-rounded-lg"
                         href="portfolio-details.html"
-                        ><img
+                        ><img loading="lazy" decoding="async"
                           class="w-100 tw-rounded-lg"
                           src="/assets/images/thumbs/portfolio-three-thumb1.jpg"
                           alt="thumb"
@@ -1701,7 +1701,7 @@ export const bodyHtml = `
                       <a
                         class="d-block cursor-hide tw-rounded-lg"
                         href="portfolio-details.html"
-                        ><img
+                        ><img loading="lazy" decoding="async"
                           class="w-100 tw-rounded-lg"
                           src="/assets/images/thumbs/portfolio-three-thumb2.jpg"
                           alt="thumb"
@@ -2018,7 +2018,7 @@ export const bodyHtml = `
                         <div
                           class="testimonial-three-thumb position-relative z-1"
                         >
-                          <img
+                          <img decoding="async"
                             class="w-100 h-100 tw-rounded-lg"
                             src="/assets/images/thumbs/testimonial-three-thumb1.jpg"
                             alt="thumb"
@@ -2043,7 +2043,7 @@ export const bodyHtml = `
                           >
                             <div>
                               <span
-                                ><img
+                                ><img decoding="async"
                                   src="/assets/images/icons/testimonial-three-icon.svg"
                                   alt="icon"
                               /></span>
@@ -2095,7 +2095,7 @@ export const bodyHtml = `
                         <div
                           class="testimonial-three-thumb position-relative z-1"
                         >
-                          <img
+                          <img decoding="async"
                             class="w-100 h-100 tw-rounded-lg"
                             src="/assets/images/thumbs/testimonial-three-thumb2.jpg"
                             alt="thumb"
@@ -2120,7 +2120,7 @@ export const bodyHtml = `
                           >
                             <div>
                               <span
-                                ><img
+                                ><img decoding="async"
                                   src="/assets/images/icons/testimonial-three-icon.svg"
                                   alt="icon"
                               /></span>
@@ -2190,12 +2190,12 @@ export const bodyHtml = `
                   data-aos-delay="200"
                 >
                   <span class="brand-active-media"
-                    ><img
+                    ><img decoding="async"
                       src="/assets/images/thumbs/marquee-two-thumb1.png"
                       alt="thumb"
                   /></span>
                   <span class="brand-hover-media"
-                    ><img
+                    ><img decoding="async"
                       src="/assets/images/thumbs/marquee-two-thumb11.png"
                       alt="thumb"
                   /></span>
@@ -2209,12 +2209,12 @@ export const bodyHtml = `
                   data-aos-delay="300"
                 >
                   <span class="brand-active-media"
-                    ><img
+                    ><img decoding="async"
                       src="/assets/images/thumbs/marquee-two-thumb2.png"
                       alt="thumb"
                   /></span>
                   <span class="brand-hover-media"
-                    ><img
+                    ><img decoding="async"
                       src="/assets/images/thumbs/marquee-two-thumb22.png"
                       alt="thumb"
                   /></span>
@@ -2229,12 +2229,12 @@ export const bodyHtml = `
                   data-aos-delay="400"
                 >
                   <span class="brand-active-media"
-                    ><img
+                    ><img decoding="async"
                       src="/assets/images/thumbs/marquee-thumb55.png"
                       alt="thumb"
                   /></span>
                   <span class="brand-hover-media"
-                    ><img
+                    ><img decoding="async"
                       src="/assets/images/thumbs/marquee-thumb5.png"
                       alt="thumb"
                   /></span>
@@ -2249,12 +2249,12 @@ export const bodyHtml = `
                   data-aos-delay="500"
                 >
                   <span class="brand-active-media"
-                    ><img
+                    ><img decoding="async"
                       src="/assets/images/thumbs/marquee-two-thumb4.png"
                       alt="thumb"
                   /></span>
                   <span class="brand-hover-media"
-                    ><img
+                    ><img decoding="async"
                       src="/assets/images/thumbs/marquee-two-thumb44.png"
                       alt="thumb"
                   /></span>
@@ -2271,12 +2271,12 @@ export const bodyHtml = `
                   data-aos-delay="200"
                 >
                   <span class="brand-active-media"
-                    ><img
+                    ><img decoding="async"
                       src="/assets/images/thumbs/marquee-thumb33.png"
                       alt="thumb"
                   /></span>
                   <span class="brand-hover-media"
-                    ><img
+                    ><img decoding="async"
                       src="/assets/images/thumbs/marquee-thumb3.png"
                       alt="thumb"
                   /></span>
@@ -2290,12 +2290,12 @@ export const bodyHtml = `
                   data-aos-delay="300"
                 >
                   <span class="brand-active-media"
-                    ><img
+                    ><img decoding="async"
                       src="/assets/images/thumbs/marquee-thumb11.png"
                       alt="thumb"
                   /></span>
                   <span class="brand-hover-media"
-                    ><img
+                    ><img decoding="async"
                       src="/assets/images/thumbs/marquee-thumb1.png"
                       alt="thumb"
                   /></span>
@@ -2310,12 +2310,12 @@ export const bodyHtml = `
                   data-aos-delay="400"
                 >
                   <span class="brand-active-media"
-                    ><img
+                    ><img decoding="async"
                       src="/assets/images/thumbs/marquee-thumb66.png"
                       alt="thumb"
                   /></span>
                   <span class="brand-hover-media"
-                    ><img
+                    ><img decoding="async"
                       src="/assets/images/thumbs/marquee-thumb6.png"
                       alt="thumb"
                   /></span>
@@ -2329,12 +2329,12 @@ export const bodyHtml = `
                   data-aos-delay="500"
                 >
                   <span class="brand-active-media"
-                    ><img
+                    ><img decoding="async"
                       src="/assets/images/thumbs/marquee-thumb22.png"
                       alt="thumb"
                   /></span>
                   <span class="brand-hover-media"
-                    ><img
+                    ><img decoding="async"
                       src="/assets/images/thumbs/marquee-thumb2.png"
                       alt="thumb"
                   /></span>
@@ -2380,7 +2380,7 @@ export const bodyHtml = `
                     class="footer-three-top-info tw-p-705 tw-rounded-lg d-flex tw-gap-6"
                   >
                     <div class="footer-three-top-thumb tw-w-160-px">
-                      <img
+                      <img loading="lazy" decoding="async"
                         class="tw-rounded-lg w-100"
                         src="/assets/images/thumbs/footer-three-thumb.png"
                         alt="thumb"
@@ -2565,7 +2565,7 @@ export const bodyHtml = `
             </div>
           </div>
           <div>
-            <img
+            <img loading="lazy" decoding="async"
               class="position-absolute top-0 start-0 z-n1"
               src="/assets/images/shapes/footer-three-bg-shape.png"
               alt="shape"

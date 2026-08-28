@@ -134,6 +134,8 @@ export default function LegacyScripts() {
     const content = document.getElementById("smooth-content");
     if (!root) return;
 
+    let lastMeasuredHeight = 0;
+    let refreshTimer;
     const sync = () => {
       const target = content
         ? content.scrollHeight
@@ -143,6 +145,20 @@ export default function LegacyScripts() {
         Math.abs(root.getBoundingClientRect().height - target) > 1
       ) {
         root.style.height = `${target}px`;
+      }
+      // Below-the-fold images are lazy-loaded, so the document height
+      // grows as they decode. Re-run ScrollTrigger.refresh() (debounced,
+      // only on real height changes) so trigger/pin positions stay
+      // aligned — without refreshing on every scroll frame.
+      if (target > 0 && Math.abs(target - lastMeasuredHeight) > 1) {
+        const needsRefresh = lastMeasuredHeight > 0;
+        lastMeasuredHeight = target;
+        if (needsRefresh && window.ScrollTrigger) {
+          window.clearTimeout(refreshTimer);
+          refreshTimer = window.setTimeout(() => {
+            if (window.ScrollTrigger) window.ScrollTrigger.refresh();
+          }, 400);
+        }
       }
     };
     sync();
@@ -157,6 +173,7 @@ export default function LegacyScripts() {
     return () => {
       window.removeEventListener("resize", sync);
       window.clearTimeout(settle);
+      window.clearTimeout(refreshTimer);
       if (ro) ro.disconnect();
       root.style.height = "";
     };

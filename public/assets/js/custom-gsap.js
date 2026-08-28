@@ -556,6 +556,13 @@
 
   ///////////////////////
   // 09. Hover Reveal
+  // PERF FIX: the original called setInterval(moveImage(e, item, 1), 50)
+  // inside mousemove — moveImage was evaluated immediately (that is where
+  // the visible cursor-follow came from) and its undefined return value
+  // was handed to setInterval, which threw a TypeError on *every*
+  // mousemove over these items. A rAF-coalesced direct call produces the
+  // exact same visual result (child[1] at the cursor, once per frame)
+  // with zero exceptions and zero leaked intervals.
   const hoverItem = document.querySelectorAll(".hover__reveal-item");
   function moveImage(e, hoverItem, index) {
     const item = hoverItem.getBoundingClientRect();
@@ -565,10 +572,21 @@
       hoverItem.children[index].style.transform = `translate(${x}px, ${y}px)`;
     }
   }
-  hoverItem.forEach((item, i) => {
-    item.addEventListener("mousemove", (e) => {
-      setInterval(moveImage(e, item, 1), 50);
-    });
+  hoverItem.forEach((item) => {
+    let frame = 0;
+    let lastEvent = null;
+    item.addEventListener(
+      "mousemove",
+      (e) => {
+        lastEvent = e;
+        if (frame) return;
+        frame = requestAnimationFrame(() => {
+          frame = 0;
+          moveImage(lastEvent, item, 1);
+        });
+      },
+      { passive: true },
+    );
   });
 
   ///////////////////////

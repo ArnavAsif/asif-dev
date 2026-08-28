@@ -68,11 +68,16 @@
 
   ////////////////////////////////////////////////////
   // 02. Sticky Js
+  // PERF FIX: the original re-queried $(".header") and touched the DOM
+  // on every scroll event. Cached lookup + state guard — identical
+  // visual behavior, zero per-scroll DOM queries or redundant writes.
+  var $stickyHeader = $(".header");
+  var stickyIsFixed = false;
   $(window).on("scroll", function () {
-    if ($(window).scrollTop() >= 260) {
-      $(".header").addClass("fixed-header");
-    } else {
-      $(".header").removeClass("fixed-header");
+    var shouldBeFixed = $(window).scrollTop() >= 260;
+    if (shouldBeFixed !== stickyIsFixed) {
+      stickyIsFixed = shouldBeFixed;
+      $stickyHeader.toggleClass("fixed-header", shouldBeFixed);
     }
   });
 
@@ -158,11 +163,12 @@
   function back_to_top() {
     var btn = $("#back_to_top");
     var btn_wrapper = $(".back-to-top-wrapper");
+    var isShown = false;
     $(window).on("scroll", function () {
-      if ($(this).scrollTop() > 300) {
-        btn_wrapper.addClass("back-to-top-btn-show");
-      } else {
-        btn_wrapper.removeClass("back-to-top-btn-show");
+      var shouldShow = $(this).scrollTop() > 300;
+      if (shouldShow !== isShown) {
+        isShown = shouldShow;
+        btn_wrapper.toggleClass("back-to-top-btn-show", shouldShow);
       }
     });
 
