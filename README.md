@@ -1,6 +1,6 @@
-# Shan Portfolio — Next.js
+# Asif Portfolio — Next.js
 
-The original static Shan portfolio, lifted into a Next.js (App Router) project with zero visual, structural, or animation changes.
+The Shan template lifted into a Next.js (App Router) project, with all visible content replaced with MD Asif Shah Diner's real portfolio content (MERN stack & Shopify developer, arnavasif.vercel.app).
 
 ## What changed (technical only, nothing visual)
 - The exact index.html body markup is preserved and rendered as-is.

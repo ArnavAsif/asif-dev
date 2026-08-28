@@ -1,9 +1,9 @@
 export const metadata = {
-  title: "Shan - Digital Agency & Creative Portfolio",
+  title: "MD Asif Shah Diner — MERN Stack & Shopify Developer",
   description:
-    "Shan - Personal Portfolio and Digital Designer. Fully responsive, creative design, and easy to customize.",
+    "MD Asif Shah Diner — MERN stack & Shopify developer in Dhaka. I build MERN stack websites, Next.js apps, and custom Shopify 2.0 themes and stores that convert.",
   keywords:
-    "Shan, Personal Portfolio, Digital Designer, Developer, Creative Agency, Responsive",
+    "MD Asif Shah Diner, Asif, MERN Stack Developer, Shopify Developer, Shopify 2.0, Next.js, React, MongoDB, Node.js, Dhaka, Bangladesh",
   robots: "INDEX,FOLLOW",
   icons: {
     icon: "/assets/images/logo/favicon.png",

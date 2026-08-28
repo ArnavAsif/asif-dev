@@ -74,7 +74,7 @@ export const bodyHtml = `
           >
             <div class="twoffcanvas__logo">
               <a class="logo-1" href="index.html"
-                ><img src="/assets/images/logo/logo.png" alt="Shan Logo"
+                ><img src="/assets/images/logo/logo.png" alt="Asif Logo"
               /></a>
             </div>
             <div class="tw-offcanvas-2-close d-md-none text-end">
@@ -163,25 +163,25 @@ export const bodyHtml = `
                   ></span>
                   <a
                     class="text-white"
-                    href="https://www.google.com/maps/@23.8223586,90.3661283,15z"
+                    href="https://www.google.com/maps?q=Khilkhet,+Dhaka,+Bangladesh"
                     target="_blank"
-                    >Manchester 21, Zurich, CH</a
+                    >Khilkhet, Dhaka, Bangladesh</a
                   >
                 </li>
                 <li>
                   <span class="text-main-two-600 tw-text-xl"
                     ><i class="ph ph-envelope"></i
                   ></span>
-                  <a class="text-white" href="mailto:techubinfo@mail.com"
-                    ><span class="__cf_email__">omioinfo@mail.com</span></a
+                  <a class="text-white" href="mailto:ifas092@gmail.com"
+                    ><span class="__cf_email__">ifas092@gmail.com</span></a
                   >
                 </li>
                 <li>
                   <span class="text-main-two-600 tw-text-xl"
                     ><i class="ph ph-phone-call"></i
                   ></span>
-                  <a class="text-white" href="tel:+48555223224"
-                    >(+00) 678 345 98568</a
+                  <a class="text-white" href="tel:+8801600018734"
+                    >+880 1600-018734</a
                   >
                 </li>
               </ul>
@@ -194,35 +194,38 @@ export const bodyHtml = `
             >
               <ul class="tw-gap-2">
                 <li>
-                  <a href="#">
+                  <a href="https://github.com/ArnavAsif" target="_blank">
                     <span
                       class="active-media d-flex align-items-center tw-gap-1"
-                      >Facebook <i class="ph ph-arrow-bend-up-right"></i
+                      >GITHUB <i class="ph ph-arrow-bend-up-right"></i
                     ></span>
                     <span class="hover-media"
-                      ><i class="ph ph-facebook-logo"></i
+                      ><i class="ph ph-github-logo"></i
                     ></span>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <span
-                      class="active-media d-flex align-items-center tw-gap-1"
-                      >INSTAGRAM <i class="ph ph-arrow-bend-up-right"></i
-                    ></span>
-                    <span class="hover-media"
-                      ><i class="ph ph-instagram-logo"></i
-                    ></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
+                  <a
+                    href="https://www.linkedin.com/in/arnav-asif"
+                    target="_blank"
+                  >
                     <span
                       class="active-media d-flex align-items-center tw-gap-1"
                       >LINKEDIN <i class="ph ph-arrow-bend-up-right"></i
                     ></span>
                     <span class="hover-media"
                       ><i class="ph ph-linkedin-logo"></i
+                    ></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:ifas092@gmail.com">
+                    <span
+                      class="active-media d-flex align-items-center tw-gap-1"
+                      >EMAIL <i class="ph ph-arrow-bend-up-right"></i
+                    ></span>
+                    <span class="hover-media"
+                      ><i class="ph ph-envelope-simple"></i
                     ></span>
                   </a>
                 </li>
@@ -247,7 +250,7 @@ export const bodyHtml = `
             <a href="index.html" class="link">
               <img
                 src="/assets/images/logo/logo-secendary.png"
-                alt="Shan Logo"
+                alt="Asif Logo"
                 class="max-w-200-px"
               />
             </a>
@@ -260,29 +263,31 @@ export const bodyHtml = `
               <li>
                 <a
                   class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
-                  href="#"
-                  ><i class="ph-bold ph-facebook-logo"></i
+                  href="https://github.com/ArnavAsif"
+                  target="_blank"
+                  ><i class="ph-bold ph-github-logo"></i
                 ></a>
               </li>
               <li>
                 <a
                   class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
-                  href="#"
-                  ><i class="ph-bold ph-x-logo"></i
+                  href="https://www.linkedin.com/in/arnav-asif"
+                  target="_blank"
+                  ><i class="ph-bold ph-linkedin-logo"></i
                 ></a>
               </li>
               <li>
                 <a
                   class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
-                  href="#"
-                  ><i class="ph-bold ph-instagram-logo"></i
+                  href="mailto:ifas092@gmail.com"
+                  ><i class="ph-bold ph-envelope-simple"></i
                 ></a>
               </li>
               <li>
                 <a
                   class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
-                  href="#"
-                  ><i class="ph-bold ph-dribbble-logo"></i
+                  href="tel:+8801600018734"
+                  ><i class="ph-bold ph-phone-call"></i
                 ></a>
               </li>
             </ul>
@@ -388,9 +393,9 @@ export const bodyHtml = `
                     </div>
                     <!-- mega menu end -->
                   </li>
-                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="about.html">Projects</a></li>
                   <li class="has-dropdown">
-                    <a href="service.html">Services</a>
+                    <a href="service.html">Skills</a>
                     <ul class="submenu tw-submenu">
                       <li><a href="service.html">Our Service</a></li>
                       <li>
@@ -399,31 +404,31 @@ export const bodyHtml = `
                     </ul>
                   </li>
                   <li class="has-dropdown">
-                    <a href="#">Pages</a>
+                    <a href="#">About</a>
                     <ul class="submenu tw-submenu">
-                      <li><a href="about.html">About Us</a></li>
-                      <li><a href="team.html">Our Team</a></li>
-                      <li><a href="testimonial.html">Testimonials</a></li>
-                      <li><a href="pricing.html">Pricing</a></li>
-                      <li><a href="portfolio-one.html">Portfolio One</a></li>
-                      <li><a href="portfolio-two.html">Portfolio Two</a></li>
+                      <li><a href="about.html">About Me</a></li>
+                      <li><a href="team.html">Experience</a></li>
+                      <li><a href="testimonial.html">Highlights</a></li>
+                      <li><a href="pricing.html">Education</a></li>
+                      <li><a href="portfolio-one.html">Shopify 2.0</a></li>
+                      <li><a href="portfolio-two.html">MERN Stack</a></li>
                       <li>
-                        <a href="portfolio-three.html">Portfolio Theee</a>
+                        <a href="portfolio-three.html">Next.js</a>
                       </li>
-                      <li><a href="portfolio-four.html">Portfolio Four</a></li>
+                      <li><a href="portfolio-four.html">Liquid</a></li>
                       <li>
-                        <a href="portfolio-details.html">Portfolio Details</a>
+                        <a href="portfolio-details.html">REST APIs</a>
                       </li>
-                      <li><a href="faq.html">Our Faq</a></li>
-                      <li><a href="error.html">Error</a></li>
+                      <li><a href="faq.html">Toolbox</a></li>
+                      <li><a href="error.html">More</a></li>
                     </ul>
                   </li>
                   <li class="has-dropdown">
-                    <a href="blog.html">Blog</a>
+                    <a href="blog.html">Experience</a>
                     <ul class="submenu tw-submenu">
-                      <li><a href="blog.html">Blog</a></li>
-                      <li><a href="blog-list.html">Blog List</a></li>
-                      <li><a href="blog-details.html">Blog Details</a></li>
+                      <li><a href="blog.html">Experience</a></li>
+                      <li><a href="blog-list.html">Education</a></li>
+                      <li><a href="blog-details.html">Highlights</a></li>
                     </ul>
                   </li>
                   <li><a href="contact.html">Contact</a></li>
@@ -455,9 +460,9 @@ export const bodyHtml = `
             <div class="header-three-button d-none d-md-block">
               <a
                 class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-md"
-                href="contact.html"
+                href="mailto:ifas092@gmail.com"
               >
-                download cv
+                hire me
                 <span class="tw-hover-btn-circle-dot bg-main-two-600"></span>
               </a>
             </div>
@@ -497,8 +502,8 @@ export const bodyHtml = `
                       data-aos-delay="200"
                     >
                       <h2 class="banner-three-left-title tw-text-3xl tw-mb-6">
-                        Hello! I'm Shan <br />
-                        a digital designer and creative developer.
+                        Assalamualaikum! <br> I'm MD Asif Shah Diner <br />
+                        a MERN stack & Shopify developer in Dhaka.
                       </h2>
                       <div class="banner-three-list">
                         <ul>
@@ -520,7 +525,7 @@ export const bodyHtml = `
                                 src="/assets/images/icons/banner-three-pluse.svg"
                                 alt="pluse"
                             /></span>
-                            Branding & Identity
+                            Next.js & React
                           </li>
                           <li
                             class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
@@ -530,7 +535,7 @@ export const bodyHtml = `
                                 src="/assets/images/icons/banner-three-pluse.svg"
                                 alt="pluse"
                             /></span>
-                            Creative Strategy
+                            Shopify 2.0 Themes
                           </li>
                           <li
                             class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
@@ -540,7 +545,7 @@ export const bodyHtml = `
                                 src="/assets/images/icons/banner-three-pluse.svg"
                                 alt="pluse"
                             /></span>
-                            UI/UX Design
+                            Custom Liquid Sections
                           </li>
                           <li
                             class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
@@ -550,7 +555,17 @@ export const bodyHtml = `
                                 src="/assets/images/icons/banner-three-pluse.svg"
                                 alt="pluse"
                             /></span>
-                            Digital Marketing
+                            REST APIs & Node.js
+                          </li>
+                          <li
+                            class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
+                          >
+                            <span
+                              ><img
+                                src="/assets/images/icons/banner-three-pluse.svg"
+                                alt="pluse"
+                            /></span>
+                            MongoDB & Express.js
                           </li>
                         </ul>
                       </div>
@@ -562,14 +577,14 @@ export const bodyHtml = `
                       data-aos-delay="200"
                     >
                       <h3 class="banner-three-center-title tw-text-120">
-                        Design, branding and web development made better.
+                        I build MERN stack & Shopify stores that convert.
                       </h3>
                       <div class="banner-three-button">
                         <a
                           class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-lg"
-                          href="contact.html"
+                          href="#"
                         >
-                          view projects
+                          see my work
                           <span
                             class="tw-hover-btn-circle-dot bg-main-two-600"
                           ></span>
@@ -591,14 +606,14 @@ export const bodyHtml = `
                           <span
                             class="purecounter font-heading"
                             data-purecounter-duration="2"
-                            data-purecounter-end="98"
+                            data-purecounter-end="100"
                           ></span
                           >%
                         </h4>
                         <p
                           class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
                         >
-                          Client Satisfaction Rate
+                          Responsive Websites
                         </p>
                       </div>
                       <div
@@ -610,14 +625,14 @@ export const bodyHtml = `
                           <span
                             class="purecounter font-heading"
                             data-purecounter-duration="4"
-                            data-purecounter-end="70"
+                            data-purecounter-end="60"
                           ></span
                           >+
                         </h4>
                         <p
                           class="banner-three-counter-paragraph tw-text-lg fw-medium text-white"
                         >
-                          Projects Launched
+                          Websites Shipped
                         </p>
                       </div>
                       <div
@@ -667,14 +682,14 @@ export const bodyHtml = `
                           <span
                             class="purecounter font-heading"
                             data-purecounter-duration="3"
-                            data-purecounter-end="96"
+                            data-purecounter-end="20"
                           ></span
                           >+
                         </h4>
                         <p
                           class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
                         >
-                          Global Clients and Growing
+                          Shopify 2.0 Stores Built
                         </p>
                       </div>
                     </div>
@@ -704,10 +719,10 @@ export const bodyHtml = `
                     <h2
                       class="about-three-title text-heading tw-text-15 tw-itm-title tw-itm-anim"
                     >
-                      I am dedicated to bringing your vision to life by crafting
-                      unique, highly aesthetic, and impactful digital
-                      experiences. My work speaks louder than words—explore the
-                      results.
+                      A developer who treats every website like a product
+                      launch. I build MERN stack websites, Next.js apps, and
+                      custom Shopify 2.0 storefronts — designed to be fast,
+                      clean, and conversion-focused. Explore the results.
                     </h2>
                   </div>
                 </div>
@@ -737,25 +752,26 @@ export const bodyHtml = `
                   >
                     <div>
                       <p class="tw-text-xl tw-mb-10">
-                        I’m a passionate digital designer and web developer
-                        focused on creating modern, user-centered digital
-                        experiences. I blend creativity with clean, efficient
-                        code to build websites that are not only visually
-                        appealing but also functional, fast, and scalable.
+                        I’m a developer with hands-on experience across the
+                        MERN stack (MongoDB, Express.js, React, Node.js),
+                        Next.js, and Shopify 2.0 theme development. From
+                        building React websites and Node.js backends to crafting
+                        conversion-focused Shopify storefronts — I cover the
+                        full spectrum.
                       </p>
                       <p class="tw-text-xl tw-mb-10">
-                        With a strong eye for design & a solid technical
-                        foundation, I transform complex ideas into simple
-                        intuitive digital solutions. I believe great design is
-                        purposeful-every layout, interaction, and line of code
-                        is crafted to enhance usability and deliver real value.
+                        I care about responsive layouts, clean code, and
+                        shipping things that work. Whether it’s a custom Liquid
+                        section, a Node.js API, or a React website — when
+                        something feels slow, I make it fast. When something
+                        feels rough, I sand it down.
                       </p>
                       <p class="tw-text-xl tw-mb-10">
-                        From concept to launch, I work closely with clients to
-                        understand their goals, audience and brand vision. my
-                        collaborative approach ensures and project reflects the
-                        client’s identity while business objectives and
-                        performance standards.
+                        From concept to launch, I treat every website like a
+                        product launch — problem solving, attention to detail,
+                        and clear communication at every step. Got a project in
+                        mind? I’m taking on new MERN stack and Shopify
+                        projects — send a brief, a screenshot, or just say hi.
                       </p>
                     </div>
                     <div class="about-three-counter d-inline-block">
@@ -773,7 +789,7 @@ export const bodyHtml = `
                             >
                             <span
                               class="text-heading fw-bold text-center tw-transition-3 tw-text-2xl fw-medium"
-                              >Years of Experience</span
+                              >Year of Experience</span
                             >
                           </span>
                           <i class="tw-btn-circle-dot bg-main-two-600"></i>
@@ -798,14 +814,14 @@ export const bodyHtml = `
                     <span
                       class="purecounter font-heading"
                       data-purecounter-duration="4"
-                      data-purecounter-end="478"
+                      data-purecounter-end="60"
                     ></span
-                    >/5
+                    >+
                   </h2>
                   <p
                     class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
                   >
-                    Client Satisfaction Rate
+                    Websites Shipped
                   </p>
                 </div>
                 <div
@@ -820,14 +836,14 @@ export const bodyHtml = `
                     <span
                       class="purecounter font-heading"
                       data-purecounter-duration="2"
-                      data-purecounter-end="115"
+                      data-purecounter-end="9"
                     ></span
-                    >k+
+                    >+
                   </h2>
                   <p
                     class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
                   >
-                    In Client revenue growth
+                    Shopify 2.0 Stores Built
                   </p>
                 </div>
               </div>
@@ -850,35 +866,35 @@ export const bodyHtml = `
               <h2
                 class="marquee-two-title marquee-three-title text-uppercase text-white"
               >
-                Services <span class="text-white">-</span>
+                MERN + Shopify <span class="text-white">-</span>
               </h2>
             </div>
             <div>
               <h2
                 class="marquee-two-title marquee-three-title text-uppercase text-stroke"
               >
-                Services <span class="text-white">-</span>
+                MERN + Shopify <span class="text-white">-</span>
               </h2>
             </div>
             <div>
               <h2
                 class="marquee-two-title marquee-three-title text-uppercase text-white"
               >
-                Services <span class="text-white">-</span>
+                MERN + Shopify <span class="text-white">-</span>
               </h2>
             </div>
             <div>
               <h2
                 class="marquee-two-title marquee-three-title text-uppercase text-stroke"
               >
-                Services <span class="text-white">-</span>
+                MERN + Shopify <span class="text-white">-</span>
               </h2>
             </div>
             <div>
               <h2
                 class="marquee-two-title marquee-three-title text-uppercase text-white"
               >
-                Services <span class="text-white">-</span>
+                MERN + Shopify <span class="text-white">-</span>
               </h2>
             </div>
           </div>
@@ -915,7 +931,7 @@ export const bodyHtml = `
                               class="service-three-title tw-text-15 text-white tw-mb-4"
                             >
                               <a href="service-details.html"
-                                >Illustration Design</a
+                                >Shopify Theme Development</a
                               >
                             </h2>
                           </div>
@@ -925,21 +941,21 @@ export const bodyHtml = `
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
                                   href="#"
-                                  >Creative Direction</a
+                                  >Liquid</a
                                 >
                               </li>
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
                                   href="#"
-                                  >Brand Identity</a
+                                  >Shopify 2.0</a
                                 >
                               </li>
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
                                   href="#"
-                                  >Graphic Design</a
+                                  >Metafields</a
                                 >
                               </li>
                             </ul>
@@ -981,7 +997,7 @@ export const bodyHtml = `
                               class="service-three-title tw-text-15 text-white tw-mb-4"
                             >
                               <a href="service-details.html"
-                                >Business Branding</a
+                                >MERN Stack Development</a
                               >
                             </h2>
                           </div>
@@ -991,21 +1007,21 @@ export const bodyHtml = `
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
                                   href="#"
-                                  >Creative Direction</a
+                                  >MongoDB</a
                                 >
                               </li>
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
                                   href="#"
-                                  >Brand Identity</a
+                                  >Express.js</a
                                 >
                               </li>
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
                                   href="#"
-                                  >Graphic Design</a
+                                  >Node.js</a
                                 >
                               </li>
                             </ul>
@@ -1046,7 +1062,7 @@ export const bodyHtml = `
                             <h2
                               class="service-three-title tw-text-15 text-white tw-mb-4"
                             >
-                              <a href="service-details.html">Web Development</a>
+                              <a href="service-details.html">Next.js & React</a>
                             </h2>
                           </div>
                           <div class="portfolio-list portfolio-two-list">
@@ -1055,21 +1071,21 @@ export const bodyHtml = `
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
                                   href="#"
-                                  >Creative Direction</a
+                                  >Next.js</a
                                 >
                               </li>
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
                                   href="#"
-                                  >Brand Identity</a
+                                  >React 19</a
                                 >
                               </li>
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
                                   href="#"
-                                  >Graphic Design</a
+                                  >TypeScript</a
                                 >
                               </li>
                             </ul>
@@ -1111,7 +1127,7 @@ export const bodyHtml = `
                               class="service-three-title tw-text-15 text-white tw-mb-4"
                             >
                               <a href="service-details.html"
-                                >Application Design</a
+                                >REST APIs & Tooling</a
                               >
                             </h2>
                           </div>
@@ -1121,21 +1137,21 @@ export const bodyHtml = `
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
                                   href="#"
-                                  >Creative Direction</a
+                                  >REST APIs</a
                                 >
                               </li>
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
                                   href="#"
-                                  >Brand Identity</a
+                                  >Git & GitHub</a
                                 >
                               </li>
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
                                   href="#"
-                                  >Graphic Design</a
+                                  >Chrome DevTools</a
                                 >
                               </li>
                             </ul>
@@ -1178,7 +1194,7 @@ export const bodyHtml = `
                             <a
                               class="hover-text-main-two-600"
                               href="portfolio-details.html"
-                              >Epic Strategy App</a
+                              >OTAP</a
                             >
                           </h2>
                         </div>
@@ -1188,14 +1204,14 @@ export const bodyHtml = `
                               <a
                                 class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
                                 href="#"
-                                >BRANDING</a
+                                >SHOPIFY 2.0</a
                               >
                             </li>
                             <li>
                               <a
                                 class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
                                 href="#"
-                                >web DESIGN</a
+                                >Anime Store</a
                               >
                             </li>
                           </ul>
@@ -1237,7 +1253,7 @@ export const bodyHtml = `
                             <a
                               class="hover-text-main-two-600"
                               href="portfolio-details.html"
-                              >Branding Identity</a
+                              >VOLTIX</a
                             >
                           </h2>
                         </div>
@@ -1247,14 +1263,14 @@ export const bodyHtml = `
                               <a
                                 class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
                                 href="#"
-                                >BRANDING</a
+                                >SHOPIFY 2.0</a
                               >
                             </li>
                             <li>
                               <a
                                 class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
                                 href="#"
-                                >web DESIGN</a
+                                >Car Showcase</a
                               >
                             </li>
                           </ul>
@@ -1294,7 +1310,7 @@ export const bodyHtml = `
                             <a
                               class="hover-text-main-two-600"
                               href="portfolio-details.html"
-                              >PixelCraft Mobile UI</a
+                              >Heyva</a
                             >
                           </h2>
                         </div>
@@ -1304,14 +1320,14 @@ export const bodyHtml = `
                               <a
                                 class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
                                 href="#"
-                                >BRANDING</a
+                                >SHOPIFY 2.0</a
                               >
                             </li>
                             <li>
                               <a
                                 class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
                                 href="#"
-                                >web DESIGN</a
+                                >Kid Supplements</a
                               >
                             </li>
                           </ul>
@@ -1351,7 +1367,7 @@ export const bodyHtml = `
                             <a
                               class="hover-text-main-two-600"
                               href="portfolio-details.html"
-                              >Creative Studio</a
+                              >Bro &amp; Compagnie</a
                             >
                           </h2>
                         </div>
@@ -1361,14 +1377,14 @@ export const bodyHtml = `
                               <a
                                 class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
                                 href="#"
-                                >BRANDING</a
+                                >SHOPIFY 2.0</a
                               >
                             </li>
                             <li>
                               <a
                                 class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
                                 href="#"
-                                >web DESIGN</a
+                                >Pet Care</a
                               >
                             </li>
                           </ul>
@@ -1392,6 +1408,301 @@ export const bodyHtml = `
                         ><img
                           class="w-100 tw-rounded-lg"
                           src="/assets/images/thumbs/portfolio-three-thumb4.jpg"
+                          alt="thumb"
+                      /></a>
+                    </div>
+                  </div>
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="portfolio-details.html"
+                              >SweetPaw</a
+                            >
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >SHOPIFY 2.0</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >Dog Chews Store</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="portfolio-three-button">
+                          <a
+                            class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                            href="portfolio-details.html"
+                            ><i class="ph ph-arrow-up-right"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="View"
+                    >
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="portfolio-details.html"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="/assets/images/thumbs/portfolio-three-thumb2.jpg"
+                          alt="thumb"
+                      /></a>
+                    </div>
+                  </div>
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="portfolio-details.html"
+                              >Manga Mint</a
+                            >
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >SHOPIFY 2.0</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >Anime &amp; Manga Store</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="portfolio-three-button">
+                          <a
+                            class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                            href="portfolio-details.html"
+                            ><i class="ph ph-arrow-up-right"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="View"
+                    >
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="portfolio-details.html"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="/assets/images/thumbs/portfolio-three-thumb3.jpg"
+                          alt="thumb"
+                      /></a>
+                    </div>
+                  </div>
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="portfolio-details.html"
+                              >CyberNexus</a
+                            >
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >SHOPIFY 2.0</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >Gaming Universe</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="portfolio-three-button">
+                          <a
+                            class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                            href="portfolio-details.html"
+                            ><i class="ph ph-arrow-up-right"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="View"
+                    >
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="portfolio-details.html"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="/assets/images/thumbs/portfolio-three-thumb4.jpg"
+                          alt="thumb"
+                      /></a>
+                    </div>
+                  </div>
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="portfolio-details.html"
+                              >Vantique</a
+                            >
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >SHOPIFY 2.0</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >Luxury Streetwear</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="portfolio-three-button">
+                          <a
+                            class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                            href="portfolio-details.html"
+                            ><i class="ph ph-arrow-up-right"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="View"
+                    >
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="portfolio-details.html"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="/assets/images/thumbs/portfolio-three-thumb1.jpg"
+                          alt="thumb"
+                      /></a>
+                    </div>
+                  </div>
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="portfolio-details.html"
+                              >BOOYAH!</a
+                            >
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >SHOPIFY 2.0</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >Gaming Lobby Store</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="portfolio-three-button">
+                          <a
+                            class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                            href="portfolio-details.html"
+                            ><i class="ph ph-arrow-up-right"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="View"
+                    >
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="portfolio-details.html"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="/assets/images/thumbs/portfolio-three-thumb2.jpg"
                           alt="thumb"
                       /></a>
                     </div>
@@ -1444,20 +1755,20 @@ export const bodyHtml = `
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >Awwwards</span
+                            >MERN &amp; Shopify Dev</span
                           >
                         </div>
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >Site Of The Day - Luxe Beauty</span
+                            >Built MERN stack websites with React, Node.js, Express &amp; MongoDB</span
                           >
                         </div>
                       </div>
                       <div>
                         <span
                           class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                          >2023</span
+                          >2025</span
                         >
                       </div>
                     </div>
@@ -1485,20 +1796,20 @@ export const bodyHtml = `
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >FWA</span
+                            >Shopify 2.0 Stores</span
                           >
                         </div>
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >Motion Design and Animation</span
+                            >Developed &amp; customized multiple stores from scratch</span
                           >
                         </div>
                       </div>
                       <div>
                         <span
                           class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                          >2022</span
+                          >2025</span
                         >
                       </div>
                     </div>
@@ -1526,20 +1837,20 @@ export const bodyHtml = `
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >CSSDA</span
+                            >Custom Sections</span
                           >
                         </div>
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >Motion Design and Animation</span
+                            >Custom sections, product pages, landing pages &amp; REST APIs</span
                           >
                         </div>
                       </div>
                       <div>
                         <span
                           class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                          >2021</span
+                          >2025</span
                         >
                       </div>
                     </div>
@@ -1567,20 +1878,20 @@ export const bodyHtml = `
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >CSSDA</span
+                            >Performance &amp; UX</span
                           >
                         </div>
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >Motion Design and Animation</span
+                            >Optimized site speed, UX &amp; third-party app integrations</span
                           >
                         </div>
                       </div>
                       <div>
                         <span
                           class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                          >2020</span
+                          >2025</span
                         >
                       </div>
                     </div>
@@ -1608,13 +1919,13 @@ export const bodyHtml = `
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >Awwwards</span
+                            >B.S.S. Economics</span
                           >
                         </div>
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >Motion Design and Animation</span
+                            >National University</span
                           >
                         </div>
                       </div>
@@ -1649,13 +1960,13 @@ export const bodyHtml = `
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >Awwwards</span
+                            >HSC (Science)</span
                           >
                         </div>
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >Motion Design and Animation</span
+                            >Higher Secondary — SSC (Science), Secondary</span
                           >
                         </div>
                       </div>
@@ -1684,9 +1995,9 @@ export const bodyHtml = `
                   <h2
                     class="testimonial-three-title text-heading tw-text-15 tw-itm-title tw-itm-anim"
                   >
-                    Honest testimonials from clients highlighting my commitment
-                    to quality, performance, & user-focused design that delivers
-                    real results
+                    Real highlights from real projects — Shopify 2.0
+                    storefronts and MERN stack websites built to convert, ship
+                    fast, and scale with confidence
                   </h2>
                 </div>
               </div>
@@ -1758,17 +2069,18 @@ export const bodyHtml = `
                             <p
                               class="testimonial-three-paragraph text-heading tw-text-2xl fw-semibold"
                             >
-                              Nemo enim ipsam voluptatem quia voluptas sit
-                              aspernatur aut odit aut fugit sed quia
-                              consequuntur magni dolores eos qui ratione
-                              voluptatem sequi nesciunt.
+                              Built MERN stack websites with React, Node.js,
+                              Express, and MongoDB — from REST APIs and
+                              backends to complete, responsive frontends.
                             </p>
                           </div>
                           <div>
                             <h2 class="tw-text-2xl fw-medium">
-                              Sophia Reynolds
+                              MERN Stack Development
                             </h2>
-                            <p class="tw-text-lg">Founder, Startup Studio</p>
+                            <p class="tw-text-lg">
+                              React · Node.js · Express · MongoDB
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -1834,17 +2146,19 @@ export const bodyHtml = `
                             <p
                               class="testimonial-three-paragraph text-heading tw-text-2xl fw-semibold"
                             >
-                              Nemo enim ipsam voluptatem quia voluptas sit
-                              aspernatur aut odit aut fugit sed quia
-                              consequuntur magni dolores eos qui ratione
-                              voluptatem sequi nesciunt.
+                              Developed and customized multiple Shopify 2.0
+                              stores from scratch — custom Liquid sections,
+                              metafields, metaobjects, and conversion-focused
+                              product pages.
                             </p>
                           </div>
                           <div>
                             <h2 class="tw-text-2xl fw-medium">
-                              Daniel Roberts
+                              Shopify 2.0 Development
                             </h2>
-                            <p class="tw-text-lg">CEO, Tech Company</p>
+                            <p class="tw-text-lg">
+                              Liquid · Metafields · Metaobjects · Shopify CLI
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -1861,7 +2175,7 @@ export const bodyHtml = `
               <div class="col-xl-12">
                 <div class="text-center tw-mb-15">
                   <h2 class="brand-three-title tw-text-xl tw-char-animation">
-                    Loved by Teams Around the World
+                    Tools &amp; Tech I Work With Daily
                   </h2>
                 </div>
               </div>
@@ -2043,7 +2357,7 @@ export const bodyHtml = `
                 >
                   <div class="tw-mb-9">
                     <h2 class="tw-text-15 text-white tw-char-animation">
-                      Let’s create something meaningful
+                      Got a project in mind? Let’s build.
                     </h2>
                   </div>
                   <div
@@ -2051,14 +2365,14 @@ export const bodyHtml = `
                   >
                     <a
                       class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white"
-                      href="mailto:shan@gmail.com"
-                      >shan@gmail.com</a
+                      href="mailto:ifas092@gmail.com"
+                      >ifas092@gmail.com</a
                     >
                     <span class="tw-text-2xl fw-medium text-main-600">//</span>
                     <a
                       class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white"
-                      href="tel:+442039991245"
-                      >+44 20 3999 1245</a
+                      href="tel:+8801600018734"
+                      >+880 1600-018734</a
                     >
                   </div>
                   <div
@@ -2076,31 +2390,35 @@ export const bodyHtml = `
                     >
                       <div>
                         <h3 class="tw-text-xl text-white tw-mb-2">
-                          Shan
+                          MD Asif Shah Diner
                         </h3>
-                        <p class="text-white">Digital Designer & Developer</p>
+                        <p class="text-white">
+                          MERN Stack &amp; Shopify Developer
+                        </p>
                       </div>
                       <div class="footer-three-social">
                         <ul class="d-flex align-items-center tw-gap-1">
                           <li>
                             <a
                               class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading"
-                              href="#"
-                              ><i class="ph ph-facebook-logo"></i
+                              href="https://github.com/ArnavAsif"
+                              target="_blank"
+                              ><i class="ph ph-github-logo"></i
                             ></a>
                           </li>
                           <li>
                             <a
                               class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading"
-                              href="#"
-                              ><i class="ph ph-x-logo"></i
+                              href="https://www.linkedin.com/in/arnav-asif"
+                              target="_blank"
+                              ><i class="ph ph-linkedin-logo"></i
                             ></a>
                           </li>
                           <li>
                             <a
                               class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading"
-                              href="#"
-                              ><i class="ph ph-instagram-logo"></i
+                              href="mailto:ifas092@gmail.com"
+                              ><i class="ph ph-envelope-simple"></i
                             ></a>
                           </li>
                         </ul>
@@ -2182,17 +2500,17 @@ export const bodyHtml = `
                         </li>
                         <li>
                           <a class="tw-text-lg text-white" href="index.html"
-                            >About Me,
+                            >Projects,
                           </a>
                         </li>
                         <li>
                           <a class="tw-text-lg text-white" href="index.html"
-                            >Portfolio,
+                            >Skills,
                           </a>
                         </li>
                         <li>
                           <a class="tw-text-lg text-white" href="index.html"
-                            >Service,
+                            >About,
                           </a>
                         </li>
                         <li>
@@ -2220,10 +2538,11 @@ export const bodyHtml = `
                       data-aos-delay="400"
                     >
                       <h4 class="tw-text-2xl text-white tw-mb-2">
-                        Shan Portfolio
+                        MD Asif Shah Diner
                       </h4>
                       <p class="tw-text-lg text-white">
-                        © 2025 Shan. All rights reserved
+                        © 2026 — MERN stack &amp; Shopify developer. All rights
+                        reserved
                       </p>
                     </div>
                   </div>
