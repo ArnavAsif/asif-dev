@@ -187,7 +187,10 @@ const hexToRGB = hex => {
 };
 
 const RippleDistortion = ({
-  src = 'https://images.unsplash.com/photo-1782977389500-dd7adad33ebe?q=80&w=3416&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  // Hero photo background (see ./heroBg for the canonical URL used by the
+  // <link rel="preload"> and by HeroRipple). w=1920&q=80 stays sharp at
+  // typical hero sizes while keeping the initial fetch light.
+  src = 'https://images.unsplash.com/photo-1782977389500-dd7adad33ebe?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   brushSize = 150,
   strength = 0.2,
   swirl = 1,
@@ -231,10 +234,14 @@ const RippleDistortion = ({
     // is drawn as glowing ripple rings on a transparent canvas.
     const rippleOnly = !src;
 
+    // Cap the backing-store resolution: 2x is plenty on desktop; phones at
+    // 3x render at 1.5x instead — visually identical ripple rings, far
+    // less GPU fill.
+    const devicePixelRatio = window.devicePixelRatio || 1;
     const renderer = new Renderer({
       alpha: rippleOnly,
       antialias: false,
-      dpr: Math.min(window.devicePixelRatio || 1, 2)
+      dpr: Math.min(devicePixelRatio, devicePixelRatio > 2 ? 1.5 : 2)
     });
     const gl = renderer.gl;
     gl.clearColor(0, 0, 0, rippleOnly ? 0 : 1);
@@ -253,6 +260,11 @@ const RippleDistortion = ({
     });
 
     let disposed = false;
+    // The photo IS the hero background, so its first frame must render on
+    // its own, without any interaction. Until the texture has loaded we
+    // draw nothing (the canvas stays transparent — no black hero), then
+    // the load itself wakes the loop to paint the first valid frame.
+    let imageReady = rippleOnly;
     if (!rippleOnly) {
       const image = new window.Image();
       image.crossOrigin = 'anonymous';
@@ -261,6 +273,8 @@ const RippleDistortion = ({
         if (disposed) return;
         imageTexture.image = image;
         compositeUniforms.uTextureSize.value = [image.naturalWidth || 1, image.naturalHeight || 1];
+        imageReady = true;
+        wake();
       };
       image.src = src;
     }
@@ -489,7 +503,7 @@ const RippleDistortion = ({
         opacities[i] = wave.opacity;
       }
 
-      if (active) {
+      if (active && imageReady) {
         geometry.attributes.iOffset.needsUpdate = true;
         geometry.attributes.iScale.needsUpdate = true;
         geometry.attributes.iOpacity.needsUpdate = true;
@@ -504,9 +518,11 @@ const RippleDistortion = ({
       // re-drawing that identical static frame every millisecond.
       const settled = reduceMotion || !active;
       if (settled && !hasPendingMove && !hasPendingDown) {
-        if (!reduceMotion && !active) {
-          // One final pass with cleared waves so the parked canvas is
-          // exactly the fully transparent steady state.
+        if (!active && imageReady) {
+          // One final pass with cleared waves: in image mode this leaves
+          // the clean photo as the parked frame; in ripple-only mode the
+          // frame is fully transparent. Runs on the first wake even under
+          // prefers-reduced-motion so the background never waits for input.
           geometry.attributes.iOffset.needsUpdate = true;
           geometry.attributes.iScale.needsUpdate = true;
           geometry.attributes.iOpacity.needsUpdate = true;

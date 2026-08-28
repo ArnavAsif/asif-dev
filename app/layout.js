@@ -1,3 +1,5 @@
+import { HERO_BG_URL } from "./_lift/heroBg";
+
 export const metadata = {
   title: "MD Asif Shah Diner — MERN Stack & Shopify Developer",
   description:
@@ -36,6 +38,22 @@ export default function RootLayout({ children }) {
         {stylesheets.map((href) => (
           <link key={href} rel="stylesheet" href={href} />
         ))}
+        {/* Above-the-fold hero assets start downloading during HTML parse:
+            the WebGL photo background (CORS mode so the texture can reuse
+            the same cache) and the hero portrait (the LCP image). */}
+        <link
+          rel="preload"
+          as="image"
+          href={HERO_BG_URL}
+          crossOrigin="anonymous"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/assets/images/shapes/banner-three-man.png"
+          fetchPriority="high"
+        />
       </head>
       <body
         className="tw-magic-cursor"

@@ -105,6 +105,13 @@ export default function LegacyScripts() {
       const a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
       if (!a) return;
       const href = a.getAttribute("href") || "";
+      // Placeholder "#" links (hero CTA, work/service cards...) must not
+      // navigate: with the template's CSS they smooth-scroll the document
+      // back to the top — the random "jump to Hero" bug.
+      if (href === "#" || href === "" || href === "##") {
+        e.preventDefault();
+        return;
+      }
       // Leave external / protocol links (mailto:, tel:, http(s)://) alone.
       if (/^(https?:|mailto:|tel:|javascript:|\/\/)/i.test(href)) return;
       // Only *.html targets 404 in this app — redirect those to home.
@@ -136,6 +143,22 @@ export default function LegacyScripts() {
 
     let lastMeasuredHeight = 0;
     let refreshTimer;
+    // Never run ScrollTrigger.refresh() while the user is scrolling: it can
+    // shift pinned content and throw the viewport back to a previous
+    // position (the "random jump to top"). Refresh only after scrolling has
+    // been idle for a beat.
+    let lastScrollTime = 0;
+    const onScrollMarker = () => {
+      lastScrollTime = Date.now();
+    };
+    window.addEventListener("scroll", onScrollMarker, { passive: true });
+    const refreshWhenQuiet = () => {
+      if (Date.now() - lastScrollTime < 350) {
+        refreshTimer = window.setTimeout(refreshWhenQuiet, 350);
+        return;
+      }
+      if (window.ScrollTrigger) window.ScrollTrigger.refresh();
+    };
     const sync = () => {
       const target = content
         ? content.scrollHeight
@@ -147,17 +170,15 @@ export default function LegacyScripts() {
         root.style.height = `${target}px`;
       }
       // Below-the-fold images are lazy-loaded, so the document height
-      // grows as they decode. Re-run ScrollTrigger.refresh() (debounced,
-      // only on real height changes) so trigger/pin positions stay
-      // aligned — without refreshing on every scroll frame.
+      // grows as they decode. A (debounced, scroll-idle) refresh keeps
+      // trigger/pin positions aligned — without refreshing on every
+      // scroll frame or mid-scroll.
       if (target > 0 && Math.abs(target - lastMeasuredHeight) > 1) {
         const needsRefresh = lastMeasuredHeight > 0;
         lastMeasuredHeight = target;
         if (needsRefresh && window.ScrollTrigger) {
           window.clearTimeout(refreshTimer);
-          refreshTimer = window.setTimeout(() => {
-            if (window.ScrollTrigger) window.ScrollTrigger.refresh();
-          }, 400);
+          refreshTimer = window.setTimeout(refreshWhenQuiet, 400);
         }
       }
     };
@@ -172,6 +193,7 @@ export default function LegacyScripts() {
     const settle = window.setTimeout(sync, 1500);
     return () => {
       window.removeEventListener("resize", sync);
+      window.removeEventListener("scroll", onScrollMarker);
       window.clearTimeout(settle);
       window.clearTimeout(refreshTimer);
       if (ro) ro.disconnect();

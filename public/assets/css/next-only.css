@@ -85,3 +85,87 @@
     padding: 0;
   }
 }
+
+/* ============================================================
+   PERFORMANCE & MOBILE-FIX LAYER (next build only)
+   Visual design is preserved exactly — these rules only remove
+   scroll conflicts, viewport overflow, loader gaps, delayed hero
+   background and oversized mobile type.
+   ============================================================ */
+
+/* --- 5) Native smooth scrolling conflicts with ScrollSmoother --------
+   main.css sets html { scroll-behavior: smooth }; with a `position:
+   fixed` smooth wrapper, programmatic scroll writes (focus handling,
+   ScrollTrigger refresh, the back-to-top jQuery animation) turn into
+   slow animated jumps. Keep GSAP in full control of scrolling. */
+html {
+  scroll-behavior: auto !important;
+}
+
+/* --- 6) Kill horizontal overflow everywhere --------------------------
+   overflow-x: clip does NOT create a scroll container, so the sticky
+   header and pinned sections keep working. */
+html,
+body {
+  overflow-x: clip;
+}
+@supports not (overflow: clip) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* --- 7) Preloader: true full-screen, no vw/vh overflow ---------------
+   The SVG curtain used width:100vw / height:110vh, which overflows
+   mobile viewports (left-side gap + horizontal scrollbar). A fixed
+   stage with inset 0 and inner 100% x 100% covers every screen
+   exactly, with 100dvh (fallback 100vh) for dynamic toolbars. */
+.preloader {
+  width: 100%;
+  height: 100vh; /* fallback for older engines */
+  height: 100dvh;
+}
+.preloader svg {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+/* --- 8) "Loading" stays on ONE line everywhere ---------------------- */
+.preloader .preloader-heading .load-text {
+  white-space: nowrap;
+  font-size: clamp(1.4rem, 4vw, 1.875rem); /* back to 30px on desktop */
+  letter-spacing: clamp(2px, 1vw, 15px);   /* back to 15px on desktop */
+  margin: 0;
+}
+
+/* --- 9) Hero portrait: never wider than the viewport ----------------- */
+@media screen and (max-width: 575px) {
+  .banner-three-man {
+    max-width: 82vw;
+  }
+}
+
+/* --- 10) Mobile typography -------------------------------------------
+   Desktop sizes are untouched. The template's fixed large headings
+   (which can clip or force awkward wraps on ~375px screens) scale
+   down smoothly with clamp(). */
+@media screen and (max-width: 575px) {
+  .banner-three-center-title {
+    font-size: clamp(1.5rem, 6.6vw, 2rem);
+  }
+  .about-three-title {
+    font-size: clamp(1.4rem, 6vw, 2rem);
+  }
+  .service-three-title {
+    font-size: clamp(1.5rem, 6.5vw, 2.6rem);
+  }
+  .testimonial-three-title {
+    font-size: clamp(1.45rem, 6.4vw, 2.4rem);
+  }
+  #site-root .tw-char-animation {
+    font-size: clamp(1.6rem, 7.5vw, 3.75rem);
+  }
+}

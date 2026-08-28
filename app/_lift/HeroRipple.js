@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import dynamic from "next/dynamic";
+import { HERO_BG_URL } from "./heroBg";
 
 // ogl/WebGL stays out of the initial JS bundle: the ripple component is
 // browser-only and loads right after hydration, long before the user can
@@ -14,11 +15,12 @@ const RippleDistortion = dynamic(() => import("./RippleDistortion"), {
 // The page body is injected as raw HTML (bodyContent.js), so the hero
 // mount point (#hero-ripple-mount inside .banner-three-area) can't hold
 // a React child directly. This component portals the WebGL canvas into
-// that div, adding a cursor-ripple effect over the whole hero section.
+// that div: the canvas renders the hero's full-bleed photo background
+// (`src` above, preloaded with high priority in layout.js) with cursor
+// ripple distortion on top; the portrait and text sit above it (z-1).
 //
-// No `src` is passed, so RippleDistortion runs in its image-less mode:
-// the canvas stays fully transparent and only draws glowing ripple
-// rings that follow the cursor — the hero img/background is untouched.
+// The background renders its first frame automatically on texture load —
+// it never waits for mouse/touch input.
 export default function HeroRipple() {
   const [mount, setMount] = useState(null);
 
@@ -34,6 +36,7 @@ export default function HeroRipple() {
 
   return createPortal(
     <RippleDistortion
+      src={HERO_BG_URL}
       brushSize={130}
       spread={6}
       fade={2.5}

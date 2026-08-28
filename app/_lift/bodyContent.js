@@ -248,7 +248,9 @@ export const bodyHtml = `
           <!-- Logo Start -->
           <div class="header-three-logo tw-rounded-md">
             <a href="index.html" class="link">
-              <img loading="lazy" decoding="async"
+              <img
+                decoding="async"
+                fetchpriority="high"
                 src="/assets/images/logo/logo-secendary.png"
                 alt="Asif Logo"
                 class="max-w-200-px"
@@ -485,7 +487,9 @@ export const bodyHtml = `
                   <div
                     class="banner-three-man position-absolute start-50 translate-middle-x"
                   >
-                    <img decoding="async"
+                    <img
+                      decoding="async"
+                      fetchpriority="high"
                       src="/assets/images/shapes/banner-three-man.png"
                       alt="man"
                     />
