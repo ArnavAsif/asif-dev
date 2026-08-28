@@ -1,4 +1,2276 @@
 // Auto-extracted from original index.html body content, unmodified except
 // asset paths normalized to root-relative (assets/... -> /assets/...).
-export const bodyHtml = "\n    <!--==================== Preloader Start ====================-->\n    <div class=\"preloader\">\n      <svg viewBox=\"0 0 1000 1000\" preserveAspectRatio=\"none\">\n        <path\n          id=\"preloaderSvg\"\n          d=\"M0,1005S175,995,500,995s500,5,500,5V0H0Z\"\n        ></path>\n      </svg>\n      <div class=\"preloader-heading\">\n        <div class=\"load-text\">\n          <span>L</span>\n          <span>o</span>\n          <span>a</span>\n          <span>d</span>\n          <span>i</span>\n          <span>n</span>\n          <span>g</span>\n        </div>\n      </div>\n    </div>\n    <!--==================== Preloader End ====================-->\n\n    <!--==================== Overlay Start ====================-->\n    <div class=\"overlay\"></div>\n    <!--==================== Overlay End ====================-->\n\n    <!--==================== Sidebar Overlay End ====================-->\n    <div class=\"side-overlay\"></div>\n    <!--==================== Sidebar Overlay End ====================-->\n\n    <!--==================== Begin Magic Cursor Start ====================-->\n    <div id=\"magic-cursor\">\n      <div id=\"ball\"></div>\n    </div>\n    <!--==================== Begin Magic Cursor End ====================-->\n\n    <!-- Custom Toast Message start -->\n    <div id=\"toast-container\"></div>\n    <!-- Custom Toast Message End -->\n\n    <!-- ==================== Scroll to Top End Here ==================== -->\n    <div class=\"back-to-top-wrapper\">\n      <button id=\"back_to_top\" type=\"button\" class=\"back-to-top-btn\">\n        <svg\n          width=\"12\"\n          height=\"7\"\n          viewBox=\"0 0 12 7\"\n          fill=\"none\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n        >\n          <path\n            d=\"M11 6L6 1L1 6\"\n            stroke=\"currentColor\"\n            stroke-width=\"1.5\"\n            stroke-linecap=\"round\"\n            stroke-linejoin=\"round\"\n          />\n        </svg>\n      </button>\n    </div>\n    <!-- ==================== Scroll to Top End Here ==================== -->\n\n    <!-- ==================== Offcanvus Mobile Menu Start Here ==================== -->\n    <div class=\"tw-offcanvas-2-area p-relative\">\n      <div class=\"tw-offcanvas-2-bg is-left left-box\"></div>\n      <div class=\"tw-offcanvas-2-bg is-right right-box d-none d-md-block\"></div>\n      <div class=\"tw-offcanvas-2-wrapper\">\n        <div class=\"tw-offcanvas-2-left left-box\">\n          <div\n            class=\"tw-offcanvas-2-left-wrap d-flex justify-content-between align-items-center\"\n          >\n            <div class=\"twoffcanvas__logo\">\n              <a class=\"logo-1\" href=\"index.html\"\n                ><img src=\"/assets/images/logo/logo.png\" alt=\"Shan Logo\"\n              /></a>\n            </div>\n            <div class=\"tw-offcanvas-2-close d-md-none text-end\">\n              <button class=\"tw-offcanvas-2-close-btn tw-offcanvas-2-close-btn\">\n                <span class=\"text\">\n                  <span class=\"text-white\">close</span>\n                </span>\n                <span class=\"d-inline-block\">\n                  <span>\n                    <svg\n                      width=\"24\"\n                      height=\"24\"\n                      viewBox=\"0 0 24 24\"\n                      fill=\"none\"\n                      xmlns=\"http://www.w3.org/2000/svg\"\n                    >\n                      <rect\n                        width=\"32.621\"\n                        height=\"1.00918\"\n                        transform=\"matrix(0.704882 0.709325 -0.704882 0.709325 1.0061 0)\"\n                        fill=\"currentcolor\"\n                      />\n                      <rect\n                        width=\"32.621\"\n                        height=\"1.00918\"\n                        transform=\"matrix(0.704882 -0.709325 0.704882 0.709325 0 23.2842)\"\n                        fill=\"currentcolor\"\n                      />\n                    </svg>\n                  </span>\n                </span>\n              </button>\n            </div>\n          </div>\n          <div class=\"tw-main-menu-mobile menu-hover-active counter-row\">\n            <nav></nav>\n          </div>\n        </div>\n        <div\n          class=\"tw-offcanvas-2-right right-box d-none d-md-block p-relative\"\n        >\n          <div class=\"tw-offcanvas-2-close text-end\">\n            <button class=\"tw-offcanvas-2-close-btn\">\n              <span class=\"text\">\n                <span>close</span>\n              </span>\n              <span class=\"d-inline-block\">\n                <span>\n                  <svg\n                    width=\"38\"\n                    height=\"38\"\n                    viewBox=\"0 0 38 38\"\n                    fill=\"none\"\n                    xmlns=\"http://www.w3.org/2000/svg\"\n                  >\n                    <path\n                      d=\"M9.80859 9.80762L28.1934 28.1924\"\n                      stroke=\"currentColor\"\n                      stroke-width=\"1.5\"\n                      stroke-linecap=\"round\"\n                      stroke-linejoin=\"round\"\n                    />\n                    <path\n                      d=\"M9.80859 28.1924L28.1934 9.80761\"\n                      stroke=\"currentColor\"\n                      stroke-width=\"1.5\"\n                      stroke-linecap=\"round\"\n                      stroke-linejoin=\"round\"\n                    />\n                  </svg>\n                </span>\n              </span>\n            </button>\n          </div>\n          <div\n            class=\"tw-offcanvas-2-right-inner d-flex flex-column justify-content-between h-100\"\n          >\n            <div class=\"twoffcanvas__contact-info\">\n              <div class=\"twoffcanvas__contact-title\">\n                <h5 class=\"text-white\">Contact us</h5>\n              </div>\n              <ul>\n                <li>\n                  <span class=\"text-main-two-600 tw-text-xl\"\n                    ><i class=\"ph ph-map-pin-line\"></i\n                  ></span>\n                  <a\n                    class=\"text-white\"\n                    href=\"https://www.google.com/maps/@23.8223586,90.3661283,15z\"\n                    target=\"_blank\"\n                    >Manchester 21, Zurich, CH</a\n                  >\n                </li>\n                <li>\n                  <span class=\"text-main-two-600 tw-text-xl\"\n                    ><i class=\"ph ph-envelope\"></i\n                  ></span>\n                  <a class=\"text-white\" href=\"mailto:techubinfo@mail.com\"\n                    ><span class=\"__cf_email__\">omioinfo@mail.com</span></a\n                  >\n                </li>\n                <li>\n                  <span class=\"text-main-two-600 tw-text-xl\"\n                    ><i class=\"ph ph-phone-call\"></i\n                  ></span>\n                  <a class=\"text-white\" href=\"tel:+48555223224\"\n                    >(+00) 678 345 98568</a\n                  >\n                </li>\n              </ul>\n            </div>\n            <div\n              class=\"footer-social\"\n              data-aos=\"fade-up\"\n              data-aos-duration=\"1000\"\n              data-aos-delay=\"200\"\n            >\n              <ul class=\"tw-gap-2\">\n                <li>\n                  <a href=\"#\">\n                    <span\n                      class=\"active-media d-flex align-items-center tw-gap-1\"\n                      >Facebook <i class=\"ph ph-arrow-bend-up-right\"></i\n                    ></span>\n                    <span class=\"hover-media\"\n                      ><i class=\"ph ph-facebook-logo\"></i\n                    ></span>\n                  </a>\n                </li>\n                <li>\n                  <a href=\"#\">\n                    <span\n                      class=\"active-media d-flex align-items-center tw-gap-1\"\n                      >INSTAGRAM <i class=\"ph ph-arrow-bend-up-right\"></i\n                    ></span>\n                    <span class=\"hover-media\"\n                      ><i class=\"ph ph-instagram-logo\"></i\n                    ></span>\n                  </a>\n                </li>\n                <li>\n                  <a href=\"#\">\n                    <span\n                      class=\"active-media d-flex align-items-center tw-gap-1\"\n                      >LINKEDIN <i class=\"ph ph-arrow-bend-up-right\"></i\n                    ></span>\n                    <span class=\"hover-media\"\n                      ><i class=\"ph ph-linkedin-logo\"></i\n                    ></span>\n                  </a>\n                </li>\n              </ul>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <!-- ==================== Offcanvus Mobile Menu End Here ==================== -->\n\n    <!-- ==================== Header Start Here ==================== -->\n    <header\n      class=\"header header-two header-three tw-transition-all tw-z-99 position-relative\"\n    >\n      <div class=\"container tw-container-1800-px\">\n        <nav\n          class=\"d-flex align-items-center justify-content-between position-relative\"\n        >\n          <!-- Logo Start -->\n          <div class=\"header-three-logo tw-rounded-md\">\n            <a href=\"index.html\" class=\"link\">\n              <img\n                src=\"/assets/images/logo/logo-secendary.png\"\n                alt=\"Shan Logo\"\n                class=\"max-w-200-px\"\n              />\n            </a>\n          </div>\n          <!-- Logo End  -->\n\n          <!-- Menu Start  -->\n          <div class=\"header-three-social d-none d-lg-block\">\n            <ul class=\"d-flex tw-gap-205\">\n              <li>\n                <a\n                  class=\"tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md\"\n                  href=\"#\"\n                  ><i class=\"ph-bold ph-facebook-logo\"></i\n                ></a>\n              </li>\n              <li>\n                <a\n                  class=\"tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md\"\n                  href=\"#\"\n                  ><i class=\"ph-bold ph-x-logo\"></i\n                ></a>\n              </li>\n              <li>\n                <a\n                  class=\"tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md\"\n                  href=\"#\"\n                  ><i class=\"ph-bold ph-instagram-logo\"></i\n                ></a>\n              </li>\n              <li>\n                <a\n                  class=\"tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md\"\n                  href=\"#\"\n                  ><i class=\"ph-bold ph-dribbble-logo\"></i\n                ></a>\n              </li>\n            </ul>\n          </div>\n          <!-- Menu End  -->\n\n          <!-- Menu Start  -->\n          <div class=\"header-menu d-none\">\n            <!-- Nav menu Start -->\n            <div class=\"main-menu\">\n              <nav class=\"tw-main-menu-content\">\n                <ul>\n                  <li class=\"p-static has-dropdown\">\n                    <a class=\"color-active\" href=\"index.html\">Home</a>\n                    <!-- mega menu start -->\n                    <div class=\"tw-submenu submenu has-homemenu\">\n                      <div\n                        class=\"row gx-6 row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2\"\n                      >\n                        <div class=\"col homemenu\">\n                          <div class=\"homemenu-thumb tw-mb-4\">\n                            <img\n                              src=\"/assets/images/thumbs/home1.jpg\"\n                              alt=\"home-one\"\n                            />\n                            <div class=\"homemenu-btn w-100\">\n                              <div class=\"tw-mb-2\">\n                                <a\n                                  class=\"bg-main-two-600 text-white fw-semibold tw-py-3 tw-text-sm d-inline-block hover-bg-white hover-text-heading menu-btn show-1\"\n                                  href=\"index.html\"\n                                >\n                                  Multi Page\n                                </a>\n                              </div>\n                            </div>\n                          </div>\n                          <div class=\"homemenu-content text-center\">\n                            <h4 class=\"homemenu-title\">\n                              <a href=\"index.html\">Ceative Agency</a>\n                            </h4>\n                          </div>\n                        </div>\n                        <div class=\"col homemenu\">\n                          <div class=\"homemenu-thumb tw-mb-4\">\n                            <img\n                              src=\"/assets/images/thumbs/home2.jpg\"\n                              alt=\"home-two\"\n                            />\n                            <div class=\"homemenu-btn w-100\">\n                              <div class=\"tw-mb-2\">\n                                <a\n                                  class=\"bg-main-two-600 text-white fw-semibold tw-py-3 tw-text-sm d-inline-block hover-bg-white hover-text-heading menu-btn show-1\"\n                                  href=\"index-2.html\"\n                                >\n                                  Multi Page\n                                </a>\n                              </div>\n                            </div>\n                          </div>\n                          <div class=\"homemenu-content text-center\">\n                            <h4 class=\"homemenu-title\">\n                              <a href=\"index-2.html\">Digital Studio</a>\n                            </h4>\n                          </div>\n                        </div>\n                        <div class=\"col homemenu\">\n                          <div class=\"homemenu-thumb tw-mb-4\">\n                            <img\n                              src=\"/assets/images/thumbs/home3.jpg\"\n                              alt=\"home-three\"\n                            />\n                            <div class=\"homemenu-btn w-100\">\n                              <div class=\"tw-mb-2\">\n                                <a\n                                  class=\"bg-main-two-600 text-white fw-semibold tw-py-3 tw-text-sm d-inline-block hover-bg-white hover-text-heading menu-btn show-1\"\n                                  href=\"index-3.html\"\n                                >\n                                  Multi Page\n                                </a>\n                              </div>\n                            </div>\n                          </div>\n                          <div class=\"homemenu-content text-center\">\n                            <h4 class=\"homemenu-title\">\n                              <a href=\"index-3.html\">Personal Portfolio</a>\n                            </h4>\n                          </div>\n                        </div>\n                        <div class=\"col homemenu\">\n                          <div class=\"homemenu-thumb tw-mb-4\">\n                            <img\n                              src=\"/assets/images/thumbs/coming-soon-img.png\"\n                              alt=\"coming-soon\"\n                            />\n                          </div>\n                          <div class=\"homemenu-content text-center\">\n                            <h4 class=\"homemenu-title\">\n                              <a href=\"#\">Coming Soon</a>\n                            </h4>\n                          </div>\n                        </div>\n                      </div>\n                    </div>\n                    <!-- mega menu end -->\n                  </li>\n                  <li><a href=\"about.html\">About Us</a></li>\n                  <li class=\"has-dropdown\">\n                    <a href=\"service.html\">Services</a>\n                    <ul class=\"submenu tw-submenu\">\n                      <li><a href=\"service.html\">Our Service</a></li>\n                      <li>\n                        <a href=\"service-details.html\">Service Details</a>\n                      </li>\n                    </ul>\n                  </li>\n                  <li class=\"has-dropdown\">\n                    <a href=\"#\">Pages</a>\n                    <ul class=\"submenu tw-submenu\">\n                      <li><a href=\"about.html\">About Us</a></li>\n                      <li><a href=\"team.html\">Our Team</a></li>\n                      <li><a href=\"testimonial.html\">Testimonials</a></li>\n                      <li><a href=\"pricing.html\">Pricing</a></li>\n                      <li><a href=\"portfolio-one.html\">Portfolio One</a></li>\n                      <li><a href=\"portfolio-two.html\">Portfolio Two</a></li>\n                      <li>\n                        <a href=\"portfolio-three.html\">Portfolio Theee</a>\n                      </li>\n                      <li><a href=\"portfolio-four.html\">Portfolio Four</a></li>\n                      <li>\n                        <a href=\"portfolio-details.html\">Portfolio Details</a>\n                      </li>\n                      <li><a href=\"faq.html\">Our Faq</a></li>\n                      <li><a href=\"error.html\">Error</a></li>\n                    </ul>\n                  </li>\n                  <li class=\"has-dropdown\">\n                    <a href=\"blog.html\">Blog</a>\n                    <ul class=\"submenu tw-submenu\">\n                      <li><a href=\"blog.html\">Blog</a></li>\n                      <li><a href=\"blog-list.html\">Blog List</a></li>\n                      <li><a href=\"blog-details.html\">Blog Details</a></li>\n                    </ul>\n                  </li>\n                  <li><a href=\"contact.html\">Contact</a></li>\n                </ul>\n              </nav>\n            </div>\n            <!-- Nav menu End  -->\n          </div>\n          <!-- Menu End  -->\n\n          <!-- Header Right start -->\n          <div class=\"header-right d-flex align-items-center tw-gap-705\">\n            <!-- Menu Button Start  -->\n            <div class=\"header-three-menu\">\n              <button\n                class=\"tw-offcanvas-open-btn tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center tw-transition-3 tw-rounded-md\"\n              >\n                <span\n                  ><img\n                    class=\"tw-transition-3\"\n                    src=\"/assets/images/icons/header-three-toggle.svg\"\n                    alt=\"toggle\"\n                /></span>\n              </button>\n            </div>\n            <!-- Menu Button End  -->\n\n            <!-- Header Button Start  -->\n            <div class=\"header-three-button d-none d-md-block\">\n              <a\n                class=\"tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-md\"\n                href=\"contact.html\"\n              >\n                download cv\n                <span class=\"tw-hover-btn-circle-dot bg-main-two-600\"></span>\n              </a>\n            </div>\n            <!-- Header Button End  -->\n          </div>\n\n          <!-- Header Right End  -->\n        </nav>\n      </div>\n    </header>\n    <!-- ==================== Header End Here ==================== -->\n    <div id=\"smooth-wrapper\">\n      <div id=\"smooth-content\">\n        <section class=\"banner-three-area\">\n          <div class=\"container tw-container-1800-px\">\n            <div class=\"row\">\n              <div class=\"col-xl-12\">\n                <div class=\"banner-three-wrapper position-relative z-1\">\n                  <div\n                    class=\"banner-three-man position-absolute start-50 translate-middle-x\"\n                  >\n                    <img\n                      src=\"/assets/images/shapes/banner-three-man.png\"\n                      alt=\"man\"\n                    />\n                  </div>\n                  <h1 class=\"banner-three-title text-black tw-mb-30\">\n                    developer\n                  </h1>\n                  <div\n                    class=\"banner-three-wrap d-flex justify-content-between align-items-end position-relative z-1\"\n                  >\n                    <div\n                      class=\"banner-three-left tw-rounded-lg\"\n                      data-aos=\"fade-up\"\n                      data-aos-duration=\"1000\"\n                      data-aos-delay=\"200\"\n                    >\n                      <h2 class=\"banner-three-left-title tw-text-3xl tw-mb-6\">\n                        Hello! I'm Shan <br />\n                        a digital designer and creative developer.\n                      </h2>\n                      <div class=\"banner-three-list\">\n                        <ul>\n                          <li\n                            class=\"tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4\"\n                          >\n                            <span\n                              ><img\n                                src=\"/assets/images/icons/banner-three-pluse.svg\"\n                                alt=\"pluse\"\n                            /></span>\n                            Web Development\n                          </li>\n                          <li\n                            class=\"tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4\"\n                          >\n                            <span\n                              ><img\n                                src=\"/assets/images/icons/banner-three-pluse.svg\"\n                                alt=\"pluse\"\n                            /></span>\n                            Branding & Identity\n                          </li>\n                          <li\n                            class=\"tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4\"\n                          >\n                            <span\n                              ><img\n                                src=\"/assets/images/icons/banner-three-pluse.svg\"\n                                alt=\"pluse\"\n                            /></span>\n                            Creative Strategy\n                          </li>\n                          <li\n                            class=\"tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4\"\n                          >\n                            <span\n                              ><img\n                                src=\"/assets/images/icons/banner-three-pluse.svg\"\n                                alt=\"pluse\"\n                            /></span>\n                            UI/UX Design\n                          </li>\n                          <li\n                            class=\"tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4\"\n                          >\n                            <span\n                              ><img\n                                src=\"/assets/images/icons/banner-three-pluse.svg\"\n                                alt=\"pluse\"\n                            /></span>\n                            Digital Marketing\n                          </li>\n                        </ul>\n                      </div>\n                    </div>\n                    <div\n                      class=\"banner-three-center text-center\"\n                      data-aos=\"fade-up\"\n                      data-aos-duration=\"1000\"\n                      data-aos-delay=\"200\"\n                    >\n                      <h3 class=\"banner-three-center-title tw-text-120\">\n                        Design, branding and web development made better.\n                      </h3>\n                      <div class=\"banner-three-button\">\n                        <a\n                          class=\"tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-lg\"\n                          href=\"contact.html\"\n                        >\n                          view projects\n                          <span\n                            class=\"tw-hover-btn-circle-dot bg-main-two-600\"\n                          ></span>\n                        </a>\n                      </div>\n                    </div>\n                    <div\n                      class=\"banner-three-right tw-rounded-lg\"\n                      data-aos=\"fade-up\"\n                      data-aos-duration=\"1000\"\n                      data-aos-delay=\"300\"\n                    >\n                      <div\n                        class=\"banner-three-counter-item tw-rounded-md tw-mb-4 position-relative\"\n                      >\n                        <h4\n                          class=\"banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1\"\n                        >\n                          <span\n                            class=\"purecounter font-heading\"\n                            data-purecounter-duration=\"2\"\n                            data-purecounter-end=\"98\"\n                          ></span\n                          >%\n                        </h4>\n                        <p\n                          class=\"banner-three-counter-paragraph tw-text-lg fw-medium text-heading\"\n                        >\n                          Client Satisfaction Rate\n                        </p>\n                      </div>\n                      <div\n                        class=\"banner-three-counter-item tw-rounded-md tw-mb-4 ms-auto bg-black\"\n                      >\n                        <h4\n                          class=\"banner-three-counter-title tw-text-101 fw-semibold font-heading text-white tw-mb-2 lh-1\"\n                        >\n                          <span\n                            class=\"purecounter font-heading\"\n                            data-purecounter-duration=\"4\"\n                            data-purecounter-end=\"70\"\n                          ></span\n                          >+\n                        </h4>\n                        <p\n                          class=\"banner-three-counter-paragraph tw-text-lg fw-medium text-white\"\n                        >\n                          Projects Launched\n                        </p>\n                      </div>\n                      <div\n                        class=\"banner-three-counter-item tw-rounded-md tw-mb-4\"\n                      >\n                        <div class=\"d-flex align-items-center tw-mb-2\">\n                          <div\n                            class=\"tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-1 border border-2 border-white\"\n                          >\n                            <img\n                              src=\"/assets/images/thumbs/team-img1.png\"\n                              alt=\"Client Image\"\n                              class=\"w-100 h-100 object-fit-cover\"\n                            />\n                          </div>\n                          <div\n                            class=\"tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-2 tw--ms-16-px z-1 border border-2 border-white\"\n                          >\n                            <img\n                              src=\"/assets/images/thumbs/team-img2.png\"\n                              alt=\"Client Image\"\n                              class=\"w-100 h-100 object-fit-cover\"\n                            />\n                          </div>\n                          <div\n                            class=\"tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-3 tw--ms-16-px z-1 border border-2 border-white\"\n                          >\n                            <img\n                              src=\"/assets/images/thumbs/team-img3.png\"\n                              alt=\"Client Image\"\n                              class=\"w-100 h-100 object-fit-cover\"\n                            />\n                          </div>\n                          <div\n                            class=\"tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-3 tw--ms-16-px z-1 border border-2 border-white\"\n                          >\n                            <img\n                              src=\"/assets/images/thumbs/team-img4.png\"\n                              alt=\"Client Image\"\n                              class=\"w-100 h-100 object-fit-cover\"\n                            />\n                          </div>\n                        </div>\n                        <h4\n                          class=\"banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1\"\n                        >\n                          <span\n                            class=\"purecounter font-heading\"\n                            data-purecounter-duration=\"3\"\n                            data-purecounter-end=\"96\"\n                          ></span\n                          >+\n                        </h4>\n                        <p\n                          class=\"banner-three-counter-paragraph tw-text-lg fw-medium text-heading\"\n                        >\n                          Global Clients and Growing\n                        </p>\n                      </div>\n                    </div>\n                    <div\n                      class=\"banner-three-line-shape position-absolute start-50 translate-middle-x z-n1\"\n                    >\n                      <img\n                        src=\"/assets/images/shapes/banner-three-shape.png\"\n                        alt=\"shape\"\n                      />\n                      <div class=\"banner-three-carcel-shape\">\n                        <div><span></span></div>\n                      </div>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </section>\n        <section class=\"about-three-area py-120 position-relative z-1\">\n          <div class=\"container tw-container-1800-px\">\n            <div class=\"about-three-top position-relative z-1\">\n              <div class=\"row justify-content-center tw-mb-21\">\n                <div class=\"col-xl-9\">\n                  <div class=\"text-center\">\n                    <h2\n                      class=\"about-three-title text-heading tw-text-15 tw-itm-title tw-itm-anim\"\n                    >\n                      I am dedicated to bringing your vision to life by crafting\n                      unique, highly aesthetic, and impactful digital\n                      experiences. My work speaks louder than words\u2014explore the\n                      results.\n                    </h2>\n                  </div>\n                </div>\n              </div>\n              <div class=\"row\">\n                <div class=\"col-xl-6\">\n                  <div\n                    class=\"about-three-thumb w-100 tw-clip-anim tw-rounded-lg\"\n                    data-aos=\"fade-up\"\n                    data-aos-duration=\"1000\"\n                    data-aos-delay=\"200\"\n                  >\n                    <img\n                      class=\"tw-anim-img w-100 tw-rounded-lg\"\n                      data-animate=\"true\"\n                      src=\"/assets/images/thumbs/about-three-thumb.png\"\n                      alt=\"thumb\"\n                    />\n                  </div>\n                </div>\n                <div class=\"col-xl-6\">\n                  <div\n                    class=\"about-three-right\"\n                    data-aos=\"fade-up\"\n                    data-aos-duration=\"1000\"\n                    data-aos-delay=\"300\"\n                  >\n                    <div>\n                      <p class=\"tw-text-xl tw-mb-10\">\n                        I\u2019m a passionate digital designer and web developer\n                        focused on creating modern, user-centered digital\n                        experiences. I blend creativity with clean, efficient\n                        code to build websites that are not only visually\n                        appealing but also functional, fast, and scalable.\n                      </p>\n                      <p class=\"tw-text-xl tw-mb-10\">\n                        With a strong eye for design & a solid technical\n                        foundation, I transform complex ideas into simple\n                        intuitive digital solutions. I believe great design is\n                        purposeful-every layout, interaction, and line of code\n                        is crafted to enhance usability and deliver real value.\n                      </p>\n                      <p class=\"tw-text-xl tw-mb-10\">\n                        From concept to launch, I work closely with clients to\n                        understand their goals, audience and brand vision. my\n                        collaborative approach ensures and project reflects the\n                        client\u2019s identity while business objectives and\n                        performance standards.\n                      </p>\n                    </div>\n                    <div class=\"about-three-counter d-inline-block\">\n                      <div class=\"tw-hover-btn-wrapper d-inline-block\">\n                        <a\n                          class=\"tw-btn-circle tw-hover-btn-item tw-hover-btn tw-w-160-px tw-h-160-px lh-1 d-inline-flex justify-content-center align-items-center rounded-circle position-relative overflow-hidden border border-1 border-neutral-200\"\n                          href=\"about.html\"\n                        >\n                          <span\n                            class=\"d-flex flex-column justify-content-center\"\n                          >\n                            <span\n                              class=\"tw-btn-circle-icon text-heading tw-text-8 tw-transition-3 font-heading fw-medium\"\n                              >2+</span\n                            >\n                            <span\n                              class=\"text-heading fw-bold text-center tw-transition-3 tw-text-2xl fw-medium\"\n                              >Years of Experience</span\n                            >\n                          </span>\n                          <i class=\"tw-btn-circle-dot bg-main-two-600\"></i>\n                        </a>\n                      </div>\n                    </div>\n                  </div>\n                </div>\n              </div>\n              <div\n                class=\"about-three-wrap-shape d-flex justify-content-between\"\n              >\n                <div\n                  class=\"banner-three-counter-item tw-rounded-md position-relative\"\n                  data-aos=\"fade-up\"\n                  data-aos-duration=\"1000\"\n                  data-aos-delay=\"200\"\n                >\n                  <h2\n                    class=\"banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1\"\n                  >\n                    <span\n                      class=\"purecounter font-heading\"\n                      data-purecounter-duration=\"4\"\n                      data-purecounter-end=\"478\"\n                    ></span\n                    >/5\n                  </h2>\n                  <p\n                    class=\"banner-three-counter-paragraph tw-text-lg fw-medium text-heading\"\n                  >\n                    Client Satisfaction Rate\n                  </p>\n                </div>\n                <div\n                  class=\"banner-three-counter-item tw-rounded-md position-relative\"\n                  data-aos=\"fade-up\"\n                  data-aos-duration=\"1000\"\n                  data-aos-delay=\"300\"\n                >\n                  <h2\n                    class=\"banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1\"\n                  >\n                    <span\n                      class=\"purecounter font-heading\"\n                      data-purecounter-duration=\"2\"\n                      data-purecounter-end=\"115\"\n                    ></span\n                    >k+\n                  </h2>\n                  <p\n                    class=\"banner-three-counter-paragraph tw-text-lg fw-medium text-heading\"\n                  >\n                    In Client revenue growth\n                  </p>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div>\n            <img\n              class=\"about-three-shape position-absolute start-0 w-100\"\n              src=\"/assets/images/shapes/about-three-shape.png\"\n              alt=\"shape\"\n            />\n          </div>\n        </section>\n        <!-- ======================== Marquee section start =========================== -->\n        <div class=\"marquee tw-pt-17 bg-black\">\n          <div\n            class=\"marquee_left d-flex align-items-center justify-content-between tw-gap-16 overflow-hidden\"\n          >\n            <div>\n              <h2\n                class=\"marquee-two-title marquee-three-title text-uppercase text-white\"\n              >\n                Services <span class=\"text-white\">-</span>\n              </h2>\n            </div>\n            <div>\n              <h2\n                class=\"marquee-two-title marquee-three-title text-uppercase text-stroke\"\n              >\n                Services <span class=\"text-white\">-</span>\n              </h2>\n            </div>\n            <div>\n              <h2\n                class=\"marquee-two-title marquee-three-title text-uppercase text-white\"\n              >\n                Services <span class=\"text-white\">-</span>\n              </h2>\n            </div>\n            <div>\n              <h2\n                class=\"marquee-two-title marquee-three-title text-uppercase text-stroke\"\n              >\n                Services <span class=\"text-white\">-</span>\n              </h2>\n            </div>\n            <div>\n              <h2\n                class=\"marquee-two-title marquee-three-title text-uppercase text-white\"\n              >\n                Services <span class=\"text-white\">-</span>\n              </h2>\n            </div>\n          </div>\n        </div>\n        <!-- ======================== Marquee section end =========================== -->\n        <section class=\"service-three-area bg-black pt-120 tw-pb-15\">\n          <div class=\"container tw-container-1800-px\">\n            <div class=\"row\">\n              <div class=\"col-12\">\n                <div class=\"service-three-wrapper\">\n                  <div\n                    class=\"service-three-single\"\n                    data-aos=\"fade-right\"\n                    data-aos-duration=\"2000\"\n                    data-aos-delay=\"200\"\n                  >\n                    <div\n                      class=\"service-three-item d-flex justify-content-between align-items-center\"\n                    >\n                      <div class=\"service-three-content d-flex tw-gap-14\">\n                        <div>\n                          <span\n                            class=\"service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3\"\n                            >01\n                            <img\n                              class=\"tw-transition-3\"\n                              src=\"/assets/images/icons/service-three-arrow.svg\"\n                              alt=\"arrow\"\n                          /></span>\n                        </div>\n                        <div>\n                          <div>\n                            <h2\n                              class=\"service-three-title tw-text-15 text-white tw-mb-4\"\n                            >\n                              <a href=\"service-details.html\"\n                                >Illustration Design</a\n                              >\n                            </h2>\n                          </div>\n                          <div class=\"portfolio-list portfolio-two-list\">\n                            <ul class=\"d-flex tw-gap-205 flex-wrap\">\n                              <li>\n                                <a\n                                  class=\"text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3\"\n                                  href=\"#\"\n                                  >Creative Direction</a\n                                >\n                              </li>\n                              <li>\n                                <a\n                                  class=\"text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3\"\n                                  href=\"#\"\n                                  >Brand Identity</a\n                                >\n                              </li>\n                              <li>\n                                <a\n                                  class=\"text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3\"\n                                  href=\"#\"\n                                  >Graphic Design</a\n                                >\n                              </li>\n                            </ul>\n                          </div>\n                        </div>\n                      </div>\n                      <div class=\"service-three-thumb\">\n                        <a href=\"service-details.html\"\n                          ><img\n                            src=\"/assets/images/thumbs/service-three-thumb1.png\"\n                            alt=\"thumb1\"\n                        /></a>\n                      </div>\n                    </div>\n                  </div>\n                  <div\n                    class=\"service-three-single ms-auto\"\n                    data-aos=\"fade-left\"\n                    data-aos-duration=\"2000\"\n                    data-aos-delay=\"300\"\n                  >\n                    <div\n                      class=\"service-three-item d-flex justify-content-between align-items-center\"\n                    >\n                      <div class=\"service-three-content d-flex tw-gap-14\">\n                        <div>\n                          <span\n                            class=\"service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3\"\n                            >02\n                            <img\n                              class=\"tw-transition-3\"\n                              src=\"/assets/images/icons/service-three-arrow.svg\"\n                              alt=\"arrow\"\n                          /></span>\n                        </div>\n                        <div>\n                          <div>\n                            <h2\n                              class=\"service-three-title tw-text-15 text-white tw-mb-4\"\n                            >\n                              <a href=\"service-details.html\"\n                                >Business Branding</a\n                              >\n                            </h2>\n                          </div>\n                          <div class=\"portfolio-list portfolio-two-list\">\n                            <ul class=\"d-flex tw-gap-205 flex-wrap\">\n                              <li>\n                                <a\n                                  class=\"text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3\"\n                                  href=\"#\"\n                                  >Creative Direction</a\n                                >\n                              </li>\n                              <li>\n                                <a\n                                  class=\"text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3\"\n                                  href=\"#\"\n                                  >Brand Identity</a\n                                >\n                              </li>\n                              <li>\n                                <a\n                                  class=\"text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3\"\n                                  href=\"#\"\n                                  >Graphic Design</a\n                                >\n                              </li>\n                            </ul>\n                          </div>\n                        </div>\n                      </div>\n                      <div class=\"service-three-thumb\">\n                        <a href=\"service-details.html\"\n                          ><img\n                            src=\"/assets/images/thumbs/service-three-thumb2.png\"\n                            alt=\"thumb1\"\n                        /></a>\n                      </div>\n                    </div>\n                  </div>\n                  <div\n                    class=\"service-three-single\"\n                    data-aos=\"fade-right\"\n                    data-aos-duration=\"2000\"\n                    data-aos-delay=\"400\"\n                  >\n                    <div\n                      class=\"service-three-item d-flex justify-content-between align-items-center\"\n                    >\n                      <div class=\"service-three-content d-flex tw-gap-14\">\n                        <div>\n                          <span\n                            class=\"service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3\"\n                            >03\n                            <img\n                              class=\"tw-transition-3\"\n                              src=\"/assets/images/icons/service-three-arrow.svg\"\n                              alt=\"arrow\"\n                          /></span>\n                        </div>\n                        <div>\n                          <div>\n                            <h2\n                              class=\"service-three-title tw-text-15 text-white tw-mb-4\"\n                            >\n                              <a href=\"service-details.html\">Web Development</a>\n                            </h2>\n                          </div>\n                          <div class=\"portfolio-list portfolio-two-list\">\n                            <ul class=\"d-flex tw-gap-205 flex-wrap\">\n                              <li>\n                                <a\n                                  class=\"text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3\"\n                                  href=\"#\"\n                                  >Creative Direction</a\n                                >\n                              </li>\n                              <li>\n                                <a\n                                  class=\"text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3\"\n                                  href=\"#\"\n                                  >Brand Identity</a\n                                >\n                              </li>\n                              <li>\n                                <a\n                                  class=\"text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3\"\n                                  href=\"#\"\n                                  >Graphic Design</a\n                                >\n                              </li>\n                            </ul>\n                          </div>\n                        </div>\n                      </div>\n                      <div class=\"service-three-thumb\">\n                        <a href=\"service-details.html\"\n                          ><img\n                            src=\"/assets/images/thumbs/service-three-thumb3.png\"\n                            alt=\"thumb1\"\n                        /></a>\n                      </div>\n                    </div>\n                  </div>\n                  <div\n                    class=\"service-three-single ms-auto\"\n                    data-aos=\"fade-left\"\n                    data-aos-duration=\"2000\"\n                    data-aos-delay=\"500\"\n                  >\n                    <div\n                      class=\"service-three-item d-flex justify-content-between align-items-center\"\n                    >\n                      <div class=\"service-three-content d-flex tw-gap-14\">\n                        <div>\n                          <span\n                            class=\"service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3\"\n                            >04\n                            <img\n                              class=\"tw-transition-3\"\n                              src=\"/assets/images/icons/service-three-arrow.svg\"\n                              alt=\"arrow\"\n                          /></span>\n                        </div>\n                        <div>\n                          <div>\n                            <h2\n                              class=\"service-three-title tw-text-15 text-white tw-mb-4\"\n                            >\n                              <a href=\"service-details.html\"\n                                >Application Design</a\n                              >\n                            </h2>\n                          </div>\n                          <div class=\"portfolio-list portfolio-two-list\">\n                            <ul class=\"d-flex tw-gap-205 flex-wrap\">\n                              <li>\n                                <a\n                                  class=\"text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3\"\n                                  href=\"#\"\n                                  >Creative Direction</a\n                                >\n                              </li>\n                              <li>\n                                <a\n                                  class=\"text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3\"\n                                  href=\"#\"\n                                  >Brand Identity</a\n                                >\n                              </li>\n                              <li>\n                                <a\n                                  class=\"text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3\"\n                                  href=\"#\"\n                                  >Graphic Design</a\n                                >\n                              </li>\n                            </ul>\n                          </div>\n                        </div>\n                      </div>\n                      <div class=\"service-three-thumb\">\n                        <a href=\"service-details.html\"\n                          ><img\n                            src=\"/assets/images/thumbs/service-three-thumb4.png\"\n                            alt=\"thumb1\"\n                        /></a>\n                      </div>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </section>\n        <section class=\"portfolio-three-area py-120 position-relative z-1\">\n          <div class=\"portfolio-three-shape position-absolute top-0 z-n1\">\n            <h3 class=\"portfolio-three-shape-title\">works</h3>\n          </div>\n          <div class=\"container tw-container-1800-px\">\n            <div class=\"row\">\n              <div class=\"col-xl-12\">\n                <div\n                  class=\"portfolio-three-wrapper d-flex justify-content-between flex-wrap align-items-start position-relative z-1\"\n                >\n                  <div\n                    class=\"portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper\"\n                  >\n                    <div\n                      class=\"portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2\"\n                    >\n                      <div class=\"tw-mb-6\">\n                        <div>\n                          <h2 class=\"tw-text-605 fw-medium tw-mb-4\">\n                            <a\n                              class=\"hover-text-main-two-600\"\n                              href=\"portfolio-details.html\"\n                              >Epic Strategy App</a\n                            >\n                          </h2>\n                        </div>\n                        <div class=\"portfolio-three-list portfolio-list\">\n                          <ul class=\"d-flex tw-gap-205 flex-wrap\">\n                            <li>\n                              <a\n                                class=\"text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3\"\n                                href=\"#\"\n                                >BRANDING</a\n                              >\n                            </li>\n                            <li>\n                              <a\n                                class=\"text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3\"\n                                href=\"#\"\n                                >web DESIGN</a\n                              >\n                            </li>\n                          </ul>\n                        </div>\n                      </div>\n                      <div>\n                        <div class=\"portfolio-three-button\">\n                          <a\n                            class=\"portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white\"\n                            href=\"portfolio-details.html\"\n                            ><i class=\"ph ph-arrow-up-right\"></i\n                          ></a>\n                        </div>\n                      </div>\n                    </div>\n                    <div\n                      class=\"portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg\"\n                      data-cursor=\"View\"\n                    >\n                      <a\n                        class=\"d-block cursor-hide tw-rounded-lg\"\n                        href=\"portfolio-details.html\"\n                        ><img\n                          class=\"w-100 tw-rounded-lg\"\n                          src=\"/assets/images/thumbs/portfolio-three-thumb1.jpg\"\n                          alt=\"thumb\"\n                      /></a>\n                    </div>\n                  </div>\n                  <div\n                    class=\"portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper\"\n                  >\n                    <div\n                      class=\"portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2\"\n                    >\n                      <div class=\"tw-mb-6\">\n                        <div>\n                          <h2 class=\"tw-text-605 fw-medium tw-mb-4\">\n                            <a\n                              class=\"hover-text-main-two-600\"\n                              href=\"portfolio-details.html\"\n                              >Branding Identity</a\n                            >\n                          </h2>\n                        </div>\n                        <div class=\"portfolio-three-list portfolio-list\">\n                          <ul class=\"d-flex tw-gap-205 flex-wrap\">\n                            <li>\n                              <a\n                                class=\"text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3\"\n                                href=\"#\"\n                                >BRANDING</a\n                              >\n                            </li>\n                            <li>\n                              <a\n                                class=\"text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3\"\n                                href=\"#\"\n                                >web DESIGN</a\n                              >\n                            </li>\n                          </ul>\n                        </div>\n                      </div>\n                      <div class=\"portfolio-three-button\">\n                        <a\n                          class=\"portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white\"\n                          href=\"portfolio-details.html\"\n                          ><i class=\"ph ph-arrow-up-right\"></i\n                        ></a>\n                      </div>\n                    </div>\n                    <div\n                      class=\"portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg\"\n                      data-cursor=\"View\"\n                    >\n                      <a\n                        class=\"d-block cursor-hide tw-rounded-lg\"\n                        href=\"portfolio-details.html\"\n                        ><img\n                          class=\"w-100 tw-rounded-lg\"\n                          src=\"/assets/images/thumbs/portfolio-three-thumb2.jpg\"\n                          alt=\"thumb\"\n                      /></a>\n                    </div>\n                  </div>\n                  <div\n                    class=\"portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper\"\n                  >\n                    <div\n                      class=\"portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2\"\n                    >\n                      <div class=\"tw-mb-6\">\n                        <div>\n                          <h2 class=\"tw-text-605 fw-medium tw-mb-4\">\n                            <a\n                              class=\"hover-text-main-two-600\"\n                              href=\"portfolio-details.html\"\n                              >PixelCraft Mobile UI</a\n                            >\n                          </h2>\n                        </div>\n                        <div class=\"portfolio-three-list portfolio-list\">\n                          <ul class=\"d-flex tw-gap-205 flex-wrap\">\n                            <li>\n                              <a\n                                class=\"text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3\"\n                                href=\"#\"\n                                >BRANDING</a\n                              >\n                            </li>\n                            <li>\n                              <a\n                                class=\"text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3\"\n                                href=\"#\"\n                                >web DESIGN</a\n                              >\n                            </li>\n                          </ul>\n                        </div>\n                      </div>\n                      <div class=\"portfolio-three-button\">\n                        <a\n                          class=\"portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white\"\n                          href=\"portfolio-details.html\"\n                          ><i class=\"ph ph-arrow-up-right\"></i\n                        ></a>\n                      </div>\n                    </div>\n                    <div\n                      class=\"portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg\"\n                      data-cursor=\"View\"\n                    >\n                      <a\n                        class=\"d-block cursor-hide tw-rounded-lg\"\n                        href=\"portfolio-details.html\"\n                        ><img\n                          class=\"w-100 tw-rounded-lg\"\n                          src=\"/assets/images/thumbs/portfolio-three-thumb3.jpg\"\n                          alt=\"thumb\"\n                      /></a>\n                    </div>\n                  </div>\n                  <div\n                    class=\"portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper\"\n                  >\n                    <div\n                      class=\"portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2\"\n                    >\n                      <div class=\"tw-mb-6\">\n                        <div>\n                          <h2 class=\"tw-text-605 fw-medium tw-mb-4\">\n                            <a\n                              class=\"hover-text-main-two-600\"\n                              href=\"portfolio-details.html\"\n                              >Creative Studio</a\n                            >\n                          </h2>\n                        </div>\n                        <div class=\"portfolio-three-list portfolio-list\">\n                          <ul class=\"d-flex tw-gap-205 flex-wrap\">\n                            <li>\n                              <a\n                                class=\"text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3\"\n                                href=\"#\"\n                                >BRANDING</a\n                              >\n                            </li>\n                            <li>\n                              <a\n                                class=\"text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3\"\n                                href=\"#\"\n                                >web DESIGN</a\n                              >\n                            </li>\n                          </ul>\n                        </div>\n                      </div>\n                      <div class=\"portfolio-three-button\">\n                        <a\n                          class=\"portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white\"\n                          href=\"portfolio-details.html\"\n                          ><i class=\"ph ph-arrow-up-right\"></i\n                        ></a>\n                      </div>\n                    </div>\n                    <div\n                      class=\"portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg\"\n                      data-cursor=\"View\"\n                    >\n                      <a\n                        class=\"d-block cursor-hide tw-rounded-lg\"\n                        href=\"portfolio-details.html\"\n                        ><img\n                          class=\"w-100 tw-rounded-lg\"\n                          src=\"/assets/images/thumbs/portfolio-three-thumb4.jpg\"\n                          alt=\"thumb\"\n                      /></a>\n                    </div>\n                  </div>\n                  <div\n                    class=\"about-three-counter portfolio-three-counter d-inline-block position-absolute bottom-0 start-0\"\n                  >\n                    <div class=\"tw-hover-btn-wrapper d-inline-block\">\n                      <a\n                        class=\"tw-btn-circle tw-hover-btn-item tw-hover-btn tw-w-160-px tw-h-160-px lh-1 d-inline-flex justify-content-center align-items-center rounded-circle position-relative overflow-hidden\"\n                        href=\"about.html\"\n                      >\n                        <span class=\"d-flex flex-column justify-content-center\">\n                          <span\n                            class=\"text-heading fw-bold tw-transition-3 tw-text-2xl fw-semibold\"\n                            >Discover <br />\n                            Our Projects <i class=\"ph ph-arrow-up-right\"></i\n                          ></span>\n                        </span>\n                        <i class=\"tw-btn-circle-dot bg-main-two-600\"></i>\n                      </a>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </section>\n        <div class=\"feature-three-area py-120 position-relative z-1\">\n          <div class=\"container tw-container-1800-px\">\n            <div class=\"row\">\n              <div class=\"col-xl-12\">\n                <div class=\"feature-three-wrapper hover__widget\">\n                  <div\n                    class=\"feature-three-single current hover__reveal-item\"\n                    data-aos=\"fade-up\"\n                    data-aos-duration=\"1000\"\n                    data-aos-delay=\"200\"\n                  >\n                    <div\n                      class=\"feature-three-item d-flex justify-content-between align-items-center\"\n                    >\n                      <div class=\"feature-three-left d-flex align-items-center\">\n                        <div>\n                          <span\n                            class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20\"\n                            >01</span\n                          >\n                        </div>\n                        <div>\n                          <span\n                            class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px\"\n                            >Awwwards</span\n                          >\n                        </div>\n                        <div>\n                          <span\n                            class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block\"\n                            >Site Of The Day - Luxe Beauty</span\n                          >\n                        </div>\n                      </div>\n                      <div>\n                        <span\n                          class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block\"\n                          >2023</span\n                        >\n                      </div>\n                    </div>\n                    <div\n                      class=\"hover__reveal-bg bg-img\"\n                      data-background-image=\"/assets/images/thumbs/feature-three-thumb1.jpg\"\n                    ></div>\n                  </div>\n                  <div\n                    class=\"feature-three-single hover__reveal-item\"\n                    data-aos=\"fade-up\"\n                    data-aos-duration=\"1000\"\n                    data-aos-delay=\"200\"\n                  >\n                    <div\n                      class=\"feature-three-item d-flex justify-content-between align-items-center\"\n                    >\n                      <div class=\"feature-three-left d-flex align-items-center\">\n                        <div>\n                          <span\n                            class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20\"\n                            >02</span\n                          >\n                        </div>\n                        <div>\n                          <span\n                            class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px\"\n                            >FWA</span\n                          >\n                        </div>\n                        <div>\n                          <span\n                            class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block\"\n                            >Motion Design and Animation</span\n                          >\n                        </div>\n                      </div>\n                      <div>\n                        <span\n                          class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block\"\n                          >2022</span\n                        >\n                      </div>\n                    </div>\n                    <div\n                      class=\"hover__reveal-bg bg-img\"\n                      data-background-image=\"/assets/images/thumbs/portfolio-two-thumb1.jpg\"\n                    ></div>\n                  </div>\n                  <div\n                    class=\"feature-three-single hover__reveal-item\"\n                    data-aos=\"fade-up\"\n                    data-aos-duration=\"1000\"\n                    data-aos-delay=\"200\"\n                  >\n                    <div\n                      class=\"feature-three-item d-flex justify-content-between align-items-center\"\n                    >\n                      <div class=\"feature-three-left d-flex align-items-center\">\n                        <div>\n                          <span\n                            class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20\"\n                            >03</span\n                          >\n                        </div>\n                        <div>\n                          <span\n                            class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px\"\n                            >CSSDA</span\n                          >\n                        </div>\n                        <div>\n                          <span\n                            class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block\"\n                            >Motion Design and Animation</span\n                          >\n                        </div>\n                      </div>\n                      <div>\n                        <span\n                          class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block\"\n                          >2021</span\n                        >\n                      </div>\n                    </div>\n                    <div\n                      class=\"hover__reveal-bg bg-img\"\n                      data-background-image=\"/assets/images/thumbs/portfolio-two-thumb2.jpg\"\n                    ></div>\n                  </div>\n                  <div\n                    class=\"feature-three-single hover__reveal-item\"\n                    data-aos=\"fade-up\"\n                    data-aos-duration=\"1000\"\n                    data-aos-delay=\"200\"\n                  >\n                    <div\n                      class=\"feature-three-item d-flex justify-content-between align-items-center\"\n                    >\n                      <div class=\"feature-three-left d-flex align-items-center\">\n                        <div>\n                          <span\n                            class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20\"\n                            >04</span\n                          >\n                        </div>\n                        <div>\n                          <span\n                            class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px\"\n                            >CSSDA</span\n                          >\n                        </div>\n                        <div>\n                          <span\n                            class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block\"\n                            >Motion Design and Animation</span\n                          >\n                        </div>\n                      </div>\n                      <div>\n                        <span\n                          class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block\"\n                          >2020</span\n                        >\n                      </div>\n                    </div>\n                    <div\n                      class=\"hover__reveal-bg bg-img\"\n                      data-background-image=\"/assets/images/thumbs/portfolio-two-thumb3.jpg\"\n                    ></div>\n                  </div>\n                  <div\n                    class=\"feature-three-single hover__reveal-item\"\n                    data-aos=\"fade-up\"\n                    data-aos-duration=\"1000\"\n                    data-aos-delay=\"200\"\n                  >\n                    <div\n                      class=\"feature-three-item d-flex justify-content-between align-items-center\"\n                    >\n                      <div class=\"feature-three-left d-flex align-items-center\">\n                        <div>\n                          <span\n                            class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20\"\n                            >05</span\n                          >\n                        </div>\n                        <div>\n                          <span\n                            class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px\"\n                            >Awwwards</span\n                          >\n                        </div>\n                        <div>\n                          <span\n                            class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block\"\n                            >Motion Design and Animation</span\n                          >\n                        </div>\n                      </div>\n                      <div>\n                        <span\n                          class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block\"\n                          >2019</span\n                        >\n                      </div>\n                    </div>\n                    <div\n                      class=\"hover__reveal-bg bg-img\"\n                      data-background-image=\"/assets/images/thumbs/portfolio-two-thumb4.jpg\"\n                    ></div>\n                  </div>\n                  <div\n                    class=\"feature-three-single hover__reveal-item\"\n                    data-aos=\"fade-up\"\n                    data-aos-duration=\"1000\"\n                    data-aos-delay=\"200\"\n                  >\n                    <div\n                      class=\"feature-three-item d-flex justify-content-between align-items-center\"\n                    >\n                      <div class=\"feature-three-left d-flex align-items-center\">\n                        <div>\n                          <span\n                            class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20\"\n                            >06</span\n                          >\n                        </div>\n                        <div>\n                          <span\n                            class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px\"\n                            >Awwwards</span\n                          >\n                        </div>\n                        <div>\n                          <span\n                            class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block\"\n                            >Motion Design and Animation</span\n                          >\n                        </div>\n                      </div>\n                      <div>\n                        <span\n                          class=\"feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block\"\n                          >2018</span\n                        >\n                      </div>\n                    </div>\n                    <div\n                      class=\"hover__reveal-bg bg-img\"\n                      data-background-image=\"/assets/images/thumbs/portfolio-thumb1.jpg\"\n                    ></div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n        <section class=\"testimonial-three-area pt-120 tw-pb-22\">\n          <div class=\"container tw-container-1800-px\">\n            <div class=\"row justify-content-center tw-mb-21\">\n              <div class=\"col-xl-10\">\n                <div class=\"text-center\">\n                  <h2\n                    class=\"testimonial-three-title text-heading tw-text-15 tw-itm-title tw-itm-anim\"\n                  >\n                    Honest testimonials from clients highlighting my commitment\n                    to quality, performance, & user-focused design that delivers\n                    real results\n                  </h2>\n                </div>\n              </div>\n            </div>\n            <div class=\"row\">\n              <div class=\"col-xl-12\">\n                <div class=\"testimonial-three-slider position-relative z-1\">\n                  <div class=\"testimonial-three-active swiper-container\">\n                    <div class=\"swiper-wrapper\">\n                      <!-- item 1 -->\n                      <div\n                        class=\"testimonial-three-wrapper d-flex align-items-center tw-gap-9 tw-rounded-lg tw-mb-705 swiper-slide\"\n                        data-aos=\"fade-up\"\n                        data-aos-duration=\"1000\"\n                        data-aos-delay=\"200\"\n                      >\n                        <div\n                          class=\"testimonial-three-thumb position-relative z-1\"\n                        >\n                          <img\n                            class=\"w-100 h-100 tw-rounded-lg\"\n                            src=\"/assets/images/thumbs/testimonial-three-thumb1.jpg\"\n                            alt=\"thumb\"\n                          />\n                          <div\n                            class=\"testimonial-three-button position-absolute start-50 top-50 translate-middle\"\n                          >\n                            <a\n                              class=\"open-popup testimonial-three-btn tw-w-220 tw-h-220 lh-1 d-inline-flex align-items-center justify-content-center bg-white text-main-two-600 tw-text-2xl position-relative z-1 hover-text-main-two-600 rounded-circle\"\n                              href=\"https://www.youtube.com/watch?v=Fvae8nxzVz4\"\n                              data-fancybox=\"gallery\"\n                              data-caption=\"\"\n                            >\n                              <i class=\"ph-bold ph-play\"></i>\n                              <span class=\"ripple\"></span>\n                            </a>\n                          </div>\n                        </div>\n                        <div class=\"testimonial-three-content w-100\">\n                          <div\n                            class=\"d-flex align-items-center justify-content-between tw-mb-16\"\n                          >\n                            <div>\n                              <span\n                                ><img\n                                  src=\"/assets/images/icons/testimonial-three-icon.svg\"\n                                  alt=\"icon\"\n                              /></span>\n                            </div>\n                            <div class=\"testimonial-three-review\">\n                              <span class=\"text-heading tw-text-lg\"\n                                ><i class=\"ph-bold ph-star\"></i\n                              ></span>\n                              <span class=\"text-heading tw-text-lg\"\n                                ><i class=\"ph-bold ph-star\"></i\n                              ></span>\n                              <span class=\"text-heading tw-text-lg\"\n                                ><i class=\"ph-bold ph-star\"></i\n                              ></span>\n                              <span class=\"text-heading tw-text-lg\"\n                                ><i class=\"ph-bold ph-star\"></i\n                              ></span>\n                              <span class=\"text-heading tw-text-lg\"\n                                ><i class=\"ph-bold ph-star\"></i\n                              ></span>\n                            </div>\n                          </div>\n                          <div class=\"tw-mb-15\">\n                            <p\n                              class=\"testimonial-three-paragraph text-heading tw-text-2xl fw-semibold\"\n                            >\n                              Nemo enim ipsam voluptatem quia voluptas sit\n                              aspernatur aut odit aut fugit sed quia\n                              consequuntur magni dolores eos qui ratione\n                              voluptatem sequi nesciunt.\n                            </p>\n                          </div>\n                          <div>\n                            <h2 class=\"tw-text-2xl fw-medium\">\n                              Sophia Reynolds\n                            </h2>\n                            <p class=\"tw-text-lg\">Founder, Startup Studio</p>\n                          </div>\n                        </div>\n                      </div>\n                      <!-- item 2 -->\n                      <div\n                        class=\"testimonial-three-wrapper d-flex align-items-center tw-gap-9 tw-rounded-lg tw-mb-705 swiper-slide\"\n                        data-aos=\"fade-up\"\n                        data-aos-duration=\"1000\"\n                        data-aos-delay=\"300\"\n                      >\n                        <div\n                          class=\"testimonial-three-thumb position-relative z-1\"\n                        >\n                          <img\n                            class=\"w-100 h-100 tw-rounded-lg\"\n                            src=\"/assets/images/thumbs/testimonial-three-thumb2.jpg\"\n                            alt=\"thumb\"\n                          />\n                          <div\n                            class=\"testimonial-three-button position-absolute start-50 top-50 translate-middle\"\n                          >\n                            <a\n                              class=\"open-popup testimonial-three-btn tw-w-220 tw-h-220 lh-1 d-inline-flex align-items-center justify-content-center bg-white text-main-two-600 tw-text-2xl position-relative z-1 hover-text-main-two-600 rounded-circle\"\n                              href=\"https://www.youtube.com/watch?v=Fvae8nxzVz4\"\n                              data-fancybox=\"gallery\"\n                              data-caption=\"\"\n                            >\n                              <i class=\"ph-bold ph-play\"></i>\n                              <span class=\"ripple\"></span>\n                            </a>\n                          </div>\n                        </div>\n                        <div class=\"testimonial-three-content w-100\">\n                          <div\n                            class=\"d-flex align-items-center justify-content-between tw-mb-16\"\n                          >\n                            <div>\n                              <span\n                                ><img\n                                  src=\"/assets/images/icons/testimonial-three-icon.svg\"\n                                  alt=\"icon\"\n                              /></span>\n                            </div>\n                            <div class=\"testimonial-three-review\">\n                              <span class=\"text-heading tw-text-lg\"\n                                ><i class=\"ph-bold ph-star\"></i\n                              ></span>\n                              <span class=\"text-heading tw-text-lg\"\n                                ><i class=\"ph-bold ph-star\"></i\n                              ></span>\n                              <span class=\"text-heading tw-text-lg\"\n                                ><i class=\"ph-bold ph-star\"></i\n                              ></span>\n                              <span class=\"text-heading tw-text-lg\"\n                                ><i class=\"ph-bold ph-star\"></i\n                              ></span>\n                              <span class=\"text-heading tw-text-lg\"\n                                ><i class=\"ph-bold ph-star\"></i\n                              ></span>\n                            </div>\n                          </div>\n                          <div class=\"tw-mb-15\">\n                            <p\n                              class=\"testimonial-three-paragraph text-heading tw-text-2xl fw-semibold\"\n                            >\n                              Nemo enim ipsam voluptatem quia voluptas sit\n                              aspernatur aut odit aut fugit sed quia\n                              consequuntur magni dolores eos qui ratione\n                              voluptatem sequi nesciunt.\n                            </p>\n                          </div>\n                          <div>\n                            <h2 class=\"tw-text-2xl fw-medium\">\n                              Daniel Roberts\n                            </h2>\n                            <p class=\"tw-text-lg\">CEO, Tech Company</p>\n                          </div>\n                        </div>\n                      </div>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </section>\n        <section class=\"brand-three-area brand-two-area pb-120 @@brandipClass\">\n          <div class=\"container tw-container-1800-px\">\n            <div class=\"row\">\n              <div class=\"col-xl-12\">\n                <div class=\"text-center tw-mb-15\">\n                  <h2 class=\"brand-three-title tw-text-xl tw-char-animation\">\n                    Loved by Teams Around the World\n                  </h2>\n                </div>\n              </div>\n            </div>\n            <div class=\"row gx-2\">\n              <div class=\"col-xl-2 col-lg-6 col-md-6\">\n                <div\n                  class=\"brand-item brand-three-item position-relative z-1 tw-mb-1\"\n                  data-aos=\"fade-up\"\n                  data-aos-duration=\"1000\"\n                  data-aos-delay=\"200\"\n                >\n                  <span class=\"brand-active-media\"\n                    ><img\n                      src=\"/assets/images/thumbs/marquee-two-thumb1.png\"\n                      alt=\"thumb\"\n                  /></span>\n                  <span class=\"brand-hover-media\"\n                    ><img\n                      src=\"/assets/images/thumbs/marquee-two-thumb11.png\"\n                      alt=\"thumb\"\n                  /></span>\n                </div>\n              </div>\n              <div class=\"col-xl-2 col-lg-6 col-md-6\">\n                <div\n                  class=\"brand-item brand-three-item position-relative z-1 tw-mb-1\"\n                  data-aos=\"fade-up\"\n                  data-aos-duration=\"1000\"\n                  data-aos-delay=\"300\"\n                >\n                  <span class=\"brand-active-media\"\n                    ><img\n                      src=\"/assets/images/thumbs/marquee-two-thumb2.png\"\n                      alt=\"thumb\"\n                  /></span>\n                  <span class=\"brand-hover-media\"\n                    ><img\n                      src=\"/assets/images/thumbs/marquee-two-thumb22.png\"\n                      alt=\"thumb\"\n                  /></span>\n                </div>\n              </div>\n              <div class=\"col-xl-2 col-lg-6 col-md-6\"></div>\n              <div class=\"col-xl-2 col-lg-6 col-md-6\">\n                <div\n                  class=\"brand-item brand-three-item position-relative z-1 tw-mb-1\"\n                  data-aos=\"fade-up\"\n                  data-aos-duration=\"1000\"\n                  data-aos-delay=\"400\"\n                >\n                  <span class=\"brand-active-media\"\n                    ><img\n                      src=\"/assets/images/thumbs/marquee-thumb55.png\"\n                      alt=\"thumb\"\n                  /></span>\n                  <span class=\"brand-hover-media\"\n                    ><img\n                      src=\"/assets/images/thumbs/marquee-thumb5.png\"\n                      alt=\"thumb\"\n                  /></span>\n                </div>\n              </div>\n              <div class=\"col-xl-2 col-lg-6 col-md-6\"></div>\n              <div class=\"col-xl-2 col-lg-6 col-md-6\">\n                <div\n                  class=\"brand-item brand-three-item position-relative z-1 tw-mb-1\"\n                  data-aos=\"fade-up\"\n                  data-aos-duration=\"1000\"\n                  data-aos-delay=\"500\"\n                >\n                  <span class=\"brand-active-media\"\n                    ><img\n                      src=\"/assets/images/thumbs/marquee-two-thumb4.png\"\n                      alt=\"thumb\"\n                  /></span>\n                  <span class=\"brand-hover-media\"\n                    ><img\n                      src=\"/assets/images/thumbs/marquee-two-thumb44.png\"\n                      alt=\"thumb\"\n                  /></span>\n                </div>\n              </div>\n            </div>\n            <div class=\"row gx-2\">\n              <div class=\"col-xl-2 col-lg-6 col-md-6\"></div>\n              <div class=\"col-xl-2 col-lg-6 col-md-6\">\n                <div\n                  class=\"brand-item brand-three-item position-relative z-1 tw-mb-1\"\n                  data-aos=\"fade-up\"\n                  data-aos-duration=\"1000\"\n                  data-aos-delay=\"200\"\n                >\n                  <span class=\"brand-active-media\"\n                    ><img\n                      src=\"/assets/images/thumbs/marquee-thumb33.png\"\n                      alt=\"thumb\"\n                  /></span>\n                  <span class=\"brand-hover-media\"\n                    ><img\n                      src=\"/assets/images/thumbs/marquee-thumb3.png\"\n                      alt=\"thumb\"\n                  /></span>\n                </div>\n              </div>\n              <div class=\"col-xl-2 col-lg-6 col-md-6\">\n                <div\n                  class=\"brand-item brand-three-item position-relative z-1 tw-mb-1\"\n                  data-aos=\"fade-up\"\n                  data-aos-duration=\"1000\"\n                  data-aos-delay=\"300\"\n                >\n                  <span class=\"brand-active-media\"\n                    ><img\n                      src=\"/assets/images/thumbs/marquee-thumb11.png\"\n                      alt=\"thumb\"\n                  /></span>\n                  <span class=\"brand-hover-media\"\n                    ><img\n                      src=\"/assets/images/thumbs/marquee-thumb1.png\"\n                      alt=\"thumb\"\n                  /></span>\n                </div>\n              </div>\n              <div class=\"col-xl-2 col-lg-6 col-md-6\"></div>\n              <div class=\"col-xl-2 col-lg-6 col-md-6\">\n                <div\n                  class=\"brand-item brand-three-item position-relative z-1 tw-mb-1\"\n                  data-aos=\"fade-up\"\n                  data-aos-duration=\"1000\"\n                  data-aos-delay=\"400\"\n                >\n                  <span class=\"brand-active-media\"\n                    ><img\n                      src=\"/assets/images/thumbs/marquee-thumb66.png\"\n                      alt=\"thumb\"\n                  /></span>\n                  <span class=\"brand-hover-media\"\n                    ><img\n                      src=\"/assets/images/thumbs/marquee-thumb6.png\"\n                      alt=\"thumb\"\n                  /></span>\n                </div>\n              </div>\n              <div class=\"col-xl-2 col-lg-6 col-md-6\">\n                <div\n                  class=\"brand-item brand-three-item position-relative z-1 tw-mb-1\"\n                  data-aos=\"fade-up\"\n                  data-aos-duration=\"1000\"\n                  data-aos-delay=\"500\"\n                >\n                  <span class=\"brand-active-media\"\n                    ><img\n                      src=\"/assets/images/thumbs/marquee-thumb22.png\"\n                      alt=\"thumb\"\n                  /></span>\n                  <span class=\"brand-hover-media\"\n                    ><img\n                      src=\"/assets/images/thumbs/marquee-thumb2.png\"\n                      alt=\"thumb\"\n                  /></span>\n                </div>\n              </div>\n            </div>\n          </div>\n        </section>\n\n        <section\n          class=\"footer-three-area pt-120 tw-pb-10 position-relative z-1\"\n        >\n          <div class=\"container tw-container-1800-px\">\n            <div class=\"row justify-content-between pb-120\">\n              <div class=\"col-xl-5 col-lg-6\">\n                <div\n                  class=\"footer-three-top-left tw-me-25\"\n                  data-aos=\"fade-up\"\n                  data-aos-duration=\"1000\"\n                  data-aos-delay=\"200\"\n                >\n                  <div class=\"tw-mb-9\">\n                    <h2 class=\"tw-text-15 text-white tw-char-animation\">\n                      Let\u2019s create something meaningful\n                    </h2>\n                  </div>\n                  <div\n                    class=\"d-inline-flex align-items-center tw-gap-6 tw-mb-10 flex-wrap\"\n                  >\n                    <a\n                      class=\"tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white\"\n                      href=\"mailto:shan@gmail.com\"\n                      >shan@gmail.com</a\n                    >\n                    <span class=\"tw-text-2xl fw-medium text-main-600\">//</span>\n                    <a\n                      class=\"tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white\"\n                      href=\"tel:+442039991245\"\n                      >+44 20 3999 1245</a\n                    >\n                  </div>\n                  <div\n                    class=\"footer-three-top-info tw-p-705 tw-rounded-lg d-flex tw-gap-6\"\n                  >\n                    <div class=\"footer-three-top-thumb tw-w-160-px\">\n                      <img\n                        class=\"tw-rounded-lg w-100\"\n                        src=\"/assets/images/thumbs/footer-three-thumb.jpg\"\n                        alt=\"thumb\"\n                      />\n                    </div>\n                    <div\n                      class=\"footer-three-top-content d-flex justify-content-between flex-column\"\n                    >\n                      <div>\n                        <h3 class=\"tw-text-xl text-white tw-mb-2\">\n                          Shan\n                        </h3>\n                        <p class=\"text-white\">Digital Designer & Developer</p>\n                      </div>\n                      <div class=\"footer-three-social\">\n                        <ul class=\"d-flex align-items-center tw-gap-1\">\n                          <li>\n                            <a\n                              class=\"tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading\"\n                              href=\"#\"\n                              ><i class=\"ph ph-facebook-logo\"></i\n                            ></a>\n                          </li>\n                          <li>\n                            <a\n                              class=\"tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading\"\n                              href=\"#\"\n                              ><i class=\"ph ph-x-logo\"></i\n                            ></a>\n                          </li>\n                          <li>\n                            <a\n                              class=\"tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading\"\n                              href=\"#\"\n                              ><i class=\"ph ph-instagram-logo\"></i\n                            ></a>\n                          </li>\n                        </ul>\n                      </div>\n                    </div>\n                  </div>\n                </div>\n              </div>\n              <div class=\"col-xl-6 col-lg-6\">\n                <div\n                  class=\"footer-three-form\"\n                  data-aos=\"fade-up\"\n                  data-aos-duration=\"1000\"\n                  data-aos-delay=\"300\"\n                >\n                  <form action=\"#\">\n                    <div class=\"row\">\n                      <div class=\"col-xl-12\">\n                        <div class=\"position-relative tw-mb-7\">\n                          <input\n                            type=\"text\"\n                            class=\"form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 tw-h-18 focus-tw-placeholder-text-hidden tw-placeholder-transition-2\"\n                            placeholder=\"First Name\"\n                          />\n                        </div>\n                      </div>\n                      <div class=\"col-xl-12\">\n                        <div class=\"position-relative tw-mb-7\">\n                          <input\n                            type=\"email\"\n                            class=\"form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 tw-h-18 focus-tw-placeholder-text-hidden tw-placeholder-transition-2\"\n                            placeholder=\"Email Address\"\n                          />\n                        </div>\n                      </div>\n                      <div class=\"col-xl-12\">\n                        <div class=\"position-relative tw-mb-7\">\n                          <textarea\n                            class=\"form-control bg-transparent shadow-none tw-h-196-px tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 focus-tw-placeholder-text-hidden tw-placeholder-transition-2\"\n                            placeholder=\"Message\"\n                          ></textarea>\n                        </div>\n                      </div>\n                      <div class=\"col-xl-12\">\n                        <div class=\"contact-button\">\n                          <button\n                            class=\"tw-hover-btn bg-main-600 text-heading tw-text-xl fw-bold tw-py-4 tw-px-10 d-inline-flex justify-content-center w-100 hover-text-heading hover-bg-white tw-transition-3 tw-rounded-lg\"\n                          >\n                            submit message\n                          </button>\n                        </div>\n                      </div>\n                    </div>\n                  </form>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"footer-three-border tw-px-18 tw-mb-10\">\n            <div class=\"container-fluid gx-0\">\n              <div class=\"row\">\n                <div class=\"col-xl-12\">\n                  <div\n                    class=\"footer-three-middile d-flex align-items-center justify-content-between\"\n                  >\n                    <div\n                      data-aos=\"fade-up\"\n                      data-aos-duration=\"1000\"\n                      data-aos-delay=\"200\"\n                    >\n                      <h4 class=\"tw-text-2xl text-white tw-mb-2\">\n                        Quick Links\n                      </h4>\n                      <ul class=\"d-flex tw-gap-2 flex-wrap\">\n                        <li>\n                          <a class=\"tw-text-lg text-white\" href=\"index.html\"\n                            >Home,</a\n                          >\n                        </li>\n                        <li>\n                          <a class=\"tw-text-lg text-white\" href=\"index.html\"\n                            >About Me,\n                          </a>\n                        </li>\n                        <li>\n                          <a class=\"tw-text-lg text-white\" href=\"index.html\"\n                            >Portfolio,\n                          </a>\n                        </li>\n                        <li>\n                          <a class=\"tw-text-lg text-white\" href=\"index.html\"\n                            >Service,\n                          </a>\n                        </li>\n                        <li>\n                          <a class=\"tw-text-lg text-white\" href=\"index.html\"\n                            >Contact\n                          </a>\n                        </li>\n                      </ul>\n                    </div>\n                    <div\n                      data-aos=\"fade-up\"\n                      data-aos-duration=\"1000\"\n                      data-aos-delay=\"300\"\n                    >\n                      <a\n                        class=\"footer-three-back-to-top tw-w-170 tw-h-170 lh-1 d-inline-flex justify-content-center align-items-center bg-main-two-600 text-white tw-text-3xl rounded-circle\"\n                        href=\"#\"\n                        ><i class=\"ph ph-arrow-up\"></i\n                      ></a>\n                    </div>\n                    <div\n                      class=\"text-lg-end\"\n                      data-aos=\"fade-up\"\n                      data-aos-duration=\"1000\"\n                      data-aos-delay=\"400\"\n                    >\n                      <h4 class=\"tw-text-2xl text-white tw-mb-2\">\n                        Shan Portfolio\n                      </h4>\n                      <p class=\"tw-text-lg text-white\">\n                        \u00a9 2025 Shan. All rights reserved\n                      </p>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div>\n            <div class=\"container tw-container-1800-px\">\n              <div class=\"row\">\n                <div class=\"col-xl-12\">\n                  <div class=\"footer-three-bottom text-center\">\n                    <h5 class=\"footer-three-bottom-title text-white text-center\">\n                      Shan\n                    </h5>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div>\n            <img\n              class=\"position-absolute top-0 start-0 z-n1\"\n              src=\"/assets/images/shapes/footer-three-bg-shape.png\"\n              alt=\"shape\"\n            />\n          </div>\n        </section>\n      </div>\n    </div>\n    <!-- Jquery js -->\n    <!-- phosphor Js -->\n    <!-- Bootstrap Bundle Js -->\n    <!-- aos -->\n    <!-- magnific popup js -->\n    <!-- marquee -->\n    <!-- counterup js -->\n    <!-- swiper bundle js -->\n    <!-- gsap js -->\n    <!-- Scroll plugin -->\n    <!-- Scroll smoother -->\n    <!-- Scroll Trigger -->\n    <!-- split text -->\n    <!-- chroma js -->\n    <!-- custom GSAP -->\n    <!-- custom GSAP -->\n    <!-- main js -->\n    <!-- cursor js -->\n    ";
+export const bodyHtml = `
+    <!--==================== Preloader Start ====================-->
+    <div class="preloader">
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <path
+          id="preloaderSvg"
+          d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"
+        ></path>
+      </svg>
+      <div class="preloader-heading">
+        <div class="load-text">
+          <span>L</span>
+          <span>o</span>
+          <span>a</span>
+          <span>d</span>
+          <span>i</span>
+          <span>n</span>
+          <span>g</span>
+        </div>
+      </div>
+    </div>
+    <!--==================== Preloader End ====================-->
+
+    <!--==================== Overlay Start ====================-->
+    <div class="overlay"></div>
+    <!--==================== Overlay End ====================-->
+
+    <!--==================== Sidebar Overlay End ====================-->
+    <div class="side-overlay"></div>
+    <!--==================== Sidebar Overlay End ====================-->
+
+    <!--==================== Begin Magic Cursor Start ====================-->
+    <div id="magic-cursor">
+      <div id="ball"></div>
+    </div>
+    <!--==================== Begin Magic Cursor End ====================-->
+
+    <!-- Custom Toast Message start -->
+    <div id="toast-container"></div>
+    <!-- Custom Toast Message End -->
+
+    <!-- ==================== Scroll to Top End Here ==================== -->
+    <div class="back-to-top-wrapper">
+      <button id="back_to_top" type="button" class="back-to-top-btn">
+        <svg
+          width="12"
+          height="7"
+          viewBox="0 0 12 7"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 6L6 1L1 6"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+    <!-- ==================== Scroll to Top End Here ==================== -->
+
+    <!-- ==================== Offcanvus Mobile Menu Start Here ==================== -->
+    <div class="tw-offcanvas-2-area p-relative">
+      <div class="tw-offcanvas-2-bg is-left left-box"></div>
+      <div class="tw-offcanvas-2-bg is-right right-box d-none d-md-block"></div>
+      <div class="tw-offcanvas-2-wrapper">
+        <div class="tw-offcanvas-2-left left-box">
+          <div
+            class="tw-offcanvas-2-left-wrap d-flex justify-content-between align-items-center"
+          >
+            <div class="twoffcanvas__logo">
+              <a class="logo-1" href="index.html"
+                ><img src="/assets/images/logo/logo.png" alt="Shan Logo"
+              /></a>
+            </div>
+            <div class="tw-offcanvas-2-close d-md-none text-end">
+              <button class="tw-offcanvas-2-close-btn tw-offcanvas-2-close-btn">
+                <span class="text">
+                  <span class="text-white">close</span>
+                </span>
+                <span class="d-inline-block">
+                  <span>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        width="32.621"
+                        height="1.00918"
+                        transform="matrix(0.704882 0.709325 -0.704882 0.709325 1.0061 0)"
+                        fill="currentcolor"
+                      />
+                      <rect
+                        width="32.621"
+                        height="1.00918"
+                        transform="matrix(0.704882 -0.709325 0.704882 0.709325 0 23.2842)"
+                        fill="currentcolor"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="tw-main-menu-mobile menu-hover-active counter-row">
+            <nav></nav>
+          </div>
+        </div>
+        <div
+          class="tw-offcanvas-2-right right-box d-none d-md-block p-relative"
+        >
+          <div class="tw-offcanvas-2-close text-end">
+            <button class="tw-offcanvas-2-close-btn">
+              <span class="text">
+                <span>close</span>
+              </span>
+              <span class="d-inline-block">
+                <span>
+                  <svg
+                    width="38"
+                    height="38"
+                    viewBox="0 0 38 38"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.80859 9.80762L28.1934 28.1924"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.80859 28.1924L28.1934 9.80761"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </div>
+          <div
+            class="tw-offcanvas-2-right-inner d-flex flex-column justify-content-between h-100"
+          >
+            <div class="twoffcanvas__contact-info">
+              <div class="twoffcanvas__contact-title">
+                <h5 class="text-white">Contact us</h5>
+              </div>
+              <ul>
+                <li>
+                  <span class="text-main-two-600 tw-text-xl"
+                    ><i class="ph ph-map-pin-line"></i
+                  ></span>
+                  <a
+                    class="text-white"
+                    href="https://www.google.com/maps/@23.8223586,90.3661283,15z"
+                    target="_blank"
+                    >Manchester 21, Zurich, CH</a
+                  >
+                </li>
+                <li>
+                  <span class="text-main-two-600 tw-text-xl"
+                    ><i class="ph ph-envelope"></i
+                  ></span>
+                  <a class="text-white" href="mailto:techubinfo@mail.com"
+                    ><span class="__cf_email__">omioinfo@mail.com</span></a
+                  >
+                </li>
+                <li>
+                  <span class="text-main-two-600 tw-text-xl"
+                    ><i class="ph ph-phone-call"></i
+                  ></span>
+                  <a class="text-white" href="tel:+48555223224"
+                    >(+00) 678 345 98568</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="footer-social"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <ul class="tw-gap-2">
+                <li>
+                  <a href="#">
+                    <span
+                      class="active-media d-flex align-items-center tw-gap-1"
+                      >Facebook <i class="ph ph-arrow-bend-up-right"></i
+                    ></span>
+                    <span class="hover-media"
+                      ><i class="ph ph-facebook-logo"></i
+                    ></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span
+                      class="active-media d-flex align-items-center tw-gap-1"
+                      >INSTAGRAM <i class="ph ph-arrow-bend-up-right"></i
+                    ></span>
+                    <span class="hover-media"
+                      ><i class="ph ph-instagram-logo"></i
+                    ></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span
+                      class="active-media d-flex align-items-center tw-gap-1"
+                      >LINKEDIN <i class="ph ph-arrow-bend-up-right"></i
+                    ></span>
+                    <span class="hover-media"
+                      ><i class="ph ph-linkedin-logo"></i
+                    ></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==================== Offcanvus Mobile Menu End Here ==================== -->
+
+    <!-- ==================== Header Start Here ==================== -->
+    <header
+      class="header header-two header-three tw-transition-all tw-z-99 position-relative"
+    >
+      <div class="container tw-container-1800-px">
+        <nav
+          class="d-flex align-items-center justify-content-between position-relative"
+        >
+          <!-- Logo Start -->
+          <div class="header-three-logo tw-rounded-md">
+            <a href="index.html" class="link">
+              <img
+                src="/assets/images/logo/logo-secendary.png"
+                alt="Shan Logo"
+                class="max-w-200-px"
+              />
+            </a>
+          </div>
+          <!-- Logo End  -->
+
+          <!-- Menu Start  -->
+          <div class="header-three-social d-none d-lg-block">
+            <ul class="d-flex tw-gap-205">
+              <li>
+                <a
+                  class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
+                  href="#"
+                  ><i class="ph-bold ph-facebook-logo"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
+                  href="#"
+                  ><i class="ph-bold ph-x-logo"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
+                  href="#"
+                  ><i class="ph-bold ph-instagram-logo"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
+                  href="#"
+                  ><i class="ph-bold ph-dribbble-logo"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!-- Menu End  -->
+
+          <!-- Menu Start  -->
+          <div class="header-menu d-none">
+            <!-- Nav menu Start -->
+            <div class="main-menu">
+              <nav class="tw-main-menu-content">
+                <ul>
+                  <li class="p-static has-dropdown">
+                    <a class="color-active" href="index.html">Home</a>
+                    <!-- mega menu start -->
+                    <div class="tw-submenu submenu has-homemenu">
+                      <div
+                        class="row gx-6 row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2"
+                      >
+                        <div class="col homemenu">
+                          <div class="homemenu-thumb tw-mb-4">
+                            <img
+                              src="/assets/images/thumbs/home1.jpg"
+                              alt="home-one"
+                            />
+                            <div class="homemenu-btn w-100">
+                              <div class="tw-mb-2">
+                                <a
+                                  class="bg-main-two-600 text-white fw-semibold tw-py-3 tw-text-sm d-inline-block hover-bg-white hover-text-heading menu-btn show-1"
+                                  href="index.html"
+                                >
+                                  Multi Page
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="homemenu-content text-center">
+                            <h4 class="homemenu-title">
+                              <a href="index.html">Ceative Agency</a>
+                            </h4>
+                          </div>
+                        </div>
+                        <div class="col homemenu">
+                          <div class="homemenu-thumb tw-mb-4">
+                            <img
+                              src="/assets/images/thumbs/home2.jpg"
+                              alt="home-two"
+                            />
+                            <div class="homemenu-btn w-100">
+                              <div class="tw-mb-2">
+                                <a
+                                  class="bg-main-two-600 text-white fw-semibold tw-py-3 tw-text-sm d-inline-block hover-bg-white hover-text-heading menu-btn show-1"
+                                  href="index-2.html"
+                                >
+                                  Multi Page
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="homemenu-content text-center">
+                            <h4 class="homemenu-title">
+                              <a href="index-2.html">Digital Studio</a>
+                            </h4>
+                          </div>
+                        </div>
+                        <div class="col homemenu">
+                          <div class="homemenu-thumb tw-mb-4">
+                            <img
+                              src="/assets/images/thumbs/home3.jpg"
+                              alt="home-three"
+                            />
+                            <div class="homemenu-btn w-100">
+                              <div class="tw-mb-2">
+                                <a
+                                  class="bg-main-two-600 text-white fw-semibold tw-py-3 tw-text-sm d-inline-block hover-bg-white hover-text-heading menu-btn show-1"
+                                  href="index-3.html"
+                                >
+                                  Multi Page
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="homemenu-content text-center">
+                            <h4 class="homemenu-title">
+                              <a href="index-3.html">Personal Portfolio</a>
+                            </h4>
+                          </div>
+                        </div>
+                        <div class="col homemenu">
+                          <div class="homemenu-thumb tw-mb-4">
+                            <img
+                              src="/assets/images/thumbs/coming-soon-img.png"
+                              alt="coming-soon"
+                            />
+                          </div>
+                          <div class="homemenu-content text-center">
+                            <h4 class="homemenu-title">
+                              <a href="#">Coming Soon</a>
+                            </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- mega menu end -->
+                  </li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li class="has-dropdown">
+                    <a href="service.html">Services</a>
+                    <ul class="submenu tw-submenu">
+                      <li><a href="service.html">Our Service</a></li>
+                      <li>
+                        <a href="service-details.html">Service Details</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="has-dropdown">
+                    <a href="#">Pages</a>
+                    <ul class="submenu tw-submenu">
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="team.html">Our Team</a></li>
+                      <li><a href="testimonial.html">Testimonials</a></li>
+                      <li><a href="pricing.html">Pricing</a></li>
+                      <li><a href="portfolio-one.html">Portfolio One</a></li>
+                      <li><a href="portfolio-two.html">Portfolio Two</a></li>
+                      <li>
+                        <a href="portfolio-three.html">Portfolio Theee</a>
+                      </li>
+                      <li><a href="portfolio-four.html">Portfolio Four</a></li>
+                      <li>
+                        <a href="portfolio-details.html">Portfolio Details</a>
+                      </li>
+                      <li><a href="faq.html">Our Faq</a></li>
+                      <li><a href="error.html">Error</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-dropdown">
+                    <a href="blog.html">Blog</a>
+                    <ul class="submenu tw-submenu">
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="blog-list.html">Blog List</a></li>
+                      <li><a href="blog-details.html">Blog Details</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <!-- Nav menu End  -->
+          </div>
+          <!-- Menu End  -->
+
+          <!-- Header Right start -->
+          <div class="header-right d-flex align-items-center tw-gap-705">
+            <!-- Menu Button Start  -->
+            <div class="header-three-menu">
+              <button
+                class="tw-offcanvas-open-btn tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center tw-transition-3 tw-rounded-md"
+              >
+                <span
+                  ><img
+                    class="tw-transition-3"
+                    src="/assets/images/icons/header-three-toggle.svg"
+                    alt="toggle"
+                /></span>
+              </button>
+            </div>
+            <!-- Menu Button End  -->
+
+            <!-- Header Button Start  -->
+            <div class="header-three-button d-none d-md-block">
+              <a
+                class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-md"
+                href="contact.html"
+              >
+                download cv
+                <span class="tw-hover-btn-circle-dot bg-main-two-600"></span>
+              </a>
+            </div>
+            <!-- Header Button End  -->
+          </div>
+
+          <!-- Header Right End  -->
+        </nav>
+      </div>
+    </header>
+    <!-- ==================== Header End Here ==================== -->
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <section class="banner-three-area">
+          <div class="container tw-container-1800-px">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="banner-three-wrapper position-relative z-1">
+                  <div
+                    class="banner-three-man position-absolute start-50 translate-middle-x"
+                  >
+                    <img
+                      src="/assets/images/shapes/banner-three-man.png"
+                      alt="man"
+                    />
+                  </div>
+                  <h1 class="banner-three-title text-black tw-mb-30">
+                    developer
+                  </h1>
+                  <div
+                    class="banner-three-wrap d-flex justify-content-between align-items-end position-relative z-1"
+                  >
+                    <div
+                      class="banner-three-left tw-rounded-lg"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <h2 class="banner-three-left-title tw-text-3xl tw-mb-6">
+                        Hello! I'm Shan <br />
+                        a digital designer and creative developer.
+                      </h2>
+                      <div class="banner-three-list">
+                        <ul>
+                          <li
+                            class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
+                          >
+                            <span
+                              ><img
+                                src="/assets/images/icons/banner-three-pluse.svg"
+                                alt="pluse"
+                            /></span>
+                            Web Development
+                          </li>
+                          <li
+                            class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
+                          >
+                            <span
+                              ><img
+                                src="/assets/images/icons/banner-three-pluse.svg"
+                                alt="pluse"
+                            /></span>
+                            Branding & Identity
+                          </li>
+                          <li
+                            class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
+                          >
+                            <span
+                              ><img
+                                src="/assets/images/icons/banner-three-pluse.svg"
+                                alt="pluse"
+                            /></span>
+                            Creative Strategy
+                          </li>
+                          <li
+                            class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
+                          >
+                            <span
+                              ><img
+                                src="/assets/images/icons/banner-three-pluse.svg"
+                                alt="pluse"
+                            /></span>
+                            UI/UX Design
+                          </li>
+                          <li
+                            class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
+                          >
+                            <span
+                              ><img
+                                src="/assets/images/icons/banner-three-pluse.svg"
+                                alt="pluse"
+                            /></span>
+                            Digital Marketing
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="banner-three-center text-center"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <h3 class="banner-three-center-title tw-text-120">
+                        Design, branding and web development made better.
+                      </h3>
+                      <div class="banner-three-button">
+                        <a
+                          class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-lg"
+                          href="contact.html"
+                        >
+                          view projects
+                          <span
+                            class="tw-hover-btn-circle-dot bg-main-two-600"
+                          ></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      class="banner-three-right tw-rounded-lg"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="300"
+                    >
+                      <div
+                        class="banner-three-counter-item tw-rounded-md tw-mb-4 position-relative"
+                      >
+                        <h4
+                          class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1"
+                        >
+                          <span
+                            class="purecounter font-heading"
+                            data-purecounter-duration="2"
+                            data-purecounter-end="98"
+                          ></span
+                          >%
+                        </h4>
+                        <p
+                          class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
+                        >
+                          Client Satisfaction Rate
+                        </p>
+                      </div>
+                      <div
+                        class="banner-three-counter-item tw-rounded-md tw-mb-4 ms-auto bg-black"
+                      >
+                        <h4
+                          class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-white tw-mb-2 lh-1"
+                        >
+                          <span
+                            class="purecounter font-heading"
+                            data-purecounter-duration="4"
+                            data-purecounter-end="70"
+                          ></span
+                          >+
+                        </h4>
+                        <p
+                          class="banner-three-counter-paragraph tw-text-lg fw-medium text-white"
+                        >
+                          Projects Launched
+                        </p>
+                      </div>
+                      <div
+                        class="banner-three-counter-item tw-rounded-md tw-mb-4"
+                      >
+                        <div class="d-flex align-items-center tw-mb-2">
+                          <div
+                            class="tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-1 border border-2 border-white"
+                          >
+                            <img
+                              src="/assets/images/thumbs/team-img1.png"
+                              alt="Client Image"
+                              class="w-100 h-100 object-fit-cover"
+                            />
+                          </div>
+                          <div
+                            class="tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-2 tw--ms-16-px z-1 border border-2 border-white"
+                          >
+                            <img
+                              src="/assets/images/thumbs/team-img2.png"
+                              alt="Client Image"
+                              class="w-100 h-100 object-fit-cover"
+                            />
+                          </div>
+                          <div
+                            class="tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-3 tw--ms-16-px z-1 border border-2 border-white"
+                          >
+                            <img
+                              src="/assets/images/thumbs/team-img3.png"
+                              alt="Client Image"
+                              class="w-100 h-100 object-fit-cover"
+                            />
+                          </div>
+                          <div
+                            class="tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-3 tw--ms-16-px z-1 border border-2 border-white"
+                          >
+                            <img
+                              src="/assets/images/thumbs/team-img4.png"
+                              alt="Client Image"
+                              class="w-100 h-100 object-fit-cover"
+                            />
+                          </div>
+                        </div>
+                        <h4
+                          class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1"
+                        >
+                          <span
+                            class="purecounter font-heading"
+                            data-purecounter-duration="3"
+                            data-purecounter-end="96"
+                          ></span
+                          >+
+                        </h4>
+                        <p
+                          class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
+                        >
+                          Global Clients and Growing
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="banner-three-line-shape position-absolute start-50 translate-middle-x z-n1"
+                    >
+                      <img
+                        src="/assets/images/shapes/banner-three-shape.png"
+                        alt="shape"
+                      />
+                      <div class="banner-three-carcel-shape">
+                        <div><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about-three-area py-120 position-relative z-1">
+          <div class="container tw-container-1800-px">
+            <div class="about-three-top position-relative z-1">
+              <div class="row justify-content-center tw-mb-21">
+                <div class="col-xl-9">
+                  <div class="text-center">
+                    <h2
+                      class="about-three-title text-heading tw-text-15 tw-itm-title tw-itm-anim"
+                    >
+                      I am dedicated to bringing your vision to life by crafting
+                      unique, highly aesthetic, and impactful digital
+                      experiences. My work speaks louder than words—explore the
+                      results.
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-6">
+                  <div
+                    class="about-three-thumb w-100 tw-clip-anim tw-rounded-lg"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <img
+                      class="tw-anim-img w-100 tw-rounded-lg"
+                      data-animate="true"
+                      src="/assets/images/thumbs/about-three-thumb.webp"
+                      alt="thumb"
+                    />
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div
+                    class="about-three-right"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
+                  >
+                    <div>
+                      <p class="tw-text-xl tw-mb-10">
+                        I’m a passionate digital designer and web developer
+                        focused on creating modern, user-centered digital
+                        experiences. I blend creativity with clean, efficient
+                        code to build websites that are not only visually
+                        appealing but also functional, fast, and scalable.
+                      </p>
+                      <p class="tw-text-xl tw-mb-10">
+                        With a strong eye for design & a solid technical
+                        foundation, I transform complex ideas into simple
+                        intuitive digital solutions. I believe great design is
+                        purposeful-every layout, interaction, and line of code
+                        is crafted to enhance usability and deliver real value.
+                      </p>
+                      <p class="tw-text-xl tw-mb-10">
+                        From concept to launch, I work closely with clients to
+                        understand their goals, audience and brand vision. my
+                        collaborative approach ensures and project reflects the
+                        client’s identity while business objectives and
+                        performance standards.
+                      </p>
+                    </div>
+                    <div class="about-three-counter d-inline-block">
+                      <div class="tw-hover-btn-wrapper d-inline-block">
+                        <a
+                          class="tw-btn-circle tw-hover-btn-item tw-hover-btn tw-w-160-px tw-h-160-px lh-1 d-inline-flex justify-content-center align-items-center rounded-circle position-relative overflow-hidden border border-1 border-neutral-200"
+                          href="about.html"
+                        >
+                          <span
+                            class="d-flex flex-column justify-content-center"
+                          >
+                            <span
+                              class="tw-btn-circle-icon text-heading tw-text-8 tw-transition-3 font-heading fw-medium"
+                              >2+</span
+                            >
+                            <span
+                              class="text-heading fw-bold text-center tw-transition-3 tw-text-2xl fw-medium"
+                              >Years of Experience</span
+                            >
+                          </span>
+                          <i class="tw-btn-circle-dot bg-main-two-600"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="about-three-wrap-shape d-flex justify-content-between"
+              >
+                <div
+                  class="banner-three-counter-item tw-rounded-md position-relative"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
+                  <h2
+                    class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1"
+                  >
+                    <span
+                      class="purecounter font-heading"
+                      data-purecounter-duration="4"
+                      data-purecounter-end="478"
+                    ></span
+                    >/5
+                  </h2>
+                  <p
+                    class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
+                  >
+                    Client Satisfaction Rate
+                  </p>
+                </div>
+                <div
+                  class="banner-three-counter-item tw-rounded-md position-relative"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
+                  <h2
+                    class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1"
+                  >
+                    <span
+                      class="purecounter font-heading"
+                      data-purecounter-duration="2"
+                      data-purecounter-end="115"
+                    ></span
+                    >k+
+                  </h2>
+                  <p
+                    class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
+                  >
+                    In Client revenue growth
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="about-three-shape position-absolute start-0 w-100"
+              src="/assets/images/shapes/about-three-shape.png"
+              alt="shape"
+            />
+          </div>
+        </section>
+        <!-- ======================== Marquee section start =========================== -->
+        <div class="marquee tw-pt-17 bg-black">
+          <div
+            class="marquee_left d-flex align-items-center justify-content-between tw-gap-16 overflow-hidden"
+          >
+            <div>
+              <h2
+                class="marquee-two-title marquee-three-title text-uppercase text-white"
+              >
+                Services <span class="text-white">-</span>
+              </h2>
+            </div>
+            <div>
+              <h2
+                class="marquee-two-title marquee-three-title text-uppercase text-stroke"
+              >
+                Services <span class="text-white">-</span>
+              </h2>
+            </div>
+            <div>
+              <h2
+                class="marquee-two-title marquee-three-title text-uppercase text-white"
+              >
+                Services <span class="text-white">-</span>
+              </h2>
+            </div>
+            <div>
+              <h2
+                class="marquee-two-title marquee-three-title text-uppercase text-stroke"
+              >
+                Services <span class="text-white">-</span>
+              </h2>
+            </div>
+            <div>
+              <h2
+                class="marquee-two-title marquee-three-title text-uppercase text-white"
+              >
+                Services <span class="text-white">-</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <!-- ======================== Marquee section end =========================== -->
+        <section class="service-three-area bg-black pt-120 tw-pb-15">
+          <div class="container tw-container-1800-px">
+            <div class="row">
+              <div class="col-12">
+                <div class="service-three-wrapper">
+                  <div
+                    class="service-three-single"
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="service-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="service-three-content d-flex tw-gap-14">
+                        <div>
+                          <span
+                            class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
+                            >01
+                            <img
+                              class="tw-transition-3"
+                              src="/assets/images/icons/service-three-arrow.svg"
+                              alt="arrow"
+                          /></span>
+                        </div>
+                        <div>
+                          <div>
+                            <h2
+                              class="service-three-title tw-text-15 text-white tw-mb-4"
+                            >
+                              <a href="service-details.html"
+                                >Illustration Design</a
+                              >
+                            </h2>
+                          </div>
+                          <div class="portfolio-list portfolio-two-list">
+                            <ul class="d-flex tw-gap-205 flex-wrap">
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >Creative Direction</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >Brand Identity</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >Graphic Design</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="service-three-thumb">
+                        <a href="service-details.html"
+                          ><img
+                            src="/assets/images/thumbs/service-three-thumb1.png"
+                            alt="thumb1"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="service-three-single ms-auto"
+                    data-aos="fade-left"
+                    data-aos-duration="2000"
+                    data-aos-delay="300"
+                  >
+                    <div
+                      class="service-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="service-three-content d-flex tw-gap-14">
+                        <div>
+                          <span
+                            class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
+                            >02
+                            <img
+                              class="tw-transition-3"
+                              src="/assets/images/icons/service-three-arrow.svg"
+                              alt="arrow"
+                          /></span>
+                        </div>
+                        <div>
+                          <div>
+                            <h2
+                              class="service-three-title tw-text-15 text-white tw-mb-4"
+                            >
+                              <a href="service-details.html"
+                                >Business Branding</a
+                              >
+                            </h2>
+                          </div>
+                          <div class="portfolio-list portfolio-two-list">
+                            <ul class="d-flex tw-gap-205 flex-wrap">
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >Creative Direction</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >Brand Identity</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >Graphic Design</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="service-three-thumb">
+                        <a href="service-details.html"
+                          ><img
+                            src="/assets/images/thumbs/service-three-thumb2.png"
+                            alt="thumb1"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="service-three-single"
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                    data-aos-delay="400"
+                  >
+                    <div
+                      class="service-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="service-three-content d-flex tw-gap-14">
+                        <div>
+                          <span
+                            class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
+                            >03
+                            <img
+                              class="tw-transition-3"
+                              src="/assets/images/icons/service-three-arrow.svg"
+                              alt="arrow"
+                          /></span>
+                        </div>
+                        <div>
+                          <div>
+                            <h2
+                              class="service-three-title tw-text-15 text-white tw-mb-4"
+                            >
+                              <a href="service-details.html">Web Development</a>
+                            </h2>
+                          </div>
+                          <div class="portfolio-list portfolio-two-list">
+                            <ul class="d-flex tw-gap-205 flex-wrap">
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >Creative Direction</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >Brand Identity</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >Graphic Design</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="service-three-thumb">
+                        <a href="service-details.html"
+                          ><img
+                            src="/assets/images/thumbs/service-three-thumb3.png"
+                            alt="thumb1"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="service-three-single ms-auto"
+                    data-aos="fade-left"
+                    data-aos-duration="2000"
+                    data-aos-delay="500"
+                  >
+                    <div
+                      class="service-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="service-three-content d-flex tw-gap-14">
+                        <div>
+                          <span
+                            class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
+                            >04
+                            <img
+                              class="tw-transition-3"
+                              src="/assets/images/icons/service-three-arrow.svg"
+                              alt="arrow"
+                          /></span>
+                        </div>
+                        <div>
+                          <div>
+                            <h2
+                              class="service-three-title tw-text-15 text-white tw-mb-4"
+                            >
+                              <a href="service-details.html"
+                                >Application Design</a
+                              >
+                            </h2>
+                          </div>
+                          <div class="portfolio-list portfolio-two-list">
+                            <ul class="d-flex tw-gap-205 flex-wrap">
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >Creative Direction</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >Brand Identity</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >Graphic Design</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="service-three-thumb">
+                        <a href="service-details.html"
+                          ><img
+                            src="/assets/images/thumbs/service-three-thumb4.png"
+                            alt="thumb1"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio-three-area py-120 position-relative z-1">
+          <div class="portfolio-three-shape position-absolute top-0 z-n1">
+            <h3 class="portfolio-three-shape-title">works</h3>
+          </div>
+          <div class="container tw-container-1800-px">
+            <div class="row">
+              <div class="col-xl-12">
+                <div
+                  class="portfolio-three-wrapper d-flex justify-content-between flex-wrap align-items-start position-relative z-1"
+                >
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="portfolio-details.html"
+                              >Epic Strategy App</a
+                            >
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >BRANDING</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >web DESIGN</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="portfolio-three-button">
+                          <a
+                            class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                            href="portfolio-details.html"
+                            ><i class="ph ph-arrow-up-right"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="View"
+                    >
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="portfolio-details.html"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="/assets/images/thumbs/portfolio-three-thumb1.jpg"
+                          alt="thumb"
+                      /></a>
+                    </div>
+                  </div>
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="portfolio-details.html"
+                              >Branding Identity</a
+                            >
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >BRANDING</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >web DESIGN</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="portfolio-three-button">
+                        <a
+                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                          href="portfolio-details.html"
+                          ><i class="ph ph-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="View"
+                    >
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="portfolio-details.html"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="/assets/images/thumbs/portfolio-three-thumb2.jpg"
+                          alt="thumb"
+                      /></a>
+                    </div>
+                  </div>
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="portfolio-details.html"
+                              >PixelCraft Mobile UI</a
+                            >
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >BRANDING</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >web DESIGN</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="portfolio-three-button">
+                        <a
+                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                          href="portfolio-details.html"
+                          ><i class="ph ph-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="View"
+                    >
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="portfolio-details.html"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="/assets/images/thumbs/portfolio-three-thumb3.jpg"
+                          alt="thumb"
+                      /></a>
+                    </div>
+                  </div>
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="portfolio-details.html"
+                              >Creative Studio</a
+                            >
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >BRANDING</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >web DESIGN</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="portfolio-three-button">
+                        <a
+                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                          href="portfolio-details.html"
+                          ><i class="ph ph-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="View"
+                    >
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="portfolio-details.html"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="/assets/images/thumbs/portfolio-three-thumb4.jpg"
+                          alt="thumb"
+                      /></a>
+                    </div>
+                  </div>
+                  <div
+                    class="about-three-counter portfolio-three-counter d-inline-block position-absolute bottom-0 start-0"
+                  >
+                    <div class="tw-hover-btn-wrapper d-inline-block">
+                      <a
+                        class="tw-btn-circle tw-hover-btn-item tw-hover-btn tw-w-160-px tw-h-160-px lh-1 d-inline-flex justify-content-center align-items-center rounded-circle position-relative overflow-hidden"
+                        href="about.html"
+                      >
+                        <span class="d-flex flex-column justify-content-center">
+                          <span
+                            class="text-heading fw-bold tw-transition-3 tw-text-2xl fw-semibold"
+                            >Discover <br />
+                            Our Projects <i class="ph ph-arrow-up-right"></i
+                          ></span>
+                        </span>
+                        <i class="tw-btn-circle-dot bg-main-two-600"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="feature-three-area py-120 position-relative z-1">
+          <div class="container tw-container-1800-px">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="feature-three-wrapper hover__widget">
+                  <div
+                    class="feature-three-single current hover__reveal-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="feature-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
+                            >01</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
+                            >Awwwards</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                            >Site Of The Day - Luxe Beauty</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                          >2023</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="hover__reveal-bg bg-img"
+                      data-background-image="/assets/images/thumbs/feature-three-thumb1.jpg"
+                    ></div>
+                  </div>
+                  <div
+                    class="feature-three-single hover__reveal-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="feature-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
+                            >02</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
+                            >FWA</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                            >Motion Design and Animation</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                          >2022</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="hover__reveal-bg bg-img"
+                      data-background-image="/assets/images/thumbs/portfolio-two-thumb1.jpg"
+                    ></div>
+                  </div>
+                  <div
+                    class="feature-three-single hover__reveal-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="feature-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
+                            >03</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
+                            >CSSDA</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                            >Motion Design and Animation</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                          >2021</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="hover__reveal-bg bg-img"
+                      data-background-image="/assets/images/thumbs/portfolio-two-thumb2.jpg"
+                    ></div>
+                  </div>
+                  <div
+                    class="feature-three-single hover__reveal-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="feature-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
+                            >04</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
+                            >CSSDA</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                            >Motion Design and Animation</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                          >2020</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="hover__reveal-bg bg-img"
+                      data-background-image="/assets/images/thumbs/portfolio-two-thumb3.jpg"
+                    ></div>
+                  </div>
+                  <div
+                    class="feature-three-single hover__reveal-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="feature-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
+                            >05</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
+                            >Awwwards</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                            >Motion Design and Animation</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                          >2019</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="hover__reveal-bg bg-img"
+                      data-background-image="/assets/images/thumbs/portfolio-two-thumb4.jpg"
+                    ></div>
+                  </div>
+                  <div
+                    class="feature-three-single hover__reveal-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="feature-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
+                            >06</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
+                            >Awwwards</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                            >Motion Design and Animation</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                          >2018</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="hover__reveal-bg bg-img"
+                      data-background-image="/assets/images/thumbs/portfolio-thumb1.jpg"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="testimonial-three-area pt-120 tw-pb-22">
+          <div class="container tw-container-1800-px">
+            <div class="row justify-content-center tw-mb-21">
+              <div class="col-xl-10">
+                <div class="text-center">
+                  <h2
+                    class="testimonial-three-title text-heading tw-text-15 tw-itm-title tw-itm-anim"
+                  >
+                    Honest testimonials from clients highlighting my commitment
+                    to quality, performance, & user-focused design that delivers
+                    real results
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="testimonial-three-slider position-relative z-1">
+                  <div class="testimonial-three-active swiper-container">
+                    <div class="swiper-wrapper">
+                      <!-- item 1 -->
+                      <div
+                        class="testimonial-three-wrapper d-flex align-items-center tw-gap-9 tw-rounded-lg tw-mb-705 swiper-slide"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="200"
+                      >
+                        <div
+                          class="testimonial-three-thumb position-relative z-1"
+                        >
+                          <img
+                            class="w-100 h-100 tw-rounded-lg"
+                            src="/assets/images/thumbs/testimonial-three-thumb1.jpg"
+                            alt="thumb"
+                          />
+                          <div
+                            class="testimonial-three-button position-absolute start-50 top-50 translate-middle"
+                          >
+                            <a
+                              class="open-popup testimonial-three-btn tw-w-220 tw-h-220 lh-1 d-inline-flex align-items-center justify-content-center bg-white text-main-two-600 tw-text-2xl position-relative z-1 hover-text-main-two-600 rounded-circle"
+                              href="https://www.youtube.com/watch?v=Fvae8nxzVz4"
+                              data-fancybox="gallery"
+                              data-caption=""
+                            >
+                              <i class="ph-bold ph-play"></i>
+                              <span class="ripple"></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="testimonial-three-content w-100">
+                          <div
+                            class="d-flex align-items-center justify-content-between tw-mb-16"
+                          >
+                            <div>
+                              <span
+                                ><img
+                                  src="/assets/images/icons/testimonial-three-icon.svg"
+                                  alt="icon"
+                              /></span>
+                            </div>
+                            <div class="testimonial-three-review">
+                              <span class="text-heading tw-text-lg"
+                                ><i class="ph-bold ph-star"></i
+                              ></span>
+                              <span class="text-heading tw-text-lg"
+                                ><i class="ph-bold ph-star"></i
+                              ></span>
+                              <span class="text-heading tw-text-lg"
+                                ><i class="ph-bold ph-star"></i
+                              ></span>
+                              <span class="text-heading tw-text-lg"
+                                ><i class="ph-bold ph-star"></i
+                              ></span>
+                              <span class="text-heading tw-text-lg"
+                                ><i class="ph-bold ph-star"></i
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="tw-mb-15">
+                            <p
+                              class="testimonial-three-paragraph text-heading tw-text-2xl fw-semibold"
+                            >
+                              Nemo enim ipsam voluptatem quia voluptas sit
+                              aspernatur aut odit aut fugit sed quia
+                              consequuntur magni dolores eos qui ratione
+                              voluptatem sequi nesciunt.
+                            </p>
+                          </div>
+                          <div>
+                            <h2 class="tw-text-2xl fw-medium">
+                              Sophia Reynolds
+                            </h2>
+                            <p class="tw-text-lg">Founder, Startup Studio</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- item 2 -->
+                      <div
+                        class="testimonial-three-wrapper d-flex align-items-center tw-gap-9 tw-rounded-lg tw-mb-705 swiper-slide"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="300"
+                      >
+                        <div
+                          class="testimonial-three-thumb position-relative z-1"
+                        >
+                          <img
+                            class="w-100 h-100 tw-rounded-lg"
+                            src="/assets/images/thumbs/testimonial-three-thumb2.jpg"
+                            alt="thumb"
+                          />
+                          <div
+                            class="testimonial-three-button position-absolute start-50 top-50 translate-middle"
+                          >
+                            <a
+                              class="open-popup testimonial-three-btn tw-w-220 tw-h-220 lh-1 d-inline-flex align-items-center justify-content-center bg-white text-main-two-600 tw-text-2xl position-relative z-1 hover-text-main-two-600 rounded-circle"
+                              href="https://www.youtube.com/watch?v=Fvae8nxzVz4"
+                              data-fancybox="gallery"
+                              data-caption=""
+                            >
+                              <i class="ph-bold ph-play"></i>
+                              <span class="ripple"></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="testimonial-three-content w-100">
+                          <div
+                            class="d-flex align-items-center justify-content-between tw-mb-16"
+                          >
+                            <div>
+                              <span
+                                ><img
+                                  src="/assets/images/icons/testimonial-three-icon.svg"
+                                  alt="icon"
+                              /></span>
+                            </div>
+                            <div class="testimonial-three-review">
+                              <span class="text-heading tw-text-lg"
+                                ><i class="ph-bold ph-star"></i
+                              ></span>
+                              <span class="text-heading tw-text-lg"
+                                ><i class="ph-bold ph-star"></i
+                              ></span>
+                              <span class="text-heading tw-text-lg"
+                                ><i class="ph-bold ph-star"></i
+                              ></span>
+                              <span class="text-heading tw-text-lg"
+                                ><i class="ph-bold ph-star"></i
+                              ></span>
+                              <span class="text-heading tw-text-lg"
+                                ><i class="ph-bold ph-star"></i
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="tw-mb-15">
+                            <p
+                              class="testimonial-three-paragraph text-heading tw-text-2xl fw-semibold"
+                            >
+                              Nemo enim ipsam voluptatem quia voluptas sit
+                              aspernatur aut odit aut fugit sed quia
+                              consequuntur magni dolores eos qui ratione
+                              voluptatem sequi nesciunt.
+                            </p>
+                          </div>
+                          <div>
+                            <h2 class="tw-text-2xl fw-medium">
+                              Daniel Roberts
+                            </h2>
+                            <p class="tw-text-lg">CEO, Tech Company</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="brand-three-area brand-two-area pb-120 @@brandipClass">
+          <div class="container tw-container-1800-px">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="text-center tw-mb-15">
+                  <h2 class="brand-three-title tw-text-xl tw-char-animation">
+                    Loved by Teams Around the World
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="row gx-2">
+              <div class="col-xl-2 col-lg-6 col-md-6">
+                <div
+                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
+                  <span class="brand-active-media"
+                    ><img
+                      src="/assets/images/thumbs/marquee-two-thumb1.png"
+                      alt="thumb"
+                  /></span>
+                  <span class="brand-hover-media"
+                    ><img
+                      src="/assets/images/thumbs/marquee-two-thumb11.png"
+                      alt="thumb"
+                  /></span>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-6 col-md-6">
+                <div
+                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
+                  <span class="brand-active-media"
+                    ><img
+                      src="/assets/images/thumbs/marquee-two-thumb2.png"
+                      alt="thumb"
+                  /></span>
+                  <span class="brand-hover-media"
+                    ><img
+                      src="/assets/images/thumbs/marquee-two-thumb22.png"
+                      alt="thumb"
+                  /></span>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-6 col-md-6"></div>
+              <div class="col-xl-2 col-lg-6 col-md-6">
+                <div
+                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="400"
+                >
+                  <span class="brand-active-media"
+                    ><img
+                      src="/assets/images/thumbs/marquee-thumb55.png"
+                      alt="thumb"
+                  /></span>
+                  <span class="brand-hover-media"
+                    ><img
+                      src="/assets/images/thumbs/marquee-thumb5.png"
+                      alt="thumb"
+                  /></span>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-6 col-md-6"></div>
+              <div class="col-xl-2 col-lg-6 col-md-6">
+                <div
+                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="500"
+                >
+                  <span class="brand-active-media"
+                    ><img
+                      src="/assets/images/thumbs/marquee-two-thumb4.png"
+                      alt="thumb"
+                  /></span>
+                  <span class="brand-hover-media"
+                    ><img
+                      src="/assets/images/thumbs/marquee-two-thumb44.png"
+                      alt="thumb"
+                  /></span>
+                </div>
+              </div>
+            </div>
+            <div class="row gx-2">
+              <div class="col-xl-2 col-lg-6 col-md-6"></div>
+              <div class="col-xl-2 col-lg-6 col-md-6">
+                <div
+                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
+                  <span class="brand-active-media"
+                    ><img
+                      src="/assets/images/thumbs/marquee-thumb33.png"
+                      alt="thumb"
+                  /></span>
+                  <span class="brand-hover-media"
+                    ><img
+                      src="/assets/images/thumbs/marquee-thumb3.png"
+                      alt="thumb"
+                  /></span>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-6 col-md-6">
+                <div
+                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
+                  <span class="brand-active-media"
+                    ><img
+                      src="/assets/images/thumbs/marquee-thumb11.png"
+                      alt="thumb"
+                  /></span>
+                  <span class="brand-hover-media"
+                    ><img
+                      src="/assets/images/thumbs/marquee-thumb1.png"
+                      alt="thumb"
+                  /></span>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-6 col-md-6"></div>
+              <div class="col-xl-2 col-lg-6 col-md-6">
+                <div
+                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="400"
+                >
+                  <span class="brand-active-media"
+                    ><img
+                      src="/assets/images/thumbs/marquee-thumb66.png"
+                      alt="thumb"
+                  /></span>
+                  <span class="brand-hover-media"
+                    ><img
+                      src="/assets/images/thumbs/marquee-thumb6.png"
+                      alt="thumb"
+                  /></span>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-6 col-md-6">
+                <div
+                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="500"
+                >
+                  <span class="brand-active-media"
+                    ><img
+                      src="/assets/images/thumbs/marquee-thumb22.png"
+                      alt="thumb"
+                  /></span>
+                  <span class="brand-hover-media"
+                    ><img
+                      src="/assets/images/thumbs/marquee-thumb2.png"
+                      alt="thumb"
+                  /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="footer-three-area pt-120 tw-pb-10 position-relative z-1"
+        >
+          <div class="container tw-container-1800-px">
+            <div class="row justify-content-between pb-120">
+              <div class="col-xl-5 col-lg-6">
+                <div
+                  class="footer-three-top-left tw-me-25"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
+                  <div class="tw-mb-9">
+                    <h2 class="tw-text-15 text-white tw-char-animation">
+                      Let’s create something meaningful
+                    </h2>
+                  </div>
+                  <div
+                    class="d-inline-flex align-items-center tw-gap-6 tw-mb-10 flex-wrap"
+                  >
+                    <a
+                      class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white"
+                      href="mailto:shan@gmail.com"
+                      >shan@gmail.com</a
+                    >
+                    <span class="tw-text-2xl fw-medium text-main-600">//</span>
+                    <a
+                      class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white"
+                      href="tel:+442039991245"
+                      >+44 20 3999 1245</a
+                    >
+                  </div>
+                  <div
+                    class="footer-three-top-info tw-p-705 tw-rounded-lg d-flex tw-gap-6"
+                  >
+                    <div class="footer-three-top-thumb tw-w-160-px">
+                      <img
+                        class="tw-rounded-lg w-100"
+                        src="/assets/images/thumbs/footer-three-thumb.png"
+                        alt="thumb"
+                      />
+                    </div>
+                    <div
+                      class="footer-three-top-content d-flex justify-content-between flex-column"
+                    >
+                      <div>
+                        <h3 class="tw-text-xl text-white tw-mb-2">
+                          Shan
+                        </h3>
+                        <p class="text-white">Digital Designer & Developer</p>
+                      </div>
+                      <div class="footer-three-social">
+                        <ul class="d-flex align-items-center tw-gap-1">
+                          <li>
+                            <a
+                              class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading"
+                              href="#"
+                              ><i class="ph ph-facebook-logo"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading"
+                              href="#"
+                              ><i class="ph ph-x-logo"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading"
+                              href="#"
+                              ><i class="ph ph-instagram-logo"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <div
+                  class="footer-three-form"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
+                  <form action="#">
+                    <div class="row">
+                      <div class="col-xl-12">
+                        <div class="position-relative tw-mb-7">
+                          <input
+                            type="text"
+                            class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 tw-h-18 focus-tw-placeholder-text-hidden tw-placeholder-transition-2"
+                            placeholder="First Name"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-xl-12">
+                        <div class="position-relative tw-mb-7">
+                          <input
+                            type="email"
+                            class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 tw-h-18 focus-tw-placeholder-text-hidden tw-placeholder-transition-2"
+                            placeholder="Email Address"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-xl-12">
+                        <div class="position-relative tw-mb-7">
+                          <textarea
+                            class="form-control bg-transparent shadow-none tw-h-196-px tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 focus-tw-placeholder-text-hidden tw-placeholder-transition-2"
+                            placeholder="Message"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="col-xl-12">
+                        <div class="contact-button">
+                          <button
+                            class="tw-hover-btn bg-main-600 text-heading tw-text-xl fw-bold tw-py-4 tw-px-10 d-inline-flex justify-content-center w-100 hover-text-heading hover-bg-white tw-transition-3 tw-rounded-lg"
+                          >
+                            submit message
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-three-border tw-px-18 tw-mb-10">
+            <div class="container-fluid gx-0">
+              <div class="row">
+                <div class="col-xl-12">
+                  <div
+                    class="footer-three-middile d-flex align-items-center justify-content-between"
+                  >
+                    <div
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <h4 class="tw-text-2xl text-white tw-mb-2">
+                        Quick Links
+                      </h4>
+                      <ul class="d-flex tw-gap-2 flex-wrap">
+                        <li>
+                          <a class="tw-text-lg text-white" href="index.html"
+                            >Home,</a
+                          >
+                        </li>
+                        <li>
+                          <a class="tw-text-lg text-white" href="index.html"
+                            >About Me,
+                          </a>
+                        </li>
+                        <li>
+                          <a class="tw-text-lg text-white" href="index.html"
+                            >Portfolio,
+                          </a>
+                        </li>
+                        <li>
+                          <a class="tw-text-lg text-white" href="index.html"
+                            >Service,
+                          </a>
+                        </li>
+                        <li>
+                          <a class="tw-text-lg text-white" href="index.html"
+                            >Contact
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="300"
+                    >
+                      <a
+                        class="footer-three-back-to-top tw-w-170 tw-h-170 lh-1 d-inline-flex justify-content-center align-items-center bg-main-two-600 text-white tw-text-3xl rounded-circle"
+                        href="#"
+                        ><i class="ph ph-arrow-up"></i
+                      ></a>
+                    </div>
+                    <div
+                      class="text-lg-end"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="400"
+                    >
+                      <h4 class="tw-text-2xl text-white tw-mb-2">
+                        Shan Portfolio
+                      </h4>
+                      <p class="tw-text-lg text-white">
+                        © 2025 Shan. All rights reserved
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="container tw-container-1800-px">
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="footer-three-bottom text-center">
+                    <h5 class="footer-three-bottom-title text-white text-center">
+                      ASIF
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="position-absolute top-0 start-0 z-n1"
+              src="/assets/images/shapes/footer-three-bg-shape.png"
+              alt="shape"
+            />
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- Jquery js -->
+    <!-- phosphor Js -->
+    <!-- Bootstrap Bundle Js -->
+    <!-- aos -->
+    <!-- magnific popup js -->
+    <!-- marquee -->
+    <!-- counterup js -->
+    <!-- swiper bundle js -->
+    <!-- gsap js -->
+    <!-- Scroll plugin -->
+    <!-- Scroll smoother -->
+    <!-- Scroll Trigger -->
+    <!-- split text -->
+    <!-- chroma js -->
+    <!-- custom GSAP -->
+    <!-- custom GSAP -->
+    <!-- main js -->
+    <!-- cursor js -->
+    `;
 export const bodyClassName = "tw-magic-cursor";

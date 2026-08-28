@@ -3712,6 +3712,11 @@ input:focus-visible {
 .max-w-200-px {
   max-width: 200px;
 }
+@media(max-width: 900px){
+.max-w-200-px {
+  max-width: 100px;
+}
+}
 .max-w-1140-px {
   max-width: 1140px;
 }
