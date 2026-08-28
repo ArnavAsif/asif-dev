@@ -1,0 +1,19 @@
+.ripple-distortion {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+.ripple-distortion canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Image-less mode: canvas shows cursor ripples only, over whatever is
+   already behind it (e.g. the hero section's own background). */
+.ripple-distortion--no-image {
+  background: transparent;
+}

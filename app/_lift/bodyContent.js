@@ -477,6 +477,7 @@ export const bodyHtml = `
     <div id="smooth-wrapper">
       <div id="smooth-content">
         <section class="banner-three-area">
+          <div id="hero-ripple-mount"></div>
           <div class="container tw-container-1800-px">
             <div class="row">
               <div class="col-xl-12">

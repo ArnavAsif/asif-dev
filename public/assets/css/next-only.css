@@ -37,3 +37,51 @@
     margin-bottom: 0;
   }
 }
+
+/* --- 3) Hero ripple distortion mount -----------------------------
+   React Bits <RippleDistortion /> (WebGL canvas, image-less cursor-ripple
+   mode) is portaled into this div. It lives as the first child of
+   .banner-three-area and covers the entire hero section. The section
+   itself must be position:relative to act as its containing block
+   (layout-invisible change). pointer-events: none keeps the canvas
+   from ever blocking clicks; the component tracks the pointer on
+   window instead, and the canvas is transparent so the hero's own
+   background, photo and text are completely untouched. */
+#site-root .banner-three-area {
+  position: relative;
+}
+
+#hero-ripple-mount {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* --- 4) Hero center card ------------------------------------------
+   Give the hero's center block (the "I build MERN stack & Shopify
+   stores that convert." headline + "see my work" button) the same
+   card treatment as the greeting block (.banner-three-left):
+   #f5f5f5 background, the template's double box-shadow, and the
+   same 8px rounded corners (tw-rounded-lg). */
+#site-root .banner-three-center {
+  background: #f5f5f5;
+  box-shadow:
+    0 4px 4px 0 rgba(0, 0, 0, 0.25),
+    -4px -4px 0 0 rgba(255, 255, 255, 0.25);
+  border-radius: 0.5rem; /* 8px, same as tw-rounded-lg */
+  padding: 2% 6%;
+}
+
+
+
+/* Mobile: no card background/shadow/padding — the headline and button
+   sit straight on the hero background. */
+@media screen and (max-width: 767px) {
+  #site-root .banner-three-center {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+  }
+}

@@ -1,5 +1,6 @@
 import { bodyHtml } from "./_lift/bodyContent";
 import LegacyScripts from "./_lift/LegacyScripts";
+import HeroRipple from "./_lift/HeroRipple";
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: bodyHtml }}
       />
       <LegacyScripts />
+      {/* WebGL ripple distortion on the hero portrait only */}
+      <HeroRipple />
     </>
   );
 }
