@@ -160,12 +160,12 @@ export default function LegacyScripts() {
     // #site-root the same height as the document content.
     const root = document.getElementById("site-root");
     const content = document.getElementById("smooth-content");
-    if (!root) return;
-
-    let lastMeasuredHeight = 0;
+    if (!root) return;    let lastMeasuredHeight = 0;
     let refreshTimer;
     let lastScrollTime = 0;
     let isRefreshing = false;
+    let lastRefreshTime = 0;
+    const COOLDOWN_MS = 600;
     const onScrollMarker = () => {
       lastScrollTime = Date.now();
     };
@@ -174,36 +174,58 @@ export default function LegacyScripts() {
     // ---------------------------------------------------------------
     // Bottom-of-page guard
     // ---------------------------------------------------------------
-    // The original jump happens because ScrollTrigger.refresh()
-    // recalculates every trigger/pin position; at the bottom boundary
-    // even a 1-px content-height change can make the browser/GSAP
-    // think the current scrollY is invalid and shove the viewport.
-    // We detect the bottom boundary and skip the refresh there.
     const isNearBottom = () => {
       const max =
         document.documentElement.scrollHeight - window.innerHeight;
       return max > 0 && window.scrollY >= max - 3;
     };
 
-    const refreshWhenQuiet = () => {
-      if (Date.now() - lastScrollTime < 350) {
-        refreshTimer = window.setTimeout(refreshWhenQuiet, 350);
-        return;
-      }
+    // A refresh must never fire while a pinned ScrollTrigger (e.g. the
+    // Works/portfolio-three pin) is currently active — GSAP briefly
+    // un-pins to remeasure natural layout during a refresh, which snaps
+    // the native scroll position and causes the "jump to Hero, then
+    // auto-scroll back down" bug.
+    const isInsideActivePin = () => {
+      if (!window.ScrollTrigger) return false;
+      return window.ScrollTrigger.getAll().some((st) => st.pin && st.isActive);
+    };
+
+    const doRefresh = () => {
       if (isRefreshing || !window.ScrollTrigger) return;
       // At the bottom boundary, a refresh would fight the browser's
       // max-scroll position and cause the oscillating jump.
       if (isNearBottom()) return;
+      // Never refresh mid-pin (see isInsideActivePin above).
+      if (isInsideActivePin()) return;
+      // Cooldown: don't refresh again within COOLDOWN_MS of the
+      // last successful refresh.  This prevents a cascade of
+      // refreshes triggered by the refresh itself (height changes,
+      // image loads, pin repositions).
+      const now = Date.now();
+      if (now - lastRefreshTime < COOLDOWN_MS) return;
       isRefreshing = true;
-      // ScrollTrigger.refresh() recalculates every pin / trigger
-      // position.  When those positions shift, GSAP may adjust the
-      // scroll position to stay consistent — the user sees a random
-      // jump.  Save the scroll position before the refresh and
-      // restore it immediately after so the user stays put.
-      const savedScrollY = window.scrollY;
+      lastRefreshTime = now;
+      // ScrollTrigger.refresh() only recalculates pin/trigger
+      // positions — it does NOT move the scroll.  The user's scroll
+      // position is already correct before the refresh and stays
+      // correct after.  Calling scrollTo() here would fight
+      // ScrollSmoother's virtual scroll and desync its internal
+      // state, causing the WORKS sticky to fail intermittently.
       window.ScrollTrigger.refresh();
-      window.scrollTo(0, savedScrollY);
       isRefreshing = false;
+    };
+
+    const refreshWhenQuiet = () => {
+      // Capture the time *now*, not when this function was scheduled.
+      // This prevents the stale-time bug where lastScrollTime was set
+      // 400ms ago and the check passes even though the user started
+      // scrolling again.
+      const now = Date.now();
+      if (now - lastScrollTime < 350) {
+        refreshTimer = window.setTimeout(refreshWhenQuiet, 350);
+        return;
+      }
+      doRefresh();
     };
 
     const sync = () => {
@@ -230,8 +252,6 @@ export default function LegacyScripts() {
     let ro;
     if (content && typeof ResizeObserver !== "undefined") {
       ro = new ResizeObserver(() => {
-        // Height still updates (so #site-root stays correct), but we
-        // only schedule a refresh when NOT at the bottom boundary.
         const target = content
           ? content.scrollHeight
           : document.body.scrollHeight;
@@ -242,8 +262,7 @@ export default function LegacyScripts() {
           root.style.height = `${target}px`;
         }
         if (
-          target > 0 &&
-          Math.abs(target - lastMeasuredHeight) > 1
+          target > 0 && Math.abs(target - lastMeasuredHeight) > 1
         ) {
           const needsRefresh = lastMeasuredHeight > 0;
           lastMeasuredHeight = target;

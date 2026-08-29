@@ -1,0 +1,324 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "OTAP",
+      "category": "Shopify 2.0",
+      "year": "2026",
+      "description": "A fully custom Shopify 2.0 anime merchandise store with optimized product pages and conversion-focused layout.",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/thumbs/portfolio-three-thumb1.jpg",
+        "poster": ""
+      },
+      "technologies": ["Shopify 2.0", "Liquid", "Metafields"],
+      "link": "#",
+      "github": "",
+      "variant": "featured"
+    },
+    {
+      "id": 2,
+      "title": "VOLTIX",
+      "category": "Shopify 2.0",
+      "year": "2026",
+      "description": "Premium car showcase storefront built on Shopify 2.0 with custom Liquid sections and dynamic metafields.",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/thumbs/portfolio-three-thumb2.jpg",
+        "poster": ""
+      },
+      "technologies": ["Shopify 2.0", "Liquid", "JavaScript"],
+      "link": "#",
+      "github": "",
+      "variant": "standard"
+    },
+    {
+      "id": 3,
+      "title": "Heyva",
+      "category": "Shopify 2.0",
+      "year": "2025",
+      "description": "Kid supplements e-commerce store with clean design, subscription-ready product pages, and mobile-first UX.",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/thumbs/portfolio-three-thumb3.jpg",
+        "poster": ""
+      },
+      "technologies": ["Shopify 2.0", "Liquid", "CSS"],
+      "link": "#",
+      "github": "",
+      "variant": "standard"
+    },
+    {
+      "id": 4,
+      "title": "Bro & Compagnie",
+      "category": "Shopify 2.0",
+      "year": "2025",
+      "description": "Pet care brand storefront featuring custom product bundles, responsive collections, and smooth checkout flow.",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/thumbs/portfolio-three-thumb4.jpg",
+        "poster": ""
+      },
+      "technologies": ["Shopify 2.0", "Liquid", "Metaobjects"],
+      "link": "#",
+      "github": "",
+      "variant": "editorial"
+    },
+    {
+      "id": 5,
+      "title": "SweetPaw",
+      "category": "Shopify 2.0",
+      "year": "2025",
+      "description": "Dog chews e-commerce store with vibrant branding, custom landing pages, and optimized product storytelling.",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/thumbs/portfolio-three-thumb2.jpg",
+        "poster": ""
+      },
+      "technologies": ["Shopify 2.0", "Liquid", "JavaScript"],
+      "link": "#",
+      "github": "",
+      "variant": "featured"
+    },
+    {
+      "id": 6,
+      "title": "Manga Mint",
+      "category": "Shopify 2.0",
+      "year": "2025",
+      "description": "Anime and manga merchandise store with dynamic collection filtering, pre-order system, and custom theme.",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/thumbs/portfolio-three-thumb3.jpg",
+        "poster": ""
+      },
+      "technologies": ["Shopify 2.0", "Liquid", "AJAX API"],
+      "link": "#",
+      "github": "",
+      "variant": "standard"
+    },
+    {
+      "id": 7,
+      "title": "CyberNexus",
+      "category": "Shopify 2.0",
+      "year": "2025",
+      "description": "Gaming universe storefront with dark-mode aesthetic, custom product cards, and immersive collection layouts.",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/thumbs/portfolio-three-thumb4.jpg",
+        "poster": ""
+      },
+      "technologies": ["Shopify 2.0", "Liquid", "GSAP"],
+      "link": "#",
+      "github": "",
+      "variant": "standard"
+    },
+    {
+      "id": 8,
+      "title": "Vantique",
+      "category": "Shopify 2.0",
+      "year": "2025",
+      "description": "Luxury streetwear brand store with editorial product pages, custom size guides, and brand-first storytelling.",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/thumbs/portfolio-three-thumb1.jpg",
+        "poster": ""
+      },
+      "technologies": ["Shopify 2.0", "Liquid", "Metafields"],
+      "link": "#",
+      "github": "",
+      "variant": "parallax"
+    },
+    {
+      "id": 9,
+      "title": "BOOYAH!",
+      "category": "Shopify 2.0",
+      "year": "2024",
+      "description": "Gaming lobby store with energetic branding, bundle deals, and conversion-optimized product page layout.",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/thumbs/portfolio-three-thumb2.jpg",
+        "poster": ""
+      },
+      "technologies": ["Shopify 2.0", "Liquid", "JavaScript"],
+      "link": "#",
+      "github": "",
+      "variant": "editorial"
+    },
+    {
+      "id": 10,
+      "title": "MERN Dashboard",
+      "category": "MERN Stack",
+      "year": "2025",
+      "description": "Full-stack admin dashboard with React frontend, Node.js/Express API, and MongoDB data layer.",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/thumbs/portfolio-two-thumb1.jpg",
+        "poster": ""
+      },
+      "technologies": ["React", "Node.js", "Express", "MongoDB"],
+      "link": "#",
+      "github": "https://github.com/ArnavAsif",
+      "variant": "featured"
+    },
+    {
+      "id": 11,
+      "title": "NextGen Store",
+      "category": "Next.js",
+      "year": "2025",
+      "description": "Server-side rendered e-commerce platform built with Next.js, featuring ISR and optimized Core Web Vitals.",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/thumbs/portfolio-two-thumb2.jpg",
+        "poster": ""
+      },
+      "technologies": ["Next.js", "React", "Tailwind CSS"],
+      "link": "#",
+      "github": "https://github.com/ArnavAsif",
+      "variant": "standard"
+    },
+    {
+      "id": 12,
+      "title": "REST API Hub",
+      "category": "Node.js",
+      "year": "2024",
+      "description": "RESTful API collection with Express.js, JWT authentication, rate limiting, and comprehensive documentation.",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/thumbs/portfolio-two-thumb3.jpg",
+        "poster": ""
+      },
+      "technologies": ["Node.js", "Express", "MongoDB", "JWT"],
+      "link": "#",
+      "github": "https://github.com/ArnavAsif",
+      "variant": "standard"
+    },
+    {
+      "id": 13,
+      "title": "NexaShop",
+      "category": "Shopify 2.0",
+      "year": "2024",
+      "description": "Multi-vendor marketplace storefront with custom product filtering, wishlist system, and AJAX cart.",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/thumbs/portfolio-three-thumb1.jpg",
+        "poster": ""
+      },
+      "technologies": ["Shopify 2.0", "Liquid", "jQuery"],
+      "link": "#",
+      "github": "",
+      "variant": "standard"
+    },
+    {
+      "id": 14,
+      "title": "PixelForge",
+      "category": "Next.js",
+      "year": "2024",
+      "description": "Creative agency portfolio with dynamic routing, image optimization, and GSAP scroll animations.",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/thumbs/portfolio-two-thumb4.jpg",
+        "poster": ""
+      },
+      "technologies": ["Next.js", "GSAP", "Cloudinary"],
+      "link": "#",
+      "github": "https://github.com/ArnavAsif",
+      "variant": "parallax"
+    },
+    {
+      "id": 15,
+      "title": "GreenLeaf",
+      "category": "Shopify 2.0",
+      "year": "2024",
+      "description": "Organic skincare brand with subscription model, ingredient transparency pages, and eco-friendly design system.",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/thumbs/portfolio-three-thumb3.jpg",
+        "poster": ""
+      },
+      "technologies": ["Shopify 2.0", "Liquid", "ReCharge"],
+      "link": "#",
+      "github": "",
+      "variant": "editorial"
+    },
+    {
+      "id": 16,
+      "title": "DevConnect",
+      "category": "MERN Stack",
+      "year": "2024",
+      "description": "Developer social platform with real-time messaging, profile system, and project collaboration features.",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/thumbs/portfolio-two-thumb1.jpg",
+        "poster": ""
+      },
+      "technologies": ["React", "Socket.io", "Node.js", "MongoDB"],
+      "link": "#",
+      "github": "https://github.com/ArnavAsif",
+      "variant": "standard"
+    },
+    {
+      "id": 17,
+      "title": "WaveRider",
+      "category": "Shopify 2.0",
+      "year": "2024",
+      "description": "Surf equipment store with size guide integration, video product demos, and international shipping support.",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/thumbs/portfolio-three-thumb4.jpg",
+        "poster": ""
+      },
+      "technologies": ["Shopify 2.0", "Liquid", "ShipStation"],
+      "link": "#",
+      "github": "",
+      "variant": "standard"
+    },
+    {
+      "id": 18,
+      "title": "TaskFlow",
+      "category": "MERN Stack",
+      "year": "2024",
+      "description": "Project management tool with Kanban boards, real-time updates, team collaboration, and analytics dashboard.",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/thumbs/portfolio-two-thumb2.jpg",
+        "poster": ""
+      },
+      "technologies": ["React", "Node.js", "Redis", "WebSocket"],
+      "link": "#",
+      "github": "https://github.com/ArnavAsif",
+      "variant": "featured"
+    },
+    {
+      "id": 19,
+      "title": "Artisan Brew",
+      "category": "Shopify 2.0",
+      "year": "2024",
+      "description": "Specialty coffee subscription store with flavor profile quizzes, bean origin stories, and auto-replenishment.",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/thumbs/portfolio-three-thumb2.jpg",
+        "poster": ""
+      },
+      "technologies": ["Shopify 2.0", "Liquid", "Bold Subscriptions"],
+      "link": "#",
+      "github": "",
+      "variant": "parallax"
+    },
+    {
+      "id": 20,
+      "title": "CodeVault",
+      "category": "Next.js",
+      "year": "2023",
+      "description": "Code snippet manager with syntax highlighting, search, tagging, and markdown documentation support.",
+      "media": {
+        "type": "image",
+        "src": "/assets/images/thumbs/portfolio-two-thumb3.jpg",
+        "poster": ""
+      },
+      "technologies": ["Next.js", "Prisma", "PostgreSQL", "MDX"],
+      "link": "#",
+      "github": "https://github.com/ArnavAsif",
+      "variant": "editorial"
+    }
+  ]
+}

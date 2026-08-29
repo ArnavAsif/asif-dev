@@ -22,23 +22,9 @@
 
   ////////////////////////////////////////////////////
   // 01. Smooth Scroll Js
-  function smoothSctoll() {
-    $(".smooth a").on("click", function (event) {
-      var target = $(this.getAttribute("href"));
-      if (target.length) {
-        event.preventDefault();
-        $("html, body")
-          .stop()
-          .animate(
-            {
-              scrollTop: target.offset().top - 120,
-            },
-            1500,
-          );
-      }
-    });
-  }
-  smoothSctoll();
+  // (removed — no element in this project has class="smooth"; this
+  // function never fired, and if it ever does it would fight
+  // ScrollSmoother exactly like the back-to-top button did.)
   if ($("#smooth-wrapper").length && $("#smooth-content").length) {
     gsap.registerPlugin(
       ScrollTrigger,
@@ -650,6 +636,7 @@
       markers: false,
       pinSpacing: false,
       scrub: 1,
+      anticipatePin: 1,
     },
   });
 })(jQuery);

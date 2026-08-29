@@ -161,7 +161,10 @@
 
   // 08. Backtotop Js
   function back_to_top() {
-    var btn = $("#back_to_top");
+    // Also bind the footer's circular arrow button — it currently has
+    // no click handler at all (href="#" gets preventDefault'd by
+    // LegacyScripts' nav-click intercept and nothing else happens).
+    var btn = $("#back_to_top, .footer-three-back-to-top");
     var btn_wrapper = $(".back-to-top-wrapper");
     var isShown = false;
     $(window).on("scroll", function () {
@@ -174,7 +177,15 @@
 
     btn.on("click", function (e) {
       e.preventDefault();
-      $("html, body").animate({ scrollTop: 0 }, 300);
+      // Use ScrollSmoother's own scrollTo when it's active so we don't
+      // fight its RAF-driven smoothing loop with a second, independent
+      // jQuery scroll animation (that mismatch was causing a stutter).
+      var smoother = window.ScrollSmoother && window.ScrollSmoother.get();
+      if (smoother) {
+        smoother.scrollTo(0, true);
+      } else {
+        $("html, body").animate({ scrollTop: 0 }, 300);
+      }
     });
   }
   back_to_top();

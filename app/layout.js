@@ -1,4 +1,5 @@
 import "./globals.css";
+import "./project-showcase.css";
 import { HERO_BG_URL } from "./_lift/heroBg";
 
 export const metadata = {
