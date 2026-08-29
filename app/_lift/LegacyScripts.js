@@ -35,6 +35,27 @@ const SCRIPTS = [
 // in-order, blocking behavior of the original static <script src> tags
 // that sat right before </body>.
 export default function LegacyScripts() {
+  // ---------------------------------------------------------------
+  // Force scroll to top on every (re)load.
+  // ---------------------------------------------------------------
+  // Browsers with "auto" scrollRestoration remember the last scroll
+  // position and restore it after a hard refresh — the user sees the
+  // Footer for a split second before ScrollSmoother jumps to the Hero.
+  // Setting "manual" and calling scrollTo(0) before any legacy scripts
+  // load keeps the page clean.
+  useEffect(() => {
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
+    // Scroll immediately so the first paint is already at the top.
+    window.scrollTo(0, 0);
+    // Also override the back/forward cache in case the browser still
+    // tries to restore a position from the session history.
+    const onPopState = () => window.scrollTo(0, 0);
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, []);
+
   useEffect(() => {
     const created = [];
     let loadedCount = 0;
@@ -143,22 +164,41 @@ export default function LegacyScripts() {
 
     let lastMeasuredHeight = 0;
     let refreshTimer;
-    // Never run ScrollTrigger.refresh() while the user is scrolling: it can
-    // shift pinned content and throw the viewport back to a previous
-    // position (the "random jump to top"). Refresh only after scrolling has
-    // been idle for a beat.
     let lastScrollTime = 0;
+    let isRefreshing = false;
     const onScrollMarker = () => {
       lastScrollTime = Date.now();
     };
     window.addEventListener("scroll", onScrollMarker, { passive: true });
+
+    // ---------------------------------------------------------------
+    // Bottom-of-page guard
+    // ---------------------------------------------------------------
+    // The original jump happens because ScrollTrigger.refresh()
+    // recalculates every trigger/pin position; at the bottom boundary
+    // even a 1-px content-height change can make the browser/GSAP
+    // think the current scrollY is invalid and shove the viewport.
+    // We detect the bottom boundary and skip the refresh there.
+    const isNearBottom = () => {
+      const max =
+        document.documentElement.scrollHeight - window.innerHeight;
+      return max > 0 && window.scrollY >= max - 3;
+    };
+
     const refreshWhenQuiet = () => {
       if (Date.now() - lastScrollTime < 350) {
         refreshTimer = window.setTimeout(refreshWhenQuiet, 350);
         return;
       }
-      if (window.ScrollTrigger) window.ScrollTrigger.refresh();
+      if (isRefreshing || !window.ScrollTrigger) return;
+      // At the bottom boundary, a refresh would fight the browser's
+      // max-scroll position and cause the oscillating jump.
+      if (isNearBottom()) return;
+      isRefreshing = true;
+      window.ScrollTrigger.refresh();
+      isRefreshing = false;
     };
+
     const sync = () => {
       const target = content
         ? content.scrollHeight
@@ -169,10 +209,6 @@ export default function LegacyScripts() {
       ) {
         root.style.height = `${target}px`;
       }
-      // Below-the-fold images are lazy-loaded, so the document height
-      // grows as they decode. A (debounced, scroll-idle) refresh keeps
-      // trigger/pin positions aligned — without refreshing on every
-      // scroll frame or mid-scroll.
       if (target > 0 && Math.abs(target - lastMeasuredHeight) > 1) {
         const needsRefresh = lastMeasuredHeight > 0;
         lastMeasuredHeight = target;
@@ -186,7 +222,30 @@ export default function LegacyScripts() {
     window.addEventListener("resize", sync);
     let ro;
     if (content && typeof ResizeObserver !== "undefined") {
-      ro = new ResizeObserver(sync);
+      ro = new ResizeObserver(() => {
+        // Height still updates (so #site-root stays correct), but we
+        // only schedule a refresh when NOT at the bottom boundary.
+        const target = content
+          ? content.scrollHeight
+          : document.body.scrollHeight;
+        if (
+          target > 0 &&
+          Math.abs(root.getBoundingClientRect().height - target) > 1
+        ) {
+          root.style.height = `${target}px`;
+        }
+        if (
+          target > 0 &&
+          Math.abs(target - lastMeasuredHeight) > 1
+        ) {
+          const needsRefresh = lastMeasuredHeight > 0;
+          lastMeasuredHeight = target;
+          if (needsRefresh && window.ScrollTrigger && !isNearBottom()) {
+            window.clearTimeout(refreshTimer);
+            refreshTimer = window.setTimeout(refreshWhenQuiet, 400);
+          }
+        }
+      });
       ro.observe(content);
     }
     // Re-run once the legacy scripts, fonts and images have settled.

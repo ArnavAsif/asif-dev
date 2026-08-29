@@ -148,10 +148,268 @@ body {
   }
 }
 
-/* --- 10) Mobile typography -------------------------------------------
-   Desktop sizes are untouched. The template's fixed large headings
-   (which can clip or force awkward wraps on ~375px screens) scale
-   down smoothly with clamp(). */
+/* ============================================================
+   LAPTOP RESPONSIVE (1024px – 1440px)
+   An intermediate tier between the large-desktop template and
+   the existing tablet / mobile breakpoints.
+   ============================================================ */
+
+/* --- 11) Hero "DEVELOPER" text ≈ 330px at laptop -------------------- */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .banner-three-title {
+    font-size: 330px;
+  }
+}
+
+/* --- 12) Hero area padding at laptop --------------------------------- */
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .banner-three-area {
+    padding-block: 250px 80px;
+  }
+}
+
+/* --- 13) Hero greeting card (left) at laptop ------------------------- */
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  #site-root .banner-three-left {
+    display: block;
+    max-width: 300px;
+    padding: 28px 22px;
+    margin-block-end: 120px;
+  }
+}
+
+/* --- 14) Hero center title at laptop --------------------------------- */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .banner-three-center-title {
+    font-size: clamp(2rem, 3.5vw, 3rem);
+  }
+}
+
+/* --- 15) Works / portfolio shape heading ≈ 525px at laptop ----------- */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .portfolio-three-shape-title {
+    font-size: 525px;
+  }
+}
+
+/* --- 16) Portfolio cards: alternating zigzag at laptop (992-1440px) ---
+   main.css sets margin-top:0 on even cards at ≤1199px, breaking the
+   zigzag. This restores the alternating layout for the full laptop
+   range with card widths that allow two per row. */
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+  #site-root .portfolio-three-wrapper {
+    flex-wrap: wrap;
+  }
+  #site-root .portfolio-three-item {
+    max-width: 48%;
+  }
+  #site-root .portfolio-three-item:nth-child(even) {
+    margin-top: 350px;
+    margin-bottom: 0;
+  }
+}
+
+/* --- 17) About section at laptop ------------------------------------- */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .about-three-title {
+    font-size: clamp(2rem, 3.2vw, 3.25rem);
+  }
+}
+
+/* --- 18) Service section titles at laptop ---------------------------- */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .service-three-title {
+    font-size: clamp(1.8rem, 3vw, 3rem);
+  }
+}
+
+/* --- 19) Testimonial title at laptop --------------------------------- */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .testimonial-three-title {
+    font-size: clamp(1.8rem, 3vw, 3.5rem);
+  }
+}
+
+/* --- 20) Footer bottom "ASIF" title at laptop ------------------------ */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .footer-three-bottom-title {
+    font-size: 350px;
+  }
+}
+
+/* --- 21) Feature section text at laptop ------------------------------ */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .feature-three-text.tw-text-605 {
+    font-size: 1.1rem;
+  }
+}
+
+/* --- 22) Header button at laptop ------------------------------------- */
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .header-three-button {
+    display: none !important;
+  }
+}
+
+/* ============================================================
+   TABLET RESPONSIVE (576px – 912px)
+   Covers iPad, iPad Air, Surface, and similar tablets.
+   ============================================================ */
+
+/* --- 30) Hero area padding at tablet --------------------------------- */
+@media screen and (min-width: 576px) and (max-width: 912px) {
+  .banner-three-area {
+    padding-block: 180px 60px;
+  }
+}
+
+/* --- 31) Hero DEVELOPER text at tablet -------------------------------- */
+@media screen and (min-width: 576px) and (max-width: 912px) {
+  .banner-three-title {
+    font-size: 166px;
+  }
+}
+
+/* --- 32) Hero center title at tablet ---------------------------------- */
+@media screen and (min-width: 576px) and (max-width: 912px) {
+  .banner-three-center-title {
+    font-size: clamp(1.5rem, 5.5vw, 2.2rem);
+  }
+}
+
+/* --- 33) About title at tablet ---------------------------------------- */
+@media screen and (min-width: 576px) and (max-width: 912px) {
+  .about-three-title {
+    font-size: clamp(1.4rem, 5.5vw, 2rem);
+  }
+}
+
+/* --- 34) Service titles at tablet ------------------------------------- */
+@media screen and (min-width: 576px) and (max-width: 912px) {
+  .service-three-title {
+    font-size: clamp(1.4rem, 5.5vw, 2.2rem);
+  }
+}
+
+/* --- 35) Works heading at tablet -------------------------------------- */
+@media screen and (min-width: 576px) and (max-width: 912px) {
+  .portfolio-three-shape-title {
+    font-size: 265px;
+  }
+}
+
+/* --- 36) Portfolio cards at tablet — single column, stacked -----------
+   On tablets the cards should stack vertically (single column),
+   NOT sit in one horizontal row. Each card takes full width with
+   a vertical offset on even cards for the zigzag look. */
+@media screen and (min-width: 576px) and (max-width: 912px) {
+  #site-root .portfolio-three-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  #site-root .portfolio-three-item {
+    max-width: 90%;
+    width: 100%;
+  }
+  #site-root .portfolio-three-item:nth-child(even) {
+    margin-top: 0;
+    margin-inline-start: auto;
+  }
+  /* Odd cards stay left, even cards offset right */
+  #site-root .portfolio-three-item:nth-child(odd) {
+    align-self: flex-start;
+  }
+  #site-root .portfolio-three-item:nth-child(even) {
+    align-self: flex-end;
+  }
+}
+
+/* --- 37) Testimonial title at tablet ---------------------------------- */
+@media screen and (min-width: 576px) and (max-width: 912px) {
+  .testimonial-three-title {
+    font-size: clamp(1.3rem, 5.5vw, 2rem);
+  }
+}
+
+/* --- 38) Footer bottom "ASIF" at tablet ------------------------------- */
+@media screen and (min-width: 576px) and (max-width: 912px) {
+  .footer-three-bottom-title {
+    font-size: 164px;
+  }
+}
+
+/* --- 39) Brand / tools section at tablet ------------------------------ */
+@media screen and (min-width: 576px) and (max-width: 912px) {
+  #site-root .tw-char-animation {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+  }
+}
+
+/* ============================================================
+   ADDITIONAL LAPTOP / TABLET FIXES
+   ============================================================ */
+
+/* --- 40) Service items: prevent text overflow at laptop/tablet ------- */
+@media screen and (max-width: 1440px) {
+  .service-three-item {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+/* --- 41) Feature rows: prevent overflow at laptop/tablet ------------- */
+@media screen and (max-width: 1440px) {
+  .feature-three-left {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+/* --- 42) Footer form at tablet — full width -------------------------- */
+@media screen and (max-width: 912px) {
+  .footer-three-form {
+    margin-block-start: 30px;
+  }
+}
+
+/* --- 43) Footer top info card at tablet ------------------------------ */
+@media screen and (max-width: 912px) {
+  .footer-three-top-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-three-top-thumb {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+/* --- 44) Footer middle row at tablet --------------------------------- */
+@media screen and (max-width: 912px) {
+  .footer-three-middile {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  .footer-three-middile > div {
+    text-align: center;
+  }
+  .footer-three-back-to-top {
+    margin: 0 auto;
+  }
+}
+
+/* --- 45) About section image + text at tablet ------------------------ */
+@media screen and (min-width: 576px) and (max-width: 912px) {
+  .about-three-wrap-shape {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+/* ============================================================
+   Mobile typography (existing — preserved)
+   ============================================================ */
 @media screen and (max-width: 575px) {
   .banner-three-center-title {
     font-size: clamp(1.5rem, 6.6vw, 2rem);
