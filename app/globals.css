@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/*
+ * Tailwind v4 entry point.
+ *
+ * This file is imported in layout.js BEFORE the legacy CSS <link> tags so
+ * that the existing main.css, bootstrap.min.css, aos.css, etc. can override
+ * Tailwind's base / preflight resets where needed.  The template's own
+ * custom utility classes (the tw-* prefixed helpers in main.css) continue
+ * to work exactly as before — Tailwind's layer ordering guarantees that
+ * styles defined outside a layer (the legacy CSS) always win over layered
+ * styles (Tailwind utilities).
+ */

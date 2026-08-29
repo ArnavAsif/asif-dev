@@ -195,7 +195,14 @@ export default function LegacyScripts() {
       // max-scroll position and cause the oscillating jump.
       if (isNearBottom()) return;
       isRefreshing = true;
+      // ScrollTrigger.refresh() recalculates every pin / trigger
+      // position.  When those positions shift, GSAP may adjust the
+      // scroll position to stay consistent — the user sees a random
+      // jump.  Save the scroll position before the refresh and
+      // restore it immediately after so the user stays put.
+      const savedScrollY = window.scrollY;
       window.ScrollTrigger.refresh();
+      window.scrollTo(0, savedScrollY);
       isRefreshing = false;
     };
 

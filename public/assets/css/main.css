@@ -7337,7 +7337,7 @@ input:focus-visible {
 }
 .tw-offcanvas-2-close-btn .text {
   width: 60px;
-  height: 20px;
+  height: 31px;
   overflow: hidden;
   color: hsl(var(--white));
   transition: all 0.4s 0s ease-out;
@@ -8207,7 +8207,7 @@ body.tw-magic-cursor #magic-cursor {
 }
 @media screen and (max-width: 1699px) {
   .banner-three-title {
-    font-size: 350px;
+    font-size: 332px;
   }
 }
 @media screen and (max-width: 1499px) {

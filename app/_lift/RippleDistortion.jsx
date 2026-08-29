@@ -368,6 +368,18 @@ const RippleDistortion = ({
       const fieldH = Math.max(2, Math.round(height * scale));
       displacementTarget.setSize(fieldW, fieldH);
       compositeUniforms.uTexel.value = [1 / fieldW, 1 / fieldH];
+
+      // renderer.setSize() clears the canvas drawing-buffer.  If the
+      // render loop is currently parked (no active waves), the hero stays
+      // black until the next pointer interaction wakes the loop.  Render
+      // a single frame immediately so the photo is always visible.
+      if (imageReady && !running) {
+        geometry.attributes.iOffset.needsUpdate = true;
+        geometry.attributes.iScale.needsUpdate = true;
+        geometry.attributes.iOpacity.needsUpdate = true;
+        renderer.render({ scene: waveMesh, target: displacementTarget, clear: true });
+        renderer.render({ scene: compositeMesh });
+      }
     };
 
     const ro = new ResizeObserver(resize);
